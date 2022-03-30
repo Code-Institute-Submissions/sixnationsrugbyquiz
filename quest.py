@@ -140,63 +140,64 @@ ire_question_list = [
 ]
 
 wales_questions = [
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Where do Wales play their home games?\n \
+    (a) Cardiff Arms Park\n \
+    (b) Sophia Gardens\n \
+    (c) Principality Stadiyum\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Which Welsh player won Player of the Tournament in 2019?\n \
+    (a) Alun Wyn Jones\n \
+    (b) George North\n \
+    (c) Dan Biggar\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Who has scored the most points for Wales in the Six-Nations\n \
+    (a) Neil Jenkins\n \
+    (b) Leigh Halfpenny\n \
+    (c) Stephen Jones\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "How many Grand Slams have Wales won?\n \
+    (a) 10\n \
+    (b) 11\n \
+    (c) 12\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "How many Triple Crowns have Wales won?\n \
+    (a) 26\n \
+    (b) 24\n \
+    (c) 22\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "When did Wales last win the Six Nations Championship?\n \
+    (a) 2019\n \
+    (b) 2020\n \
+    (c) 2021\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Which Welsh player won Player of the Championship in 2013\n \
+    (a) Dan Lydiate\n \
+    (b) Leigh Halfpenny\n \
+    (c) Shane Williams\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Wales hold the record for the longest time without conceding a "
+    "try.  How many minutes?\n \
+    (a) 220\n \
+    (b) 150\n \
+    (c) 358\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Who was the head coach for Wales when they won the Grand Slam in 2005?\n \
+    (a) Mike Ruddock\n \
+    (b) Steve Hansen\n \
+    (c) Scott Johnson\n"
 
 ]
 
 wales_question_list = [
-    Question(wales_questions[0], ""),
-    Question(wales_questions[1], ""),
-    Question(wales_questions[2], ""),
-    Question(wales_questions[3], ""),
-    Question(wales_questions[4], ""),
-    Question(wales_questions[5], ""),
-    Question(wales_questions[6], ""),
-    Question(wales_questions[7], ""),
-    Question(wales_questions[8], ""),
+    Question(wales_questions[0], "c"),
+    Question(wales_questions[1], "a"),
+    Question(wales_questions[2], "c"),
+    Question(wales_questions[3], "c"),
+    Question(wales_questions[4], "a"),
+    Question(wales_questions[5], "c"),
+    Question(wales_questions[6], "b"),
+    Question(wales_questions[7], "c"),
+    Question(wales_questions[8], "a"),
 
 ]
 
