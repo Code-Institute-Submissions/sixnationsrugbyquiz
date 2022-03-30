@@ -202,63 +202,63 @@ wales_question_list = [
 ]
 
 scot_questions = [
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Scotland compete against which team in the Six-Nations for the Calcutta Cup?\n \
+    (a) Ireland\n \
+    (b) Wales\n \
+    (c) England\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Who captained Scotland in the 2020 Six-Nations Championship?\n \
+    (a) Stuart Hogg\n \
+    (b) Finn Russell\n \
+    (c) Ali Price\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Who is Scotland's top scorer in the Six Nations?\n \
+    (a) Gavin Hastings\n \
+    (b) Gregor Townsend\n \
+    (c) Chris Paterson\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Who is Scotland's most capped player in the Six-Nations?\n \
+    (a) Jonny  Gray\n \
+    (b) Greig Lidlaw\n \
+    (c) Ross Ford\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Who has scored the most tries for Scotland in the Six-Nations\n \
+    (a) Ian Smith\n \
+    (b) Stuart Hogg\n \
+    (c) Gavin Hastings\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Where do Scotland play their home games?\n \
+    (a) Ibrox Stadium\n \
+    (b) Hampden Park\n \
+    (c) Murrayfield\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "What flower is the national emblem of Scotland?\n \
+    (a) Daffodil\n \
+    (b) Thistle\n \
+    (c) Rose\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "When did Scotland last win a Grand Slam\n \
+    (a) 1982\n \
+    (b) 1985\n \
+    (c) 1990\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Who captianed Scotland when they won their last Grand Slam?\n \
+    (a) David Sole\n \
+    (b) Gavin Hastings\n \
+    (c) Craig Chalmers\n"
 
 ]
 
 scot_question_list = [
-    Question(scot_questions[0], ""),
-    Question(scot_questions[1], ""),
-    Question(scot_questions[2], ""),
-    Question(scot_questions[3], ""),
-    Question(scot_questions[4], ""),
-    Question(scot_questions[5], ""),
-    Question(scot_questions[6], ""),
-    Question(scot_questions[7], ""),
-    Question(scot_questions[8], ""),
+    Question(scot_questions[0], "c"),
+    Question(scot_questions[1], "a"),
+    Question(scot_questions[2], "c"),
+    Question(scot_questions[3], "c"),
+    Question(scot_questions[4], "a"),
+    Question(scot_questions[5], "c"),
+    Question(scot_questions[6], "b"),
+    Question(scot_questions[7], "c"),
+    Question(scot_questions[8], "a"),
 
 ]
 
