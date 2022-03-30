@@ -1,3 +1,4 @@
+"""True or False Quiz Game"""
 import gspread
 from google.oauth2.service_account import Credentials
 
