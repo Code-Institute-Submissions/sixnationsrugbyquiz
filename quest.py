@@ -202,7 +202,8 @@ wales_question_list = [
 ]
 
 scot_questions = [
-    "Scotland compete against which team in the Six-Nations for the Calcutta Cup?\n \
+    "Scotland compete against which team in the Six-Nations for the "
+    "Calcutta Cup?\n \
     (a) Ireland\n \
     (b) Wales\n \
     (c) England\n",
@@ -263,63 +264,64 @@ scot_question_list = [
 ]
 
 italy_questions = [
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Who is Italy's most capped player for the Six-Nations?\n \
+    (a) Martin Castrogiovanni\n \
+    (b) Alessandro Zanni\n \
+    (c) Sergio Parisse\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Who was Italy's coach for the 2017 Six-Nations?\n \
+    (a) Conor O'Shea\n \
+    (b) Jacques Brunel\n \
+    (c) Franco Smith\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "What stadium do Italy play their home games in?\n \
+    (a) Stadio Flaminio\n \
+    (b) Stadio Marassi\n \
+    (c) Stadio Olimpico\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Who did Italy defeat in their very first Six-Nations game?\n \
+    (a) Wales\n \
+    (b) Ireland\n \
+    (c) Scotland\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "What year did Italy and France start competing for the "
+    "Giuseppe Garibaldi trophy?\n \
+    (a) 2007\n \
+    (b) 2008\n \
+    (c) 2009\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "What year was Italy added to the Six-Nations tournament?\n \
+    (a) 2002\n \
+    (b) 2001\n \
+    (c) 2000\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "What is the national rugby team color for Italy?\n \
+    (a) Azure Blue\n \
+    (b) Savoy Blue\n \
+    (c) Royal Blue\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "How many times have Italy taken home the Wooden Spoon trophy?\n \
+    (a) 15\n \
+    (b) 14\n \
+    (c) 17\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "How many times have Italy beaten France in the Six-Nations?\n \
+    (a) Once\n \
+    (b) Twice\n \
+    (c) Three times\n"
 
 ]
 
 italy_question_list = [
-    Question(italy_questions[0], ""),
-    Question(italy_questions[1], ""),
-    Question(italy_questions[2], ""),
-    Question(italy_questions[3], ""),
-    Question(italy_questions[4], ""),
-    Question(italy_questions[5], ""),
-    Question(italy_questions[6], ""),
-    Question(italy_questions[7], ""),
-    Question(italy_questions[8], ""),
+    Question(italy_questions[0], "c"),
+    Question(italy_questions[1], "a"),
+    Question(italy_questions[2], "c"),
+    Question(italy_questions[3], "c"),
+    Question(italy_questions[4], "a"),
+    Question(italy_questions[5], "c"),
+    Question(italy_questions[6], "b"),
+    Question(italy_questions[7], "c"),
+    Question(italy_questions[8], "b"),
 
 ]
 
