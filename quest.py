@@ -22,40 +22,40 @@ eng_questions = [
     (c) 13\n",
 
     "What English player won 'Player of the Championship' in 2014?\n \
-    (a) 'Mike Brown'\n \
-    (b) 'Chris Robshaw'\n \
-    (c) 'Dylan Hartley'\n",
+    (a) Mike Brown\n \
+    (b) Chris Robshaw\n \
+    (c) Dylan Hartley\n",
 
     "England hold the record for most scores in one match.  What was"
     "that score?\n \
-    (a) '93 points'\n \
-    (b) '75 points'\n \
-    (c) '80 points'\n"
+    (a) 93 points\n \
+    (b) 75 points\n \
+    (c) 80 points\n"
 
     "Who is Englands most capped Six-Nations Player\n \
-    (a) 'Ben Youngs'\n \
-    (b) 'Jason Leonard'\n \
-    (c) 'Mike Catt'\n"
+    (a) Ben Youngs\n \
+    (b) Jason Leonard\n \
+    (c) Mike Catt\n"
 
     "Who captained England to the 1991 Grand Slam?\n \
-    (a) 'Will Carling'\n \
-    (b) 'Brian Moore'\n \
-    (c) 'Rob Andrew'\n"
+    (a) Will Carling\n \
+    (b) Brian Moore\n \
+    (c) Rob Andrew\n"
 
     "Who scored the most Six-Nations tries for England?\n \
-    (a) 'Tony Underwood'\n \
-    (b) 'Jason Leonard'\n \
-    (c) 'Rory Underwood'\n"
+    (a) Tony Underwood\n \
+    (b) Jason Leonard\n \
+    (c) Rory Underwood\n"
 
     "What English player has scored the most drop-goals in the tournament?\n \
-    (a) 'Rob Andrew'\n \
-    (b) 'Johnny Wilkinson'\n \
-    (c) 'Owen Farrell'\n"
+    (a) Rob Andrew\n \
+    (b) Johnny Wilkinson\n \
+    (c) Owen Farrell\n"
 
     "What stadium do England play their home games?\n \
-    (a) 'Wembly'\n \
-    (b) 'Millenium Statidum'\n \
-    (c) 'Twickenham'\n"
+    (a) Wembly\n \
+    (b) Millenium Statidum\n \
+    (c) Twickenham\n"
 
 ]
 
@@ -74,63 +74,68 @@ eng_question_list = [
 
 
 ire_questions = [
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Who scored the only try for Ireland when they beat England in "
+    "Twickenham in 2004\n \
+    (a) Girvan Dempsey\n \
+    (b) Brian O'Driscoll\n \
+    (c) Ronan O'Gara\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Who won player of the Six-Nations Championship in 2010?\n \
+    (a) Brian O'Driscoll\n \
+    (b) Paul O'Connell\n \
+    (c) Tommy Bowe\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "As of 2021 what irish player holds the record for the most points "
+    "scored in the Six Nations Championship?\n \
+    (a) David Humphreys\n \
+    (b) Johnny Sexton\n \
+    (c) Ronan O'Gara\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Ireland's biggest away winning margin of 63-10 was away to"
+    " Italy in what year?\n \
+    (a) 2015\n \
+    (b) 2009\n \
+    (c) 2017\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "How many times has Ireland won a Six-Nations grand slam?\n \
+    (a) 3\n \
+    (b) 4\n \
+    (c) 2\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "What place did Ireland finish in the 2021 Six-nations Championship?\n \
+    (a) Second\n \
+    (b) First\n \
+    (c) Third\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Rob Kearney has won two Grand Slams for Ireland.  Who is the"
+    " only other Irish Player to do this?\n \
+    (a) Brian O'Driscoll\n \
+    (b) Rory Best\n \
+    (c) Paul O'Connell\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Which Irish player holds the record for the most successive "
+    "starts in the Six Nations?\n \
+    (a) Keith Wood\n \
+    (b) Brian O'Driscoll\n \
+    (c) John Hayes\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Whoe has the most ball carries in a single Six Nations encounter\n \
+    (a) Denis Leamy\n \
+    (b) Peter O'Mahoney\n \
+    (c) David Wallace\n"
 
 ]
 
 ire_question_list = [
-    Question(ire_questions[0], ""),
-    Question(ire_questions[1], ""),
-    Question(ire_questions[2], ""),
-    Question(ire_questions[3], ""),
-    Question(ire_questions[4], ""),
-    Question(ire_questions[5], ""),
-    Question(ire_questions[6], ""),
-    Question(ire_questions[7], ""),
-    Question(ire_questions[8], ""),
+    Question(ire_questions[0], "a"),
+    Question(ire_questions[1], "a"),
+    Question(ire_questions[2], "c"),
+    Question(ire_questions[3], "c"),
+    Question(ire_questions[4], "a"),
+    Question(ire_questions[5], "c"),
+    Question(ire_questions[6], "b"),
+    Question(ire_questions[7], "c"),
+    Question(ire_questions[8], "a"),
 
 ]
 
@@ -253,5 +258,127 @@ scot_question_list = [
     Question(scot_questions[6], ""),
     Question(scot_questions[7], ""),
     Question(scot_questions[8], ""),
+
+]
+
+italy_questions = [
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n",
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n",
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n",
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+]
+
+italy_question_list = [
+    Question(italy_questions[0], ""),
+    Question(italy_questions[1], ""),
+    Question(italy_questions[2], ""),
+    Question(italy_questions[3], ""),
+    Question(italy_questions[4], ""),
+    Question(italy_questions[5], ""),
+    Question(italy_questions[6], ""),
+    Question(italy_questions[7], ""),
+    Question(italy_questions[8], ""),
+
+]
+
+france_questions = [
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n",
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n",
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n",
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+    "\n \
+    (a) \n \
+    (b) \n \
+    (c) \n"
+
+]
+
+france_question_list = [
+    Question(france_questions[0], ""),
+    Question(france_questions[1], ""),
+    Question(france_questions[2], ""),
+    Question(france_questions[3], ""),
+    Question(france_questions[4], ""),
+    Question(france_questions[5], ""),
+    Question(france_questions[6], ""),
+    Question(france_questions[7], ""),
+    Question(france_questions[8], ""),
 
 ]
