@@ -1,6 +1,12 @@
 """True or False Quiz Game"""
 import gspread
 from google.oauth2.service_account import Credentials
+from quest import eng_question_list
+from quest import ire_question_list
+from quest import wales_question_list
+from quest import france_question_list
+from quest import scot_question_list
+from quest import italy_question_list
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -15,6 +21,13 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 
 data = SHEET.worksheet('scores')
 
-info = data.get_all_values()
 
-print(info)
+def start_quiz(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.question)
+        if answer == question.answer:
+            score += 1
+    print("You got " + str(score) + '/' + str(len(questions)) + " correct")
+
+start_quiz(eng_question_list)
