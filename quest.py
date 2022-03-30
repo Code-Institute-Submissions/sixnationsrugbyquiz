@@ -326,62 +326,62 @@ italy_question_list = [
 ]
 
 france_questions = [
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Where do France play their home games?\n \
+    (a) Stade Pierre-Mauroy\n \
+    (b) Parc de France\n \
+    (c) Stade de France\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Who is France's top scorer for the Six-Nations?\n \
+    (a) Frederic Michalak\n \
+    (b) Romain Ntamack\n \
+    (c) Philippe Sella\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n",
+    "Which French player was Player of the Championship in 2020?\n \
+    (a) Gael Fickou\n \
+    (b) Charles Ollivon\n \
+    (c) Antoine Dupont\n",
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Who is France's most capped player in the Six-Nations?\n \
+    (a) Serg Betsen\n \
+    (b) Fabien Galthie\n \
+    (c) Fabien Pelous\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Who is France's top try-scorer in the Six-Nations\n \
+    (a) Serg Blanco\n \
+    (b) Vincent Clerc\n \
+    (c) Tomas Castaignede\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "How many times have France won a Six-Nations Grand Slam?\n \
+    (a) 10\n \
+    (b) 8\n \
+    (c) 9\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "When did France last win a Six Nations Grand Slam?\n \
+    (a) 2011\n \
+    (b) 2022\n \
+    (c) 2015\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "The French mascot is a rooster but what is his name?\n \
+    (a) Astrix\n \
+    (b) Serge\n \
+    (c) Footix\n"
 
-    "\n \
-    (a) \n \
-    (b) \n \
-    (c) \n"
+    "Which game is commonly referred to as 'Le Crunch'?\n \
+    (a) France v England\n \
+    (b) France v Wales\n \
+    (c) France v Ireland\n"
 
 ]
 
 france_question_list = [
-    Question(france_questions[0], ""),
-    Question(france_questions[1], ""),
-    Question(france_questions[2], ""),
-    Question(france_questions[3], ""),
-    Question(france_questions[4], ""),
-    Question(france_questions[5], ""),
-    Question(france_questions[6], ""),
-    Question(france_questions[7], ""),
-    Question(france_questions[8], ""),
+    Question(france_questions[0], "c"),
+    Question(france_questions[1], "a"),
+    Question(france_questions[2], "c"),
+    Question(france_questions[3], "c"),
+    Question(france_questions[4], "a"),
+    Question(france_questions[5], "a"),
+    Question(france_questions[6], "b"),
+    Question(france_questions[7], "c"),
+    Question(france_questions[8], "a"),
 
 ]
