@@ -22,7 +22,7 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 data = SHEET.worksheet('scores')
 
 
-def start_quiz(questions):
+def get_questions(questions):
     score = 0
     for question in questions:
         answer = input(question.question)
@@ -30,4 +30,4 @@ def start_quiz(questions):
             score += 1
     print("You got " + str(score) + '/' + str(len(questions)) + " correct")
 
-start_quiz(eng_question_list)
+get_questions(eng_question_list)
