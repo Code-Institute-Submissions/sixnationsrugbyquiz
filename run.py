@@ -23,6 +23,9 @@ data = SHEET.worksheet('scores')
 
 
 def get_questions(questions):
+    """
+    This function will get the questions for each section
+    """
     score = 0
     for question in questions:
         answer = input(question.question)
@@ -30,4 +33,24 @@ def get_questions(questions):
             score += 1
     print("You got " + str(score) + '/' + str(len(questions)) + " correct")
 
-get_questions(eng_question_list)
+
+def main_quiz_start():
+    """
+    Main function to run
+    """
+    print('Hello and welcome to the Six Nations Rugby Quiz\n')
+    print()
+    print()
+    print('Would you like to see the rules or go ahead and play the game?\n')
+    player_choice = input('Type "r" to see the rules, "p" to play and "q" to quit: \n')
+    if player_choice == 'r':
+        print("Here are the rules")
+    elif player_choice == 'p':
+        print("Which game would you like to play? ")
+    elif player_choice == 'q':
+        print("Goodbye")
+        
+    # get_questions(eng_question_list)
+
+
+main_quiz_start()
