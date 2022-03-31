@@ -63,9 +63,16 @@ def game_choice():
         game_choice()
 
 
+def validate_choice(choices):
+    """
+    Inside the try, converts all values into lowercase.  
+    Rais
+    """
+
+
 def main_quiz_start():
     """
-    Main function to run
+    Main function to run all program functions
     """
     print('Hello and welcome to the Six Nations Rugby Quiz\n')
     print()
