@@ -59,10 +59,9 @@ def game_choice():
     elif get_choice == "it":
         get_questions(italy_question_list)
     else:
-        print('You must choice a valid selection, please choose again...\n')
+        print('You must choose a valid selection, please choose again...\n')
         get_choice = input('Please enter your choice correctly to continue')
 
-    
 
 def main_quiz_start():
     """
@@ -79,9 +78,6 @@ def main_quiz_start():
         game_choice()
     else:
         print('You must enter a valid choice either "r" or "p"')
-
-
-    
 
 
 main_quiz_start()
