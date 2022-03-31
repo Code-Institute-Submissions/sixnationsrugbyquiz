@@ -24,7 +24,8 @@ data = SHEET.worksheet('scores')
 
 def get_questions(questions):
     """
-    This function will get the questions for each section
+    This function will get the questions for each section and get user
+    scores
     """
     score = 0
     for question in questions:
@@ -32,6 +33,7 @@ def get_questions(questions):
         if answer == question.answer:
             score += 1
     print("You got " + str(score) + '/' + str(len(questions)) + " correct")
+    
 
 
 def main_quiz_start():
@@ -42,14 +44,15 @@ def main_quiz_start():
     print()
     print()
     print('Would you like to see the rules or go ahead and play the game?\n')
-    player_choice = input('Type "r" to see the rules, "p" to play and "q" to quit: \n')
+    player_choice = input('Type "r" to see the rules, "p" to play: \n')
     if player_choice == 'r':
         print("Here are the rules")
     elif player_choice == 'p':
         print("Which game would you like to play? ")
-    elif player_choice == 'q':
-        print("Goodbye")
-        
+    else:
+        print('You must enter a valid choice either "r" or "p"')
+
+
     # get_questions(eng_question_list)
 
 
