@@ -11,7 +11,7 @@ Link to the repository is [here]().
 
 The Design has been focused to **Desktop** first and **Responsive**
 
-![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1646745681/Flip%20the%20Bird/flip-mockup_thutsp.png)
+![alt text]()
 
 -----
 

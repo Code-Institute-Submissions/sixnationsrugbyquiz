@@ -38,13 +38,13 @@ def game_choice():
     """
     This function gets the users choice on which game they want to play
     """
-    print('You have the choice of six quiz questions to play:\n')
-    print('To answer questions about England type "eng"...\n')
-    print('To answer questions about Ireland type "ire"...\n')
-    print('To answer questions about Wales type "wal"...\n')
-    print('To answer questions about France type "fr"...\n')
-    print('To answer questions about Scotland type "sc"...\n')
-    print('To answer questions about Italy type "it"...\n')
+    print('You have the choice of six quiz questions to play:')
+    print('To answer questions about England type "eng"')
+    print('To answer questions about Ireland type "ire"')
+    print('To answer questions about Wales type "wal"')
+    print('To answer questions about France type "fr"')
+    print('To answer questions about Scotland type "sc"')
+    print('To answer questions about Italy type "it"')
     get_choice = input("So what's it going to be?: \n")
     if get_choice == "eng":
         get_questions(eng_question_list)
@@ -60,7 +60,7 @@ def game_choice():
         get_questions(italy_question_list)
     else:
         print('You must choose a valid selection, please choose again...\n')
-        get_choice = input('Please enter your choice correctly to continue')
+        game_choice()
 
 
 def main_quiz_start():
