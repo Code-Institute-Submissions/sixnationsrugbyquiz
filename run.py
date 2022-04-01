@@ -2,6 +2,7 @@
 import gspread
 from colorama import Fore
 from info import welcome_message
+from info import rules
 from google.oauth2.service_account import Credentials
 from quest import eng_question_list
 from quest import ire_question_list
@@ -91,7 +92,12 @@ def main_quiz_start():
     welcome_message()
     player_choice = input('Type "r" to see the rules, "p" to play: \n')
     if player_choice == 'r':
-        print("Here are the rules")
+        rules()
+        player_choice = input('Type p to play or q to quit: \n')
+        if player_choice == 'p':
+            game_choice()
+        if player_choice == 'q':
+            print('ok bye')
     elif player_choice == 'p':
         game_choice()
     else:

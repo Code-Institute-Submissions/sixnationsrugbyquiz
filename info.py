@@ -18,3 +18,26 @@ def welcome_message():
     print('There are six sections in total, one for each country')
     time.sleep(2)
     print('Would you like to see the rules or go ahead and play the game?\n')
+
+
+def rules():
+    """
+    A Function that displays the rules to the user
+    """
+    print('The Rules are simple.....')
+    time.sleep(2)
+    print('The Six-Nations Championships consist of six countries...')
+    time.sleep(2)
+    print('Ireland, England, Scotland, Wales, Italy and France...')
+    time.sleep(2)
+    print('You will be asked 6 questions in each section...')
+    time.sleep(2)
+    print('Each section will have questions about each country...')
+    time.sleep(2)
+    print('All questions are multiple choice...')
+    time.sleep(2)
+    print('You answer with a, b, or c...')
+    time.sleep(2)
+    print("Let's see what country you cheer for...")
+    time.sleep(2)
+    
