@@ -38,7 +38,7 @@ def game_choice():
     """
     This function gets the users choice on which game they want to play
     """
-    print('You have the choice of six quiz questions to play:')
+    print('You have the choice of six quiz sections to play:')
     print('To answer questions about England type "eng"')
     print('To answer questions about Ireland type "ire"')
     print('To answer questions about Wales type "wal"')
