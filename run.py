@@ -1,6 +1,6 @@
 """True or False Quiz Game"""
 import gspread
-from colorama import Fore, Back, Style
+from colorama import Fore
 from info import welcome_message
 from google.oauth2.service_account import Credentials
 from quest import eng_question_list
