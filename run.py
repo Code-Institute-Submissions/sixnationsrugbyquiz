@@ -1,6 +1,6 @@
 """True or False Quiz Game"""
 import gspread
-from pyfiglet import figlet_format
+from info import welcome_message
 from google.oauth2.service_account import Credentials
 from quest import eng_question_list
 from quest import ire_question_list
@@ -8,6 +8,7 @@ from quest import wales_question_list
 from quest import france_question_list
 from quest import scot_question_list
 from quest import italy_question_list
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -86,11 +87,7 @@ def main_quiz_start():
     """
     Main function to run all program functions
     """
-    print(figlet_format('Six Nations Rugby Quiz', font="slant"))
-    print('Hello and welcome to the Six Nations Rugby Quiz\n')
-    print()
-    print()
-    print('Would you like to see the rules or go ahead and play the game?\n')
+    welcome_message()
     player_choice = input('Type "r" to see the rules, "p" to play: \n')
     if player_choice == 'r':
         print("Here are the rules")
