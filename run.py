@@ -1,5 +1,6 @@
 """True or False Quiz Game"""
 import gspread
+from colorama import Fore, Back, Style
 from info import welcome_message
 from google.oauth2.service_account import Credentials
 from quest import eng_question_list
@@ -34,7 +35,7 @@ def get_questions(questions):
         answer = input(question.question)
         if answer == question.answer:
             score += 1
-    print("You got " + str(score) + '/' + str(len(questions)) + " correct")
+    print(f"{Fore.GREEN}You got " + str(score) + '/' + str(len(questions)) + " correct")
 
 
 def game_choice():
@@ -42,12 +43,12 @@ def game_choice():
     This function gets the users choice on which game they want to play
     """
     print('You have the choice of six quiz sections to play:')
-    print('To answer questions about England type "eng"')
-    print('To answer questions about Ireland type "ire"')
-    print('To answer questions about Wales type "wal"')
-    print('To answer questions about France type "fr"')
-    print('To answer questions about Scotland type "sc"')
-    print('To answer questions about Italy type "it"')
+    print(f'To answer questions about England type {Fore.RED}"eng"{Fore.WHITE}')
+    print(f'To answer questions about Ireland type {Fore.GREEN}"ire"{Fore.WHITE}')
+    print(f'To answer questions about Scotland type {Fore.BLUE}"sc"{Fore.WHITE}')
+    print(f'To answer questions about Wales type {Fore.LIGHTRED_EX}"wal"{Fore.WHITE}')
+    print(f'To answer questions about France type {Fore.BLUE}"fr"{Fore.WHITE}')
+    print(f'To answer questions about Italy type {Fore.CYAN}"it"{Fore.WHITE}')
     get_choice = input("So what's it going to be?: \n")
     if get_choice == "eng":
         get_questions(eng_question_list)
