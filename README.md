@@ -5,11 +5,11 @@
 
 For my **Portfolio 3 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a command line Six Nations Rugby Quiz game.  The game asks the user questions on each of the teams that take part in the Six Nations Rugby tournament.  There are six countries that take part so there are six different sections to choose from.  
 
-Link to the deployed website is [here](). 
+Link to the deployed app is [here](https://sixnationsrugbyquiz.herokuapp.com/). 
 
 Link to the repository is [here](). 
 
-The Design has been focused to **Desktop** first and **Responsive**
+
 
 ![alt text]()
 
