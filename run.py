@@ -1,5 +1,6 @@
 """True or False Quiz Game"""
 import gspread
+from pyfiglet import figlet_format
 from google.oauth2.service_account import Credentials
 from quest import eng_question_list
 from quest import ire_question_list
@@ -34,6 +35,7 @@ def get_questions(questions):
             score += 1
     print("You got " + str(score) + '/' + str(len(questions)) + " correct")
 
+
 def game_choice():
     """
     This function gets the users choice on which game they want to play
@@ -63,17 +65,28 @@ def game_choice():
         game_choice()
 
 
-def validate_choice(choices):
-    """
-    Inside the try, converts all values into lowercase.  
-    Rais
-    """
+# def validate_choice(choices):
+#     """
+#     Inside the try, converts all values into lowercase.
+#     """
+
+#     if choices != 'a' or 'b' or 'c' or 'd':
+#             raise ValueError(
+#                 f"That is not a valid answer, you must chose either a,
+#               b, c or d"
+#             )
+#     except ValueError as e:
+#         print(f"Invalid data: {e}, please try again.\n")
+#         return False
+
+#     return True
 
 
 def main_quiz_start():
     """
     Main function to run all program functions
     """
+    print(figlet_format('Six Nations Rugby Quiz', font="slant"))
     print('Hello and welcome to the Six Nations Rugby Quiz\n')
     print()
     print()
