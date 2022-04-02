@@ -1,5 +1,6 @@
 """True or False Quiz Game"""
 import gspread
+import time
 from colorama import Fore
 from info import welcome_message
 from info import rules
@@ -44,12 +45,19 @@ def game_choice():
     This function gets the users choice on which game they want to play
     """
     print('You have the choice of six quiz sections to play:')
+    time.sleep(1)
     print(f'To answer questions about England type {Fore.RED}"eng"{Fore.WHITE}')
+    time.sleep(1)
     print(f'To answer questions about Ireland type {Fore.GREEN}"ire"{Fore.WHITE}')
+    time.sleep(1)
     print(f'To answer questions about Scotland type {Fore.BLUE}"sc"{Fore.WHITE}')
+    time.sleep(1)
     print(f'To answer questions about Wales type {Fore.LIGHTRED_EX}"wal"{Fore.WHITE}')
+    time.sleep(1)
     print(f'To answer questions about France type {Fore.BLUE}"fr"{Fore.WHITE}')
+    time.sleep(1)
     print(f'To answer questions about Italy type {Fore.CYAN}"it"{Fore.WHITE}')
+    time.sleep(2)
     get_choice = input("So what's it going to be?: \n")
     if get_choice == "eng":
         get_questions(eng_question_list)
