@@ -17,7 +17,8 @@ def welcome_message():
     time.sleep(2)
     print('There are six sections in total, one for each country')
     time.sleep(2)
-    print('Would you like to see the rules or go ahead and play the game?\n')
+    user_name = input('What is your name player?: \n')
+    print(f'Hello {user_name} would you like to see the rules or go ahead and play the game?\n')
 
 
 def rules():
