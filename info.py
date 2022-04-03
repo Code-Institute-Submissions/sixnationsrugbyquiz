@@ -11,6 +11,7 @@ from quest import wales_question_list
 from quest import france_question_list
 from quest import scot_question_list
 from quest import italy_question_list
+from validate import User
 
 
 def welcome_message():
@@ -24,9 +25,14 @@ def welcome_message():
     time.sleep(2)
     print('There are six sections in total, one for each country')
     time.sleep(2)
-    user_name = input('What is your name player?: \n')
-    print(f'Hello {user_name} would you like to see the rules or\
+    print('What is your name player?: \n')
+
+    new_user = User()
+
+    print(f'Hello {new_user.username} would you like to see the rules or\
     go ahead and play the game?\n')
+
+    return new_user
 
 
 def rules():
