@@ -37,7 +37,7 @@ def get_questions(questions):
         answer = input(question.question)
         if answer == question.answer:
             score += 1
-    print(f"{Fore.GREEN}You got " + str(score) + '/' + str(len(questions)) + " correct")
+    print(f"You got " + str(score) + '/' + str(len(questions)) + " correct")
 
 
 def game_choice():
