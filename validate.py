@@ -4,6 +4,9 @@
 class User():
     """
     This Function will create a user object
+    Attributes: username
+    Methods:    get user name
+                validate user name
     """
     def __init__(self, username):
         self.username = username
