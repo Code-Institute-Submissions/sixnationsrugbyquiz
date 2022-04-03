@@ -39,7 +39,7 @@ def rules():
     time.sleep(2)
     print('Ireland, England, Scotland, Wales, Italy and France...')
     time.sleep(2)
-    print('You will be asked 6 questions in each section...')
+    print('You will be asked 5 questions in each section...')
     time.sleep(2)
     print('Each section will have questions about each country...')
     time.sleep(2)
