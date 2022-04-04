@@ -3,6 +3,7 @@ Information Messages for users
 """
 
 import time
+import random
 from pyfiglet import figlet_format
 from colorama import Fore
 from quest import eng_question_list
@@ -11,7 +12,7 @@ from quest import wales_question_list
 from quest import france_question_list
 from quest import scot_question_list
 from quest import italy_question_list
-from validate import User
+# from validate import User
 
 
 def welcome_message():
@@ -25,11 +26,8 @@ def welcome_message():
     time.sleep(2)
     print('There are six sections in total, one for each country')
     time.sleep(2)
-    print('What is your name player?: \n')
-
-    new_user = User()
-
-    print(f'Hello {new_user.username} would you like to see the rules or\
+    new_user = input('What is your name player?: \n')
+    print(f'Hello {new_user} would you like to see the rules or\
     go ahead and play the game?\n')
 
     return new_user
@@ -112,8 +110,11 @@ def get_questions(questions):
     scores
     """
     score = 0
+    random.shuffle(questions)
     for question in questions:
         answer = input(question.question)
         if answer == question.answer:
             score += 1
-    print(f' your score is {score} out of {questions}')
+        else:
+            score -= 1
+    print("You got " + str(score) + '/' + str(len(questions)) + " correct")
