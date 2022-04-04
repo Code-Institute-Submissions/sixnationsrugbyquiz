@@ -1,41 +1,44 @@
 """Validation file"""
 
 
-# class User():
-#     """
-#     This Function will create a user object
-#     """
-#     def __init__(self, username):
-#         self.username = username
+class User():
+    """
+    Creates a User object which can take
+    the users name, display a welcome message
+    validate user input for name and answers
 
-#     def get_user_name(self):
-#         """
-#         Allows user to enter their name
+    """
 
-#         Maxium characters of 12 is valid
-#         Profanity not allowed.  Use profanity_filter
-#         to check
-#         """
-#         while True:
-#             print("Please enter your name....")
-#             print("Your name can not be longer than 10 characaters")
-#             print("and cannot contain any numbers")
+    def get_user_name(self):
+        """
+        Allows user to enter their name
+        Maxium characters of 12 is valid
+        Numbers are not allowed
+        """
+        while True:
+            username = input("So Player what shall I call you?: \n")
 
-#             user_str = input("So Player what shall I call you?: /n")
+            if self.validate_name(username):
+                print(f"Hello {username} let's get started...")
+                break
 
-#             username = user_str.split()
+    @staticmethod
+    def validate_name(name):
+        """
+        Inside the try it checks if the user has inputed a name that
+        is longer than 10 characters or has any characteres at all
+        """
 
-#             if validate_name(username):
-#                 print(f"Hello {username} let's get started...")
-# #     def validate_name(values):
-#         """
-#         Inside the try it checks if the user has inputed a name with
-#         less than six characters and hasn't entered any numbers
-#         """
+        try:
+            if len(name) == 0:
+                raise ValueError('...name cannot be blank')
+            elif len(name) > 10:
+                raise ValueError("..sorry only 10 characters allowed")
+            elif name.isdigit():
+                raise ValueError('...no numbers allowed')
+            else:
+                return True
 
-#         try:
-#             if values > 10:
-#                 raise ValueError(
-#                     f"Sorry only 10 characters allowed you had {len(values)}'
-#                     )
-#         pass
+        except ValueError as err:
+            print(f'Please try again {err}')
+            return False

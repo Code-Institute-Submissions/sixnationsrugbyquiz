@@ -5,6 +5,7 @@ from info import welcome_message
 from info import rules
 from info import choices
 from info import game_choice
+from validate import User
 
 
 SCOPE = [
@@ -37,12 +38,10 @@ data = SHEET.worksheet('scores')
 
 #     return True
 
-
-def main_quiz_start():
+def rules_or_play():
     """
-    Main function to run all program functions
+    Function to get players choice of rules or to play game
     """
-    welcome_message()
     player_choice = input('Type "r" to see the rules, "p" to play: \n')
     if player_choice == 'r':
         rules()
@@ -57,6 +56,16 @@ def main_quiz_start():
         game_choice()
     else:
         print('You must enter a valid choice either "r" or "p"')
+
+
+def main_quiz_start():
+    """
+    Main function to run all program functions
+    """
+    welcome_message()
+    user = User()
+    user.get_user_name()
+    rules_or_play()
 
 
 main_quiz_start()
