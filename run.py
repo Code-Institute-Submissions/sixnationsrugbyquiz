@@ -1,5 +1,6 @@
 """True or False Quiz Game"""
 # import os
+import random
 import gspread
 from google.oauth2.service_account import Credentials
 from tabulate import tabulate
@@ -35,6 +36,31 @@ def display_score_board():
         result.append(ind)
     load_scores = result
     print(tabulate(load_scores, tablefmt="pretty",))
+
+
+def get_questions(questions):
+    """
+    This function will get the questions for each section and get user
+    scores
+    """
+    score = 0
+    random.shuffle(questions)
+    for question in questions:
+        while True:
+            answer = input(question.question).lower()
+            if answer not in {'a', 'b', 'c'}:
+                print("You must enter a, b or c, please try again")
+
+            else:
+                break
+        if answer == question.answer:
+            score += 1
+            print('Correct Answer!')
+        else:
+            print('Sorry you got that one wrong!')
+    print(f'You got {score} out of {len(questions)}')
+    show_scores = SHEET.worksheet('scores')
+    show_scores.append_row(values=[score])
 
 
 # def validate_choice(choices):

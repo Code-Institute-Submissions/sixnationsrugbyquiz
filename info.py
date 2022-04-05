@@ -106,10 +106,19 @@ def get_questions(questions):
     score = 0
     random.shuffle(questions)
     for question in questions:
-        answer = input(question.question)
+        while True:
+            answer = input(question.question).lower()
+            if answer not in {'a', 'b', 'c'}:
+                print("You must enter a, b or c, please try again")
+
+            else:
+                break
         if answer == question.answer:
             score += 1
-    print(f' your score is {score} out of {questions}')
+            print('Correct Answer!')
+        else:
+            print('Sorry you got that one wrong!')
+    print(f'You got {score} out of {len(questions)}')
 
 
 def blank_line():
