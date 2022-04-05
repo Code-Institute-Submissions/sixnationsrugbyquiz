@@ -25,7 +25,6 @@ rsa==4.8
 ruamel.yaml==0.15.100
 spacy==2.3.7
 srsly==1.0.5
-tabulate==0.8.9
 thinc==7.4.5
 tomlkit==0.5.11
 wasabi==0.9.1
