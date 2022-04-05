@@ -1,5 +1,6 @@
 """True or False Quiz Game"""
-# import os
+import os
+from time import sleep
 import random
 import gspread
 from google.oauth2.service_account import Credentials
@@ -63,22 +64,6 @@ def get_questions(questions):
     show_scores.append_row(values=[score])
 
 
-# def validate_choice(choices):
-#     """
-#     Inside the try, converts all values into lowercase.
-#     """
-
-#     if choices != 'a' or 'b' or 'c' or 'd':
-#             raise ValueError(
-#                 f"That is not a valid answer, you must chose either a,
-#               b, c or d"
-#             )
-#     except ValueError as e:
-#         print(f"Invalid data: {e}, please try again.\n")
-#         return False
-
-#     return True
-
 def rules_or_play():
     """
     Function to get players choice of rules or to play game
@@ -99,25 +84,23 @@ def rules_or_play():
         print('You must enter a valid choice either "r" or "p"')
 
 
-# def clear_terminal():
-#     """
-#     clears terminal
-#     """
-#     os.system("printf")
+def clear():
+    """
+    Function to clear console
+    """
+    os.system('clear')
 
 
 def main_quiz_start():
     """
     Main function to run all program functions
     """
-    # table = [["Sun", 696000, 1989100000], ["Earth", 6371, 5973.6],
-    #          ["Moon", 1737, 73.5], ["Mars", 3390, 641.85]]
-    # print(tabulate(table))
     display_score_board()
     welcome_message()
     user = User()
     user.get_user_name()
-    # clear_terminal()
+    sleep(2)
+    clear()
     rules_or_play()
 
 
