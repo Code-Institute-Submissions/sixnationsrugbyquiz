@@ -35,7 +35,7 @@ class User():
             elif len(name) > 10:
                 raise ValueError("..sorry only 10 characters allowed")
             elif name.isdigit():
-                raise ValueError('...no numbers allowed')
+                raise ValueError('...numbers on their own not allowed')
             else:
                 return True
 

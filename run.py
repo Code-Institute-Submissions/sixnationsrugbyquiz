@@ -26,11 +26,15 @@ data = SHEET.worksheet('scores')
 
 def display_score_board():
     """
-    Function to get scores and display scoreboard
-
+    Collects high scores to display
     """
-    high_scores = SHEET.worksheet('scores')
-    
+
+    high_scores = data.get_all_values()
+    result = []
+    for ind in high_scores:
+        result.append(ind)
+    load_scores = result
+    print(tabulate(load_scores, tablefmt="pretty",))
 
 
 # def validate_choice(choices):
