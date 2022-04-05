@@ -1,6 +1,7 @@
 """True or False Quiz Game"""
 import gspread
 from google.oauth2.service_account import Credentials
+import os
 from info import welcome_message
 from info import rules
 from info import choices
@@ -58,6 +59,13 @@ def rules_or_play():
         print('You must enter a valid choice either "r" or "p"')
 
 
+def clear_terminal():
+    """
+    clears terminal
+    """
+    os.system("printf")
+
+
 def main_quiz_start():
     """
     Main function to run all program functions
@@ -65,6 +73,7 @@ def main_quiz_start():
     welcome_message()
     user = User()
     user.get_user_name()
+    clear_terminal()
     rules_or_play()
 
 

@@ -110,3 +110,8 @@ def get_questions(questions):
         if answer == question.answer:
             score += 1
     print(f' your score is {score} out of {questions}')
+
+def blank_line():
+    """
+    Function to display a blank line
+    """
