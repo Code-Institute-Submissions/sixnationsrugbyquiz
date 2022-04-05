@@ -2,6 +2,7 @@
 # import os
 import gspread
 from google.oauth2.service_account import Credentials
+from tabulate import tabulate
 from info import welcome_message
 from info import rules
 from info import choices
@@ -70,6 +71,9 @@ def main_quiz_start():
     """
     Main function to run all program functions
     """
+    table = [["Sun", 696000, 1989100000], ["Earth", 6371, 5973.6],
+             ["Moon", 1737, 73.5], ["Mars", 3390, 641.85]]
+    print(tabulate(table))
     welcome_message()
     user = User()
     user.get_user_name()
