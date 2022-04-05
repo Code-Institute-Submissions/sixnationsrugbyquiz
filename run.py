@@ -7,9 +7,13 @@ from google.oauth2.service_account import Credentials
 from tabulate import tabulate
 from info import welcome_message
 from info import rules
-from info import choices
-from info import game_choice
 from validate import User
+from quest import eng_question_list
+from quest import ire_question_list
+from quest import wales_question_list
+from quest import france_question_list
+from quest import scot_question_list
+from quest import italy_question_list
 
 
 SCOPE = [
@@ -24,19 +28,29 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('true_false')
 
 data = SHEET.worksheet('scores')
+quiz_choices = SHEET.worksheet('quizchoices')
 
 
-def display_score_board():
+def game_choice():
     """
-    Collects high scores to display
+    This function gets the users choice on which game they want to play
     """
-
-    high_scores = data.get_all_values()
-    result = []
-    for ind in high_scores:
-        result.append(ind)
-    load_scores = result
-    print(tabulate(load_scores, tablefmt="pretty",))
+    get_choice = input("So what's it going to be?: \n")
+    if get_choice == "eng":
+        get_questions(eng_question_list)
+    elif get_choice == "ire":
+        get_questions(ire_question_list)
+    elif get_choice == "wal":
+        get_questions(wales_question_list)
+    elif get_choice == "fr":
+        get_questions(france_question_list)
+    elif get_choice == "sc":
+        get_questions(scot_question_list)
+    elif get_choice == "it":
+        get_questions(italy_question_list)
+    else:
+        print('You must choose a valid selection, please choose again...\n')
+        game_choice()
 
 
 def get_questions(questions):
@@ -44,6 +58,7 @@ def get_questions(questions):
     This function will get the questions for each section and get user
     scores
     """
+    clear()
     score = 0
     random.shuffle(questions)
     for question in questions:
@@ -60,8 +75,33 @@ def get_questions(questions):
         else:
             print('Sorry you got that one wrong!')
     print(f'You got {score} out of {len(questions)}')
-    show_scores = SHEET.worksheet('scores')
-    show_scores.append_row(values=[score])
+
+
+def choices():
+    """
+    Function to display choices for user
+    """
+
+    qchoices = [['For Questions On:', 'Type:'], ["England", "eng"],
+                ["Ireland", "ire"], ["Scotland", "sc"],
+                ["Wales", "wal"], ["France", "fr"],
+                ["Italy", "it"]]
+    print(
+        tabulate
+        (qchoices, headers='firstrow', tablefmt='psql', stralign="center"))
+
+
+def display_score_board():
+    """
+    Collects high scores to display
+    """
+
+    high_scores = data.get_all_values()
+    result = []
+    for ind in high_scores:
+        result.append(ind)
+    load_scores = result
+    print(tabulate(load_scores, tablefmt="pretty",))
 
 
 def rules_or_play():
@@ -70,14 +110,17 @@ def rules_or_play():
     """
     player_choice = input('Type "r" to see the rules, "p" to play: \n')
     if player_choice == 'r':
+        clear()
         rules()
         player_choice = input('Type p to play or q to quit: \n')
         if player_choice == 'p':
+            clear()
             choices()
             game_choice()
         if player_choice == 'q':
             print('ok bye')
     elif player_choice == 'p':
+        clear()
         choices()
         game_choice()
     else:
@@ -95,7 +138,7 @@ def main_quiz_start():
     """
     Main function to run all program functions
     """
-    display_score_board()
+    # display_score_board()
     welcome_message()
     user = User()
     user.get_user_name()

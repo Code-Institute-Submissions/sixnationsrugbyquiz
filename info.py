@@ -3,15 +3,7 @@ Information Messages for users
 """
 
 import time
-import random
 from pyfiglet import figlet_format
-from colorama import Fore
-from quest import eng_question_list
-from quest import ire_question_list
-from quest import wales_question_list
-from quest import france_question_list
-from quest import scot_question_list
-from quest import italy_question_list
 
 
 def welcome_message():
@@ -47,78 +39,6 @@ def rules():
     time.sleep(2)
     print("Let's see what country you cheer for...")
     time.sleep(2)
-
-
-def game_choice():
-    """
-    This function gets the users choice on which game they want to play
-    """
-    get_choice = input("So what's it going to be?: \n")
-    if get_choice == "eng":
-        get_questions(eng_question_list)
-    elif get_choice == "ire":
-        get_questions(ire_question_list)
-    elif get_choice == "wal":
-        get_questions(wales_question_list)
-    elif get_choice == "fr":
-        get_questions(france_question_list)
-    elif get_choice == "sc":
-        get_questions(scot_question_list)
-    elif get_choice == "it":
-        get_questions(italy_question_list)
-    else:
-        print('You must choose a valid selection, please choose again...\n')
-        game_choice()
-
-
-def choices():
-    """
-    Function to display choices for user
-    """
-    time.sleep(2)
-    print('You have the choice of six quiz sections to play:')
-    time.sleep(1)
-    print(f'To answer questions about England type {Fore.RED}"eng"\
-    {Fore.WHITE}')
-    time.sleep(1)
-    print(f'To answer questions about Ireland type {Fore.GREEN}"ire"\
-    {Fore.WHITE}')
-    time.sleep(1)
-    print(f'To answer questions about Scotland type {Fore.BLUE}"sc"\
-    {Fore.WHITE}')
-    time.sleep(1)
-    print(f'To answer questions about Wales type {Fore.LIGHTRED_EX}\
-    "wal"{Fore.WHITE}')
-    time.sleep(1)
-    print(f'To answer questions about France type {Fore.BLUE}"fr"\
-    {Fore.WHITE}')
-    time.sleep(1)
-    print(f'To answer questions about Italy type {Fore.CYAN}"it"\
-    {Fore.WHITE}')
-    time.sleep(2)
-
-
-def get_questions(questions):
-    """
-    This function will get the questions for each section and get user
-    scores
-    """
-    score = 0
-    random.shuffle(questions)
-    for question in questions:
-        while True:
-            answer = input(question.question).lower()
-            if answer not in {'a', 'b', 'c'}:
-                print("You must enter a, b or c, please try again")
-
-            else:
-                break
-        if answer == question.answer:
-            score += 1
-            print('Correct Answer!')
-        else:
-            print('Sorry you got that one wrong!')
-    print(f'You got {score} out of {len(questions)}')
 
 
 def blank_line():
