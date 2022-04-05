@@ -111,6 +111,7 @@ def get_questions(questions):
             score += 1
     print(f' your score is {score} out of {questions}')
 
+
 def blank_line():
     """
     Function to display a blank line

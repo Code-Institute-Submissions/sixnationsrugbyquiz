@@ -39,6 +39,5 @@ class User():
             else:
                 return True
 
-        except ValueError as err:
-            print(f'Please try again {err}')
+        except TypeError:
             return False

@@ -1,7 +1,7 @@
 """True or False Quiz Game"""
+import os
 import gspread
 from google.oauth2.service_account import Credentials
-import os
 from info import welcome_message
 from info import rules
 from info import choices
