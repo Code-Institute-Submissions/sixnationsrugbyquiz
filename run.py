@@ -24,6 +24,15 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 data = SHEET.worksheet('scores')
 
 
+def display_score_board():
+    """
+    Function to get scores and display scoreboard
+
+    """
+    high_scores = SHEET.worksheet('scores')
+    
+
+
 # def validate_choice(choices):
 #     """
 #     Inside the try, converts all values into lowercase.
@@ -71,9 +80,10 @@ def main_quiz_start():
     """
     Main function to run all program functions
     """
-    table = [["Sun", 696000, 1989100000], ["Earth", 6371, 5973.6],
-             ["Moon", 1737, 73.5], ["Mars", 3390, 641.85]]
-    print(tabulate(table))
+    # table = [["Sun", 696000, 1989100000], ["Earth", 6371, 5973.6],
+    #          ["Moon", 1737, 73.5], ["Mars", 3390, 641.85]]
+    # print(tabulate(table))
+    display_score_board()
     welcome_message()
     user = User()
     user.get_user_name()
