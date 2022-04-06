@@ -1,4 +1,4 @@
-"""Validation file"""
+"""Contains user class"""
 
 
 class User():

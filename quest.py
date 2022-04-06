@@ -1,5 +1,5 @@
 """
-Questions for Quiz.
+Questions and Answers for Quiz.
 
 """
 
