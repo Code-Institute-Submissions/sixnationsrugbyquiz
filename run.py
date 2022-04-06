@@ -9,7 +9,6 @@ from time import sleep
 # to get random questions
 import random
 
-
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -47,6 +46,7 @@ score_data = SHEET.worksheet('scores')
 quiz_choices = SHEET.worksheet('quizchoices')
 rules_info = SHEET.worksheet('rules')
 
+
 # Functions below to display messages
 
 
@@ -54,11 +54,12 @@ def welcome_message():
     """
     Displays welcome message to user
     """
-    print(figlet_format('Six Nations Rugby Quiz', font="slant"))
+    print(figlet_format('Six Nations', font="slant", justify="center"))
+    print(figlet_format('Rugby Quiz', font="slant", justify="center"))
     print('Hello and welcome to the Six Nations Rugby Quiz\n')
-
+    sleep(2)
     print('Here you will be tested on your knowledge of Six Nations Rugby')
-
+    sleep(2)
     print('There are six sections in total, one for each country')
 
 
@@ -83,10 +84,15 @@ def choices():
     print("Here are your six choices:".center(80))
     print()
     print('To answer questions on England, type "eng"'.center(80))
+    sleep(2)
     print('To answer questions on Ireland, type "ire"'.center(80))
+    sleep(2)
     print('To answer questions on Scotland, type "sc"'.center(80))
+    sleep(2)
     print('To answer questions on Wales, type "wal"'.center(80))
+    sleep(2)
     print('To answer questions on France, type "fr"'.center(80))
+    sleep(2)
     print('To answer questions on Italy, type "it"'.center(80))
 
 
@@ -102,6 +108,8 @@ def display_score_board():
     load_scores = result
     print(tabulate(load_scores, tablefmt="pretty",))
 
+
+# Miscellanous functions to tweek game
 
 def blank_spacer():
     """
@@ -167,9 +175,22 @@ def get_questions(questions):
         if answer == question.answer:
             score += 1
             print('Correct Answer!')
+            sleep(3)
+            clear()
         else:
             print('Sorry you got that one wrong!')
+            sleep(3)
+            clear()
+    sleep(3)
     print(f'You got {score} out of {len(questions)}')
+    print('Would you like to continue playing or quit?')
+    continue_play = input('Type p to play or q to quit')
+    if continue_play == "p":
+        game_choice()
+    elif continue_play == "q":
+        quit()
+    else:
+        print("That wasn't a valid choice, please try again")
 
 
 def rules_or_play():
