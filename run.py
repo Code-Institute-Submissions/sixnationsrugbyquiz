@@ -5,8 +5,7 @@ import random
 import gspread
 from google.oauth2.service_account import Credentials
 from tabulate import tabulate
-from info import welcome_message
-from info import rules
+from pyfiglet import figlet_format
 from validate import User
 from quest import eng_question_list
 from quest import ire_question_list
@@ -29,6 +28,39 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 
 data = SHEET.worksheet('scores')
 quiz_choices = SHEET.worksheet('quizchoices')
+rules_info = SHEET.worksheet('rules')
+
+
+def welcome_message():
+    """
+    Function to display welcome message to user
+    """
+    print(figlet_format('Six Nations Rugby Quiz', font="slant"))
+    print('Hello and welcome to the Six Nations Rugby Quiz\n')
+
+    print('Here you will be tested on your knowledge of Six Nations Rugby')
+
+    print('There are six sections in total, one for each country')
+
+
+def rules():
+    """
+    A Function that displays the rules to the user
+    """
+
+    rules_data = rules_info.get_all_values()
+    rules_list = []
+    for ind in rules_data:
+        rules_list.append(ind)
+    display_rules = rules_list
+    print(tabulate(display_rules, tablefmt="pretty",))
+
+
+def blank_line():
+    """
+    Function to display a blank line
+    """
+    print("")
 
 
 def game_choice():
