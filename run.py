@@ -79,15 +79,15 @@ def choices():
     """
     Displays choices for user
     """
-    print("Here are your six choices:")
-
-    qchoices = [['For Questions On:', 'Type:'], ["England", "eng"],
-                ["Ireland", "ire"], ["Scotland", "sc"],
-                ["Wales", "wal"], ["France", "fr"],
-                ["Italy", "it"]]
-    print(
-        tabulate
-        (qchoices, headers='firstrow', tablefmt='psql', stralign="center"))
+    blank_spacer()
+    print("Here are your six choices:".center(80))
+    print()
+    print('To answer questions on England, type "eng"'.center(80))
+    print('To answer questions on Ireland, type "ire"'.center(80))
+    print('To answer questions on Scotland, type "sc"'.center(80))
+    print('To answer questions on Wales, type "wal"'.center(80))
+    print('To answer questions on France, type "fr"'.center(80))
+    print('To answer questions on Italy, type "it"'.center(80))
 
 
 def display_score_board():
@@ -103,11 +103,15 @@ def display_score_board():
     print(tabulate(load_scores, tablefmt="pretty",))
 
 
-def blank_line():
+def blank_spacer():
     """
-    Function to display a blank line
+    Function to display multiple blank lines
     """
-    print("")
+    print()
+    print()
+    print()
+    print()
+    print()
 
 
 def clear():
@@ -124,7 +128,8 @@ def game_choice():
     Will get users choice on which game they want to play
     """
     print("")
-    get_choice = input("Which game would you like to play?: \n")
+    # choice_list = ["eng", "ire", "wal", "fr", "sc", "it"]
+    get_choice = input("Which game would you like to play?: \n".center(80))
     if get_choice == "eng":
         get_questions(eng_question_list)
     elif get_choice == "ire":
