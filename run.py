@@ -67,7 +67,8 @@ def game_choice():
     """
     This function gets the users choice on which game they want to play
     """
-    get_choice = input("So what's it going to be?: \n")
+    print("")
+    get_choice = input("Which game would you like to play?: \n")
     if get_choice == "eng":
         get_questions(eng_question_list)
     elif get_choice == "ire":
@@ -113,6 +114,7 @@ def choices():
     """
     Function to display choices for user
     """
+    print("Here are your six choices:")
 
     qchoices = [['For Questions On:', 'Type:'], ["England", "eng"],
                 ["Ireland", "ire"], ["Scotland", "sc"],
@@ -144,7 +146,7 @@ def rules_or_play():
     if player_choice == 'r':
         clear()
         rules()
-        player_choice = input('Type p to play or q to quit: \n')
+        player_choice = input('Play or Quit?: \n')
         if player_choice == 'p':
             clear()
             choices()
@@ -163,7 +165,7 @@ def clear():
     """
     Function to clear console
     """
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def main_quiz_start():
