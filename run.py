@@ -19,7 +19,7 @@ from tabulate import tabulate
 from pyfiglet import figlet_format
 
 # Contains User()
-from user import User
+# from user import User
 
 # get questions
 from quest import eng_question_list
@@ -222,13 +222,13 @@ def main_quiz_start():
     """
     Main function to run all program functions
     """
-    # display_score_board()
-    welcome_message()
-    user = User()
-    user.get_user_name()
-    sleep(2)
-    clear()
-    rules_or_play()
+    display_score_board()
+    # welcome_message()
+    # user = User()
+    # user.get_user_name()
+    # sleep(2)
+    # clear()
+    # rules_or_play()
 
 
 main_quiz_start()
