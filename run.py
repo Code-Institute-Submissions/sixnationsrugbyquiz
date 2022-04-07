@@ -19,7 +19,7 @@ from tabulate import tabulate
 from pyfiglet import figlet_format
 
 # Contains User()
-# from user import User
+from user import User
 
 # get questions
 from quest import eng_question_list
@@ -109,6 +109,16 @@ def display_score_board():
     print(tabulate(load_scores, tablefmt="pretty",))
 
 
+# def update_leaderboard(score):
+#     """
+#     Function to update leaderboard
+#     """
+#     print("Updating Leaderboard...\n")
+#     score = SHEET.worksheet('scores')
+#     score.append_row(score)
+#     print("Leaderboardupdated successfully")
+
+
 # Miscellanous functions to tweek game
 
 def blank_spacer():
@@ -183,6 +193,7 @@ def get_questions(questions):
             clear()
     sleep(3)
     print(f'You got {score} out of {len(questions)}')
+    # update_leaderboard(score)
     print('Would you like to continue playing or quit?')
     continue_play = input('Type p to play or q to quit')
     if continue_play == "p":
@@ -223,12 +234,12 @@ def main_quiz_start():
     Main function to run all program functions
     """
     display_score_board()
-    # welcome_message()
-    # user = User()
-    # user.get_user_name()
-    # sleep(2)
-    # clear()
-    # rules_or_play()
+    welcome_message()
+    user = User()
+    user.get_user_name()
+    sleep(2)
+    clear()
+    rules_or_play()
 
 
 main_quiz_start()
