@@ -85,6 +85,7 @@ def choices():
 
     blank_spacer()
     print("Here are your six choices:".center(80))
+    sleep(2)
     print()
     print('To answer questions on England, type "eng"'.center(80))
     sleep(2)
@@ -119,7 +120,7 @@ def display_choices_left():
 
     print('You have the following choices left to play:')
     sleep(1)
-    print(*choices_in)
+    print(tabulate(choices_in, tablefmt="pretty",))
 
 
 # def update_leaderboard(score):
@@ -133,6 +134,7 @@ def display_choices_left():
 
 
 # Miscellanous functions to tweek game
+
 
 def blank_spacer():
     """
@@ -219,17 +221,17 @@ def get_questions(questions):
         if answer == question.answer:
             score += 1
             print('Correct Answer!')
-            sleep(3)
+            sleep(2)
             clear()
         else:
             print('Sorry you got that one wrong!')
-            sleep(3)
+            sleep(2)
             clear()
-    sleep(3)
+    sleep(2)
     print(f'You got {score} out of {len(questions)}')
     # update_leaderboard(score)
-    print('Would you like to continue playing or quit?')
-    continue_play = input('Type p to play or q to quit')
+    print('Would you like to continue playing or quit?\n')
+    continue_play = input('Type p to play or q to quit\n')
     if continue_play == "p":
         display_choices_left()
         game_choice()
