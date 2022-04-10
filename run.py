@@ -128,19 +128,6 @@ def display_choices_left():
         print(f"Choice {i}: {left}")
 
 
-# def update_leaderboard(score):
-#     """
-#     Function to update leaderboard
-#     """
-#     print("Updating Leaderboard...\n")
-#     score = SHEET.worksheet('scores')
-#     score.append_row(score)
-#     print("Leaderboardupdated successfully")
-
-
-# Miscellanous functions to tweek game
-
-
 def blank_spacer():
     """
     Function to display multiple blank lines
@@ -214,8 +201,7 @@ def get_questions(questions):
     """
     clear()
     score = 0
-    random.shuffle(questions)
-    for question in questions:
+    for question in random.choices(questions, k=5):
         while True:
             answer = input(question.question).lower()
             if answer not in {'a', 'b', 'c'}:
@@ -233,8 +219,7 @@ def get_questions(questions):
             sleep(2)
             clear()
     sleep(2)
-    print(f'You got {score} out of {len(questions)}')
-    # update_leaderboard(score)
+    print(f'You got {score} in that round')
     print('Would you like to continue playing or quit?\n')
     continue_play = input('Type p to play or q to quit\n')
     if continue_play == "p":
