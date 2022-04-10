@@ -201,7 +201,7 @@ def get_questions(questions):
     """
     clear()
     score = 0
-    for question in random.choices(questions, k=5):
+    for question in random.sample(questions, 5):
         while True:
             answer = input(question.question).lower()
             if answer not in {'a', 'b', 'c'}:
