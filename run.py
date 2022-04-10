@@ -19,7 +19,7 @@ from tabulate import tabulate
 from pyfiglet import figlet_format
 
 # Contains User()
-from user import User
+# from user import User
 
 # get questions
 from quest import eng_question_list
@@ -46,6 +46,7 @@ score_data = SHEET.worksheet('scores')
 quiz_choices = SHEET.worksheet('quizchoices')
 rules_info = SHEET.worksheet('rules')
 choices_out = []
+choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
 
 
 # Functions below to display messages
@@ -111,6 +112,16 @@ def display_score_board():
     print(tabulate(load_scores, tablefmt="pretty",))
 
 
+def display_choices_left():
+    """
+    A Function to display game choices left for user
+    """
+
+    print('You have the following choices left to play:')
+    sleep(1)
+    print(*choices_in)
+
+
 # def update_leaderboard(score):
 #     """
 #     Function to update leaderboard
@@ -149,29 +160,42 @@ def game_choice():
     """
 
     global choices_out
+    global choices_in
     print("")
 
     get_choice = input("Which game would you like to play?: \n".center(80))
     if get_choice == "eng" and get_choice not in choices_out:
         choices_out.append(get_choice)
+        choices_in.remove(get_choice)
         get_questions(eng_question_list)
     elif get_choice == "ire" and get_choice not in choices_out:
         choices_out.append(get_choice)
+        choices_in.remove(get_choice)
         get_questions(ire_question_list)
     elif get_choice == "wal" and get_choice not in choices_out:
         choices_out.append(get_choice)
+        choices_in.remove(get_choice)
         get_questions(wales_question_list)
     elif get_choice == "fr" and get_choice not in choices_out:
         choices_out.append(get_choice)
+        choices_in.remove(get_choice)
         get_questions(france_question_list)
     elif get_choice == "sc" and get_choice not in choices_out:
         choices_out.append(get_choice)
+        choices_in.remove(get_choice)
         get_questions(scot_question_list)
     elif get_choice == "it" and get_choice not in choices_out:
         choices_out.append(get_choice)
+        choices_in.remove(get_choice)
         get_questions(italy_question_list)
+    elif get_choice in choices_out:
+        print(f'You have already played {get_choice}')
+        print("")
+        game_choice()
     else:
-        print('You must choose a valid selection, please choose again...\n')
+        print('Did you type your choice correctly...\n')
+        print('Please check and try again')
+        print("")
         game_choice()
 
 
@@ -207,6 +231,7 @@ def get_questions(questions):
     print('Would you like to continue playing or quit?')
     continue_play = input('Type p to play or q to quit')
     if continue_play == "p":
+        display_choices_left()
         game_choice()
     elif continue_play == "q":
         quit()
@@ -243,12 +268,12 @@ def main_quiz_start():
     """
     Main function to run all program functions
     """
-    display_score_board()
-    welcome_message()
-    user = User()
-    user.get_user_name()
-    sleep(2)
-    clear()
+    # display_score_board()
+    # welcome_message()
+    # user = User()
+    # user.get_user_name()
+    # sleep(2)
+    # clear()
     rules_or_play()
 
 
