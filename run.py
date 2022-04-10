@@ -232,6 +232,16 @@ def get_questions(questions):
             print("Invalid choice please try again")
     else:
         print("No choices left")
+        print("Type l for leaderboard, q to quit or p to play again")
+        what_next = input("So what would you like to do?\n")
+        if what_next == "l":
+            display_score_board()
+        elif what_next == "q":
+            quit()
+        elif what_next == "p":
+            print("Play again")
+        else:
+            print("Invalid choice, try again")
 
 
 def rules_or_play():
