@@ -45,6 +45,7 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 score_data = SHEET.worksheet('scores')
 quiz_choices = SHEET.worksheet('quizchoices')
 rules_info = SHEET.worksheet('rules')
+choices_out = []
 
 
 # Functions below to display messages
@@ -80,6 +81,7 @@ def choices():
     """
     Displays choices for user
     """
+
     blank_spacer()
     print("Here are your six choices:".center(80))
     print()
@@ -145,20 +147,28 @@ def game_choice():
     """
     Will get users choice on which game they want to play
     """
+
+    global choices_out
     print("")
-    # choice_list = ["eng", "ire", "wal", "fr", "sc", "it"]
+
     get_choice = input("Which game would you like to play?: \n".center(80))
-    if get_choice == "eng":
+    if get_choice == "eng" and get_choice not in choices_out:
+        choices_out.append(get_choice)
         get_questions(eng_question_list)
-    elif get_choice == "ire":
+    elif get_choice == "ire" and get_choice not in choices_out:
+        choices_out.append(get_choice)
         get_questions(ire_question_list)
-    elif get_choice == "wal":
+    elif get_choice == "wal" and get_choice not in choices_out:
+        choices_out.append(get_choice)
         get_questions(wales_question_list)
-    elif get_choice == "fr":
+    elif get_choice == "fr" and get_choice not in choices_out:
+        choices_out.append(get_choice)
         get_questions(france_question_list)
-    elif get_choice == "sc":
+    elif get_choice == "sc" and get_choice not in choices_out:
+        choices_out.append(get_choice)
         get_questions(scot_question_list)
-    elif get_choice == "it":
+    elif get_choice == "it" and get_choice not in choices_out:
+        choices_out.append(get_choice)
         get_questions(italy_question_list)
     else:
         print('You must choose a valid selection, please choose again...\n')
