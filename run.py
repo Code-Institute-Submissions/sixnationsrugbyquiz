@@ -43,8 +43,6 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 
 # Get data for scores, choices, rules and leaderboard
 score_data = SHEET.worksheet('scores')
-quiz_choices = SHEET.worksheet('quizchoices')
-rules_info = SHEET.worksheet('rules')
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
 
@@ -123,9 +121,11 @@ def display_choices_left():
     A Function to display game choices left for user
     """
 
-    print('You have the following choices left to play:')
+    print('You have the following choices left to play:'.center(80))
     sleep(1)
-    print(tabulate(choices_in, tablefmt="pretty",))
+
+    for i, left in enumerate(choices_in, 1):
+        print(f"Choice {i}: {left}")
 
 
 # def update_leaderboard(score):
