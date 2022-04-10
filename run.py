@@ -201,7 +201,7 @@ def get_questions(questions):
     """
     clear()
     score = 0
-    for question in random.sample(questions, 5):
+    for question in random.sample(questions, 2):
         while True:
             answer = input(question.question).lower()
             if answer not in {'a', 'b', 'c'}:
@@ -219,16 +219,19 @@ def get_questions(questions):
             sleep(2)
             clear()
     sleep(2)
-    print(f'You got {score} in that round')
-    print('Would you like to continue playing or quit?\n')
-    continue_play = input('Type p to play or q to quit\n')
-    if continue_play == "p":
-        display_choices_left()
-        game_choice()
-    elif continue_play == "q":
-        quit()
+    print(f'You scored {score} in that round')
+    if len(choices_in) != 0:
+        print('Would you like to continue playing or quit?\n')
+        continue_play = input('Type p to play or q to quit\n')
+        if continue_play == "p":
+            display_choices_left()
+            game_choice()
+        elif continue_play == "q":
+            quit()
+        elif continue_play != "q" and continue_play != "p":
+            print("Invalid choice please try again")
     else:
-        print("That wasn't a valid choice, please try again")
+        print("No choices left")
 
 
 def rules_or_play():
@@ -260,7 +263,7 @@ def main_quiz_start():
     """
     Main function to run all program functions
     """
-    display_score_board()
+
     welcome_message()
     user = User()
     user.get_user_name()
