@@ -19,7 +19,7 @@ from tabulate import tabulate
 from pyfiglet import figlet_format
 
 # Contains User()
-# from user import User
+from user import User
 
 # get questions
 from quest import eng_question_list
@@ -70,12 +70,16 @@ def rules():
     Displays the rules to the user from google sheets
     """
 
-    rules_data = rules_info.get_all_values()
-    rules_list = []
-    for ind in rules_data:
-        rules_list.append(ind)
-    display_rules = rules_list
-    print(tabulate(display_rules, tablefmt="pretty",))
+    print("Rules".center(80))
+    print("The Rules are simple.  The Six Nations Championships".center(80))
+    print("consist of six countries: Ireland, England, Wales".center(80))
+    print("Scotland, Italy and France.  You will be asked five".center(80))
+    print("questions on a country in each section.  All questions".center(80))
+    print("are multiple choice. Answer with 'a', 'b' or 'c'".center(80))
+    print("")
+    print("Let's see which country you favour".center(80))
+    print("")
+    print('Type "p" to play or "q" to quit'.center(80))
 
 
 def choices():
@@ -98,6 +102,7 @@ def choices():
     print('To answer questions on France, type "fr"'.center(80))
     sleep(2)
     print('To answer questions on Italy, type "it"'.center(80))
+    sleep(2)
 
 
 def display_score_board():
@@ -245,11 +250,11 @@ def rules_or_play():
     """
     Function to get players choice of rules or to play game
     """
-    player_choice = input('Type "r" to see the rules, "p" to play: \n')
+    player_choice = input('Type "r" for rules, "p" to play: \n'.center(80))
     if player_choice == 'r':
         clear()
         rules()
-        player_choice = input('Play or Quit?: \n')
+        player_choice = input('Play or Quit?: \n'.center(80))
         if player_choice == 'p':
             clear()
             choices()
@@ -270,12 +275,12 @@ def main_quiz_start():
     """
     Main function to run all program functions
     """
-    # display_score_board()
-    # welcome_message()
-    # user = User()
-    # user.get_user_name()
-    # sleep(2)
-    # clear()
+    display_score_board()
+    welcome_message()
+    user = User()
+    user.get_user_name()
+    sleep(2)
+    clear()
     rules_or_play()
 
 
