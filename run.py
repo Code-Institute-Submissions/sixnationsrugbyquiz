@@ -208,17 +208,17 @@ def get_questions(questions):
         while True:
             answer = input(question.question.center(80)).lower()
             if answer not in {'a', 'b', 'c'}:
-                print("You must enter a, b or c, please try again")
+                print("You must enter a, b or c, please try again".center(80))
 
             else:
                 break
         if answer == question.answer:
             score += 1
-            print('Correct Answer!')
+            print('Correct Answer!'.center(80))
             sleep(2)
             clear()
         else:
-            print('Sorry you got that one wrong!')
+            print('Sorry you got that one wrong!'.center(80))
             sleep(2)
             clear()
     sleep(2)
@@ -234,7 +234,7 @@ def get_questions(questions):
         elif continue_play == "q":
             print("ok good bye".center(80))
         elif continue_play != "q" and continue_play != "p":
-            print("Invalid choice please try again")
+            print("Invalid choice please try again".center(80))
     else:
         print("No choices left")
         print("Type l for leaderboard, q to quit or p to play again")
