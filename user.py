@@ -16,10 +16,10 @@ class User():
         Numbers are not allowed
         """
         while True:
-            username = input("So Player what shall I call you?: \n")
+            username = input("So Player what shall I call you?: \n".center(80))
 
             if self.validate_name(username):
-                print(f"Hello {username} let's get started...")
+                print(f"Hello {username} let's get started...".center(80))
                 break
 
     @staticmethod

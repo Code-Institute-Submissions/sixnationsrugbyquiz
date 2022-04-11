@@ -56,18 +56,20 @@ def welcome_message():
     """
     print(figlet_format('Six Nations', font="slant", justify="center"))
     print(figlet_format('Rugby Quiz', font="slant", justify="center"))
-    print('Hello and welcome to the Six Nations Rugby Quiz\n')
+    print('Hello and welcome to the Six Nations Rugby Quiz\n'.center(80))
     sleep(2)
-    print('Here you will be tested on your knowledge of Six Nations Rugby')
+    print('Here you will be tested on your knowledge of Six'
+          ' Nations Rugby'.center(80))
     sleep(2)
-    print('There are six sections in total, one for each country')
+    print('There are six sections in total, one for each'
+          ' country'.center(80))
 
 
 def rules():
     """
     Displays the rules to the user from google sheets
     """
-
+    blank_spacer()
     print("Rules".center(80))
     print("The Rules are simple.  The Six Nations Championships".center(80))
     print("consist of six countries: Ireland, England, Wales".center(80))
@@ -120,12 +122,12 @@ def display_choices_left():
     """
     A Function to display game choices left for user
     """
-
+    blank_spacer()
     print('You have the following choices left to play:'.center(80))
     sleep(1)
 
     for i, left in enumerate(choices_in, 1):
-        print(f"Choice {i}: {left}")
+        print(f"Choice {i}: {left}".center(80))
 
 
 def blank_spacer():
@@ -201,9 +203,10 @@ def get_questions(questions):
     """
     clear()
     score = 0
+    blank_spacer()
     for question in random.sample(questions, 2):
         while True:
-            answer = input(question.question).lower()
+            answer = input(question.question.center(80)).lower()
             if answer not in {'a', 'b', 'c'}:
                 print("You must enter a, b or c, please try again")
 
@@ -219,15 +222,17 @@ def get_questions(questions):
             sleep(2)
             clear()
     sleep(2)
-    print(f'You scored {score} in that round')
+    blank_spacer()
+    print(f'You scored {score} in that round'.center(80))
     if len(choices_in) != 0:
-        print('Would you like to continue playing or quit?\n')
-        continue_play = input('Type p to play or q to quit\n')
+        print('Would you like to continue playing or quit?\n'.center(80))
+        continue_play = input('Type p to play or q to quit\n'.center(80))
         if continue_play == "p":
+            clear()
             display_choices_left()
             game_choice()
         elif continue_play == "q":
-            quit()
+            print("ok good bye".center(80))
         elif continue_play != "q" and continue_play != "p":
             print("Invalid choice please try again")
     else:
@@ -248,6 +253,7 @@ def rules_or_play():
     """
     Function to get players choice of rules or to play game
     """
+    blank_spacer()
     player_choice = input('Type "r" for rules, "p" to play: \n'.center(80))
     if player_choice == 'r':
         clear()
