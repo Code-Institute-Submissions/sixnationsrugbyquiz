@@ -203,9 +203,10 @@ def get_questions(questions):
     """
     clear()
     score = 0
-    blank_spacer()
+
     for question in random.sample(questions, 2):
         while True:
+            blank_spacer()
             answer = input(question.question.center(80)).lower()
             if answer not in {'a', 'b', 'c'}:
                 print("You must enter a, b or c, please try again".center(80))

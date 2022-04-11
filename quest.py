@@ -31,9 +31,8 @@ eng_questions = [
     (b) Chris Robshaw\n \
     (c) Dylan Hartley\n",
 
-    "England hold the record for most scores in one "
-    "match.  What was "
-    "that score?\n \
+    "       England hold the record for most scores in one "
+    "                   match. What was that score?\n \
     (a) 93 points\n \
     (b) 75 points\n \
     (c) 80 points\n",
