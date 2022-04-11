@@ -54,6 +54,7 @@ def welcome_message():
     """
     Displays welcome message to user
     """
+
     print(figlet_format('Six Nations', font="slant", justify="center"))
     print(figlet_format('Rugby Quiz', font="slant", justify="center"))
     print('Hello and welcome to the Six Nations Rugby Quiz\n'.center(80))
