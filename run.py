@@ -19,7 +19,6 @@ from tabulate import tabulate
 from pyfiglet import figlet_format
 
 # Contains User()
-from user import User
 
 # get questions
 from quest import eng_question_list
@@ -43,8 +42,61 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 
 # Get data for scores, choices, rules and leaderboard
 score_data = SHEET.worksheet('scores')
+username_data = SHEET.worksheet('scores')
+user_scores = {"Name": [],
+               "England": [],
+               "Ireland": [],
+               "Scotland": [],
+               "Wales": [],
+               "France": [], }
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
+
+# Class for User
+
+
+class User():
+    """
+    Creates a User object which can take
+    the users name, display a welcome message
+    validate user input for name and answers
+
+    """
+
+    def get_user_name(self):
+        """
+        Allows user to enter their name
+        Maxium characters of 12 is valid
+        Numbers are not allowed
+        """
+        while True:
+            username = input("So Player what shall I call you?: \n".center(80))
+            if self.validate_name(username):
+                user_scores["Name"].append(username)
+                print(user_scores)
+                print(f"Hello {username} let's get started...".center(80))
+                break
+
+    @staticmethod
+    def validate_name(name):
+        """
+        Inside the try it checks if the user has inputed a name that
+        is longer than 10 characters or has any characteres at all
+        """
+
+        try:
+            if len(name.strip()) == 0:
+                raise ValueError('...name cannot be blank')
+            elif len(name) > 10:
+                raise ValueError("..sorry only 10 characters allowed")
+            elif name.isdigit():
+                raise ValueError('...numbers on their own not allowed')
+            else:
+                return True
+
+        except ValueError as err:
+            print(f'Please try again {err}')
+            return False
 
 
 # Functions below to display messages
@@ -200,7 +252,7 @@ def get_questions(questions):
     """
     This function will get the questions for each section
     Get users answers
-    Get users scores
+    Get users scores and update leaderboard
     """
     clear()
     score = 0
