@@ -185,12 +185,12 @@ def game_choice():
         choices_in.remove(get_choice)
         get_questions(italy_question_list)
     elif get_choice in choices_out:
-        print(f'You have already played {get_choice}')
+        print(f'You have already played {get_choice}'.center(80))
         print("")
         game_choice()
     else:
-        print('Did you type your choice correctly...\n')
-        print('Please check and try again')
+        print('Did you type your choice correctly...\n'.center(80))
+        print('Please check and try again'.center(80))
         print("")
         game_choice()
 
