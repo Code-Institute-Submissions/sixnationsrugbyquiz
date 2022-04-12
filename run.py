@@ -13,12 +13,15 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 #  To create tables
-from tabulate import tabulate
+# from tabulate import tabulate
 
 # For ascii art
 from pyfiglet import figlet_format
 
 # Contains User()
+
+# import numpy as np
+
 
 # get questions
 from quest import eng_question_list
@@ -42,10 +45,14 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 
 # Get data for scores, choices, rules and leaderboard
 score_data = SHEET.worksheet('scores')
-username_data = SHEET.worksheet('scores')
 user_scores = {"Name": [], }
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
+
+# array = np.array([[1, 2, 3], [4, 5, 6]])
+
+# # Write the array to worksheet starting from the A2 cell
+# worksheet.update('A2', array.tolist())
 
 # Class for User
 
@@ -67,8 +74,9 @@ class User():
         while True:
             username = input("So Player what shall I call you?: \n".center(80))
             if self.validate_name(username):
+                # clear_user = username.split()
+                # score_data.append_row(clear_user)
                 user_scores["Name"].append(username)
-                print(user_scores)
                 print(f"Hello {username} let's get started...".center(80))
                 break
 
@@ -153,24 +161,31 @@ def choices():
     sleep(2)
 
 
-def update_score_sheet():
-    """
-    Use the score dictionary to update google sheets
-    so the user can see top scores
-    """
+# def update_score_sheet():
+#     """
+#     Use the score dictionary to update google sheets
+#     so the user can see top scores
+#     """
+#     score_data = SHEET.worksheet('scores')
+#     score_data.append
+
+    # for key, value in user_scores.items():
+    #     output = str.join(" - ", value)
+
+    #     print(output)
 
 
-def display_score_board():
-    """
-    Collects high scores to display
-    """
+# def display_score_board():
+#     """
+#     Collects high scores to display
+#     """
 
-    high_scores = score_data.get_all_values()
-    result = []
-    for ind in high_scores:
-        result.append(ind)
-    load_scores = result
-    print(tabulate(load_scores, tablefmt="pretty",))
+#     high_scores = score_data.get_all_values()
+#     result = []
+#     for ind in high_scores:
+#         result.append(ind)
+#     load_scores = result
+#     print(tabulate(load_scores, tablefmt="pretty",))
 
 
 def display_choices_left():
@@ -218,27 +233,27 @@ def game_choice():
     if get_choice == "eng" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(eng_question_list, "England")
+        get_questions(eng_question_list, "England", "b1")
     elif get_choice == "ire" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(ire_question_list, "Ireland")
+        get_questions(ire_question_list, "Ireland", "c1")
     elif get_choice == "wal" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(wales_question_list, "Wales")
+        get_questions(wales_question_list, "Wales", "e1")
     elif get_choice == "fr" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(france_question_list, "France")
+        get_questions(france_question_list, "France", "f1")
     elif get_choice == "sc" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(scot_question_list, "Scotland")
+        get_questions(scot_question_list, "Scotland", "d1")
     elif get_choice == "it" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(italy_question_list, "Italy")
+        get_questions(italy_question_list, "Italy", "g1")
     elif get_choice in choices_out:
         print(f'You have already played {get_choice}'.center(80))
         print("")
@@ -250,7 +265,17 @@ def game_choice():
         game_choice()
 
 
-def get_questions(questions, choice_name):
+def as_list(x):
+    """
+    Changes score to list
+    """
+    if isinstance(x, list):
+        return x
+    else:
+        return [x]
+
+
+def get_questions(questions, choice_name, row_no):
     """
     This function will get the questions for each section
     Get users answers
@@ -280,8 +305,31 @@ def get_questions(questions, choice_name):
     sleep(2)
     blank_spacer()
     print(f'You scored {score} for {choice_name}'.center(80))
-    user_scores[choice_name] = score
+    user_scores[choice_name] = str(score)
+    print(user_scores)
+    # new_score = as_list(score)
+
+    # if row_no == "b1":
+    #     country_score = score_data.col_values(2)
+    #     country_score.append_col(new_score)
+    # elif row_no == "c1":
+    #     country_score = score_data.col_values(3)
+    #     country_score.append_col(new_score)
+    # elif row_no == "d1":
+    #     country_score = score_data.col_values(4)
+    #     country_score.append_col(new_score)
+    # elif row_no == "e1":
+    #     country_score = score_data.col_values(5)
+    #     country_score.append_col(new_score)
+    # elif row_no == "f1":
+    #     country_score = score_data.col_values(6)
+    #     country_score.append_col(new_score)
+    # elif row_no == "g1":
+    #     country_score = score_data.col_values(7)
+    #     country_score.append_col(new_score)
+
     print("Updating scores...".center(80))
+    # print(user_scores)
     sleep(3)
     if len(choices_in) != 0:
         print('Would you like to continue playing or quit?\n'.center(80))
@@ -299,7 +347,7 @@ def get_questions(questions, choice_name):
         print("Type l for leaderboard, q to quit or p to play again")
         what_next = input("So what would you like to do?\n")
         if what_next == "l":
-            display_score_board()
+            print("display_score_board")
         elif what_next == "q":
             quit()
         elif what_next == "p":
