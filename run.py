@@ -43,12 +43,7 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 # Get data for scores, choices, rules and leaderboard
 score_data = SHEET.worksheet('scores')
 username_data = SHEET.worksheet('scores')
-user_scores = {"Name": [],
-               "England": [],
-               "Ireland": [],
-               "Scotland": [],
-               "Wales": [],
-               "France": [], }
+user_scores = {"Name": [], }
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
 
@@ -158,6 +153,13 @@ def choices():
     sleep(2)
 
 
+def update_score_sheet():
+    """
+    Use the score dictionary to update google sheets
+    so the user can see top scores
+    """
+
+
 def display_score_board():
     """
     Collects high scores to display
@@ -216,27 +218,27 @@ def game_choice():
     if get_choice == "eng" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(eng_question_list)
+        get_questions(eng_question_list, "England")
     elif get_choice == "ire" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(ire_question_list)
+        get_questions(ire_question_list, "Ireland")
     elif get_choice == "wal" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(wales_question_list)
+        get_questions(wales_question_list, "Wales")
     elif get_choice == "fr" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(france_question_list)
+        get_questions(france_question_list, "France")
     elif get_choice == "sc" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(scot_question_list)
+        get_questions(scot_question_list, "Scotland")
     elif get_choice == "it" and get_choice not in choices_out:
         choices_out.append(get_choice)
         choices_in.remove(get_choice)
-        get_questions(italy_question_list)
+        get_questions(italy_question_list, "Italy")
     elif get_choice in choices_out:
         print(f'You have already played {get_choice}'.center(80))
         print("")
@@ -248,7 +250,7 @@ def game_choice():
         game_choice()
 
 
-def get_questions(questions):
+def get_questions(questions, choice_name):
     """
     This function will get the questions for each section
     Get users answers
@@ -277,7 +279,10 @@ def get_questions(questions):
             clear()
     sleep(2)
     blank_spacer()
-    print(f'You scored {score} in that round'.center(80))
+    print(f'You scored {score} for {choice_name}'.center(80))
+    user_scores[choice_name] = score
+    print("Updating scores...".center(80))
+    sleep(3)
     if len(choices_in) != 0:
         print('Would you like to continue playing or quit?\n'.center(80))
         continue_play = input('Type p to play or q to quit\n'.center(80))
