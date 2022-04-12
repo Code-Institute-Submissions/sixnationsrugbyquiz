@@ -20,7 +20,7 @@ from pyfiglet import figlet_format
 
 # Contains User()
 
-import numpy as np
+# import numpy as np
 
 
 # get questions
@@ -44,14 +44,13 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('true_false')
 
 # Get data for scores, choices, rules and leaderboard
-score_data = SHEET.worksheet('scores')
-user_scores = {"Name": [],
-               "England": [],
-               "Ireland": [],
-               "Scotland": [],
-               "France": [],
-               "Italy": [],
-               "Wales": [], }
+user_scores = {"Name": "",
+               "England": "0",
+               "Ireland": "0",
+               "Scotland": "0",
+               "Wales": "0",
+               "France": "0",
+               "Italy": "0", }
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
 
@@ -80,9 +79,7 @@ class User():
         while True:
             username = input("So Player what shall I call you?: \n".center(80))
             if self.validate_name(username):
-                # clear_user = username.split()
-                # score_data.append_row(clear_user)
-                user_scores["Name"].append(username)
+                user_scores.update({"Name": username})
                 print(f"Hello {username} let's get started...".center(80))
                 break
 
@@ -167,33 +164,26 @@ def choices():
     sleep(2)
 
 
-def get_leader_data():
-    """
-    Gets Leader data
-    """
-    clean_data = np.array(user_scores)
-    print(clean_data)
-    as_list(clean_data)
-    print(clean_data)
-
-
-# Write the array to worksheet starting from the A2 cell
-# worksheet.update('A2', array.tolist())
-
-# def update_score_sheet():
+# def get_leader_data():
 #     """
-#     Use the score dictionary to update google sheets
-#     so the user can see top scores
+#     Gets Leader data
 #     """
-#     score_data = SHEET.worksheet('scores')
-#     score_data.append
-
-    # for key, value in user_scores.items():
-    #     output = str.join(" - ", value)
-
-    #     print(output)
+#     clean_data = np.array(user_scores)
+#     print(clean_data)
+#     as_list(clean_data)
+#     print(clean_data)
 
 
+def update_score_sheet():
+    """
+    Use the score dictionary to update google sheets
+    so the user can see top scores
+    """
+    score_data = SHEET.worksheet('scores')
+    new_list = list(user_scores.values())
+    score_data.append_row(new_list)
+
+   
 # def display_score_board():
 #     """
 #     Collects high scores to display
@@ -326,17 +316,17 @@ def get_questions(questions, choice_name, row_no):
     print(f'You scored {score} for {choice_name} go {row_no}'.center(80))
 
     if row_no == "b1":
-        user_scores["England"].append(score)
+        user_scores.update({"England": score})
     elif row_no == "c1":
-        user_scores["Ireland"].append(score)
+        user_scores.update({'Ireland': score})
     elif row_no == "d1":
-        user_scores["Scotland"].append(score)
+        user_scores.update({'Scotland': score})
     elif row_no == "e1":
-        user_scores["Wales"].append(score)
+        user_scores.update({'Wales': score})
     elif row_no == "f1":
-        user_scores["France"].append(score)
+        user_scores.update({'France': score})
     elif row_no == "g1":
-        user_scores["Italy"].append(score)
+        user_scores.update({'Italy': score})
 
     print("Updating scores...".center(80))
     print(user_scores)
@@ -350,7 +340,7 @@ def get_questions(questions, choice_name, row_no):
             game_choice()
         elif continue_play == "q":
             print("Would you like to see leaderboard before you go?")
-            get_leader_data()
+            update_score_sheet()
             # print("ok good bye".center(80))
         elif continue_play != "q" and continue_play != "p":
             print("Invalid choice please try again".center(80))
