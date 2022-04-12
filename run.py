@@ -54,10 +54,6 @@ user_scores = {"Name": "",
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
 
-# array = np.array([[1, 2, 3], [4, 5, 6]])
-
-# # Write the array to worksheet starting from the A2 cell
-# worksheet.update('A2', array.tolist())
 
 # Class for User
 
@@ -164,16 +160,6 @@ def choices():
     sleep(2)
 
 
-# def get_leader_data():
-#     """
-#     Gets Leader data
-#     """
-#     clean_data = np.array(user_scores)
-#     print(clean_data)
-#     as_list(clean_data)
-#     print(clean_data)
-
-
 def update_score_sheet():
     """
     Use the score dictionary to update google sheets
@@ -183,7 +169,7 @@ def update_score_sheet():
     new_list = list(user_scores.values())
     score_data.append_row(new_list)
 
-   
+
 # def display_score_board():
 #     """
 #     Collects high scores to display
