@@ -183,16 +183,6 @@ def game_choice():
         game_choice()
 
 
-def as_list(x):
-    """
-    Changes score to list
-    """
-    if isinstance(x, list):
-        return x
-    else:
-        return [x]
-
-
 def get_questions(questions, choice_name, row_no):
     """
     This function will get the questions for each section
