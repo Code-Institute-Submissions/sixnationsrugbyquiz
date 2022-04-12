@@ -20,7 +20,7 @@ from pyfiglet import figlet_format
 
 # Contains User()
 
-# import numpy as np
+import numpy as np
 
 
 # get questions
@@ -45,7 +45,13 @@ SHEET = GSPREAD_CLIENT.open('true_false')
 
 # Get data for scores, choices, rules and leaderboard
 score_data = SHEET.worksheet('scores')
-user_scores = {"Name": [], }
+user_scores = {"Name": [],
+               "England": [],
+               "Ireland": [],
+               "Scotland": [],
+               "France": [],
+               "Italy": [],
+               "Wales": [], }
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
 
@@ -160,6 +166,19 @@ def choices():
     print('To answer questions on Italy, type "it"'.center(80))
     sleep(2)
 
+
+def get_leader_data():
+    """
+    Gets Leader data
+    """
+    clean_data = np.array(user_scores)
+    print(clean_data)
+    as_list(clean_data)
+    print(clean_data)
+
+
+# Write the array to worksheet starting from the A2 cell
+# worksheet.update('A2', array.tolist())
 
 # def update_score_sheet():
 #     """
@@ -304,32 +323,23 @@ def get_questions(questions, choice_name, row_no):
             clear()
     sleep(2)
     blank_spacer()
-    print(f'You scored {score} for {choice_name}'.center(80))
-    user_scores[choice_name] = str(score)
-    print(user_scores)
-    # new_score = as_list(score)
+    print(f'You scored {score} for {choice_name} go {row_no}'.center(80))
 
-    # if row_no == "b1":
-    #     country_score = score_data.col_values(2)
-    #     country_score.append_col(new_score)
-    # elif row_no == "c1":
-    #     country_score = score_data.col_values(3)
-    #     country_score.append_col(new_score)
-    # elif row_no == "d1":
-    #     country_score = score_data.col_values(4)
-    #     country_score.append_col(new_score)
-    # elif row_no == "e1":
-    #     country_score = score_data.col_values(5)
-    #     country_score.append_col(new_score)
-    # elif row_no == "f1":
-    #     country_score = score_data.col_values(6)
-    #     country_score.append_col(new_score)
-    # elif row_no == "g1":
-    #     country_score = score_data.col_values(7)
-    #     country_score.append_col(new_score)
+    if row_no == "b1":
+        user_scores["England"].append(score)
+    elif row_no == "c1":
+        user_scores["Ireland"].append(score)
+    elif row_no == "d1":
+        user_scores["Scotland"].append(score)
+    elif row_no == "e1":
+        user_scores["Wales"].append(score)
+    elif row_no == "f1":
+        user_scores["France"].append(score)
+    elif row_no == "g1":
+        user_scores["Italy"].append(score)
 
     print("Updating scores...".center(80))
-    # print(user_scores)
+    print(user_scores)
     sleep(3)
     if len(choices_in) != 0:
         print('Would you like to continue playing or quit?\n'.center(80))
@@ -339,7 +349,9 @@ def get_questions(questions, choice_name, row_no):
             display_choices_left()
             game_choice()
         elif continue_play == "q":
-            print("ok good bye".center(80))
+            print("Would you like to see leaderboard before you go?")
+            get_leader_data()
+            # print("ok good bye".center(80))
         elif continue_play != "q" and continue_play != "p":
             print("Invalid choice please try again".center(80))
     else:
