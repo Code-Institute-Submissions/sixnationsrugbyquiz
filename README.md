@@ -51,6 +51,8 @@ As a user it is important:
 -----
 ## UX 
 
+While I did want to give the game a bit of design it was not nececessary to draft wireframes as the instructions were to produce a command line interface application.  Minimal styles were achieved by adding a background image, adding a mock tv screen and color to the 'Let's Play' button. 
+
 <p align="center"><img src="rugbyquizflow.png"></p>
 
 
