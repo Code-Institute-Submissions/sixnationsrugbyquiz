@@ -13,6 +13,8 @@ from google.oauth2.service_account import Credentials
 #  To create tables
 from tabulate import tabulate
 
+from colorama import Fore, Style
+
 # import numpy as np
 from info import welcome_message
 from info import choices
@@ -218,17 +220,20 @@ def get_questions(questions, choice_name, row_no):
         if answer == question.answer:
             score += 1
             print()
-            print('Correct Answer!'.center(80))
+            print(Fore.GREEN + 'Correct Answer!'.center(80))
+            print(Style.RESET_ALL)
             sleep(2)
             clear()
         else:
             print()
-            print('Sorry you got that one wrong!'.center(80))
+            print(Fore.RED + 'Sorry you got that one wrong!'.center(80))
+            print(Style.RESET_ALL)
             sleep(2)
             clear()
     sleep(2)
     blank_spacer()
-    print(f'You scored {score} for {choice_name}'.center(80))
+    print(Fore.YELLOW + f'You scored {score} for {choice_name}'.center(80))
+    print(Style.RESET_ALL)
 
     if row_no == "b1":
         user_scores.update({"England": str(score)})
