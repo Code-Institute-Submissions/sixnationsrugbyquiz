@@ -31,6 +31,7 @@ def rules():
     """
     blank_spacer()
     print("Rules".center(80))
+    print()
     print("The Rules are simple.  The Six Nations Championships".center(80))
     print("consist of six countries: Ireland, England, Wales".center(80))
     print("Scotland, Italy and France.  You will be asked five".center(80))
@@ -49,20 +50,20 @@ def choices():
 
     blank_spacer()
     print("Here are your six choices:".center(80))
-    sleep(2)
+    sleep(1)
     print()
     print('To answer questions on England, type "eng"'.center(80))
-    sleep(2)
+    sleep(1)
     print('To answer questions on Ireland, type "ire"'.center(80))
-    sleep(2)
+    sleep(1)
     print('To answer questions on Scotland, type "sc"'.center(80))
-    sleep(2)
+    sleep(1)
     print('To answer questions on Wales, type "wal"'.center(80))
-    sleep(2)
+    sleep(1)
     print('To answer questions on France, type "fr"'.center(80))
-    sleep(2)
+    sleep(1)
     print('To answer questions on Italy, type "it"'.center(80))
-    sleep(2)
+    sleep(1)
 
 
 def blank_spacer():

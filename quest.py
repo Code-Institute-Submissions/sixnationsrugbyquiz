@@ -16,54 +16,54 @@ class Question:
 
 
 eng_questions = [
-    "What year did England win their last Six-Nations "
+    "\tWhat year did England win their last Six-Nations "
     "grand slam?\n \
-    (a) 2016\n \
-    (b) 2017\n \
-    (c) 2018\n",
+    \t\t(a) 2016\n \
+    \t\t(b) 2017\n \
+    \t\t(c) 2018\n",
 
-    "How many grand slams have England won in total?\n \
-    (a) 12\n \
-    (b) 15\n \
-    (c) 13\n",
+    "\tHow many grand slams have England won in total?\n \
+    \t\t(a) 12\n \
+    \t\t(b) 15\n \
+    \t\t(c) 13\n",
 
-    "What English player won 'Player of the Championship' "
+    "\tWhat English player won 'Player of the Championship' "
     "in 2014?\n \
-    (a) Mike Brown\n \
-    (b) Chris Robshaw\n \
-    (c) Dylan Hartley\n",
+    \t\t(a) Mike Brown\n \
+    \t\t(b) Chris Robshaw\n \
+    \t\t(c) Dylan Hartley\n",
 
-    "England hold the record for most scores in one "
+    "\tEngland hold the record for most scores in one "
     "match. What was that score?\n \
-    (a) 93 points\n \
-    (b) 75 points\n \
-    (c) 80 points\n",
+    \t\t(a) 93 points\n \
+    \t\t(b) 75 points\n \
+    \t\t(c) 80 points\n",
 
-    "Who is Englands most capped Six-Nations Player\n \
-    (a) Ben Youngs\n \
-    (b) Jason Leonard\n \
-    (c) Mike Catt\n",
+    "\tWho is Englands most capped Six-Nations Player\n \
+    \t\t(a) Ben Youngs\n \
+    \t\t(b) Jason Leonard\n \
+    \t\t(c) Mike Catt\n",
 
-    "Who captained England to the 1991 Grand Slam?\n \
-    (a) Will Carling\n \
-    (b) Brian Moore\n \
-    (c) Rob Andrew\n",
+    "\tWho captained England to the 1991 Grand Slam?\n \
+    \t\t(a) Will Carling\n \
+    \t\t(b) Brian Moore\n \
+    \t\t(c) Rob Andrew\n",
 
-    "Who scored the most Six-Nations tries for England?\n \
-    (a) Tony Underwood\n \
-    (b) Jason Leonard\n \
-    (c) Rory Underwood\n",
+    "\tWho scored the most Six-Nations tries for England?\n \
+    \t\t(a) Tony Underwood\n \
+    \t\t(b) Jason Leonard\n \
+    \t\t(c) Rory Underwood\n",
 
-    "What English player has scored the most drop-goals "
+    "\tWhat English player has scored the most drop-goals "
     "in the tournament?\n \
-    (a) Rob Andrew\n \
-    (b) Johnny Wilkinson\n \
-    (c) Owen Farrell\n",
+    \t\t(a) Rob Andrew\n \
+    \t\t(b) Johnny Wilkinson\n \
+    \t\t(c) Owen Farrell\n",
 
     "What stadium do England play their home games?\n \
-    (a) Wembly\n \
-    (b) Millenium Statidum\n \
-    (c) Twickenham\n",
+    \t\t(a) Wembly\n \
+    \t\t(b) Millenium Statidum\n \
+    \t\t(c) Twickenham\n",
 
 ]
 

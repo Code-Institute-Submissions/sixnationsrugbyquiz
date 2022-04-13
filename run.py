@@ -290,7 +290,8 @@ def rules_or_play():
     Function to get players choice of rules or to play game
     """
     blank_spacer()
-    player_choice = input('Type "r" for rules, "p" to play: \n'.center(80))
+    blank_spacer()
+    player_choice = input('TYPE "r" FOR RULES, "p" TO PLAY: \n'.center(80))
     if player_choice == 'r':
         clear()
         rules()
