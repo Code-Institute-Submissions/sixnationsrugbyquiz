@@ -49,7 +49,8 @@ user_scores = {"Name": "",
                "Scotland": "0",
                "Wales": "0",
                "France": "0",
-               "Italy": "0", }
+               "Italy": "0",
+               "Total": "0"}
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
 
@@ -100,6 +101,16 @@ class User():
         except ValueError as err:
             print(f'Please try again {err}'.center(80))
             return False
+
+
+def get_total_score():
+    """
+    Function to get total score for each section and
+    append to score_data
+    """
+    get_score_data = list(user_scores.values())[1:7]
+    change_score = list(map(int, get_score_data))
+    user_scores.update({"Total": sum(change_score)})
 
 
 def update_score_sheet():
@@ -221,16 +232,22 @@ def get_questions(questions, choice_name, row_no):
 
     if row_no == "b1":
         user_scores.update({"England": str(score)})
+        get_total_score()
     elif row_no == "c1":
         user_scores.update({'Ireland': str(score)})
+        get_total_score()
     elif row_no == "d1":
         user_scores.update({'Scotland': str(score)})
+        get_total_score()
     elif row_no == "e1":
         user_scores.update({'Wales': str(score)})
+        get_total_score()
     elif row_no == "f1":
         user_scores.update({'France': str(score)})
+        get_total_score()
     elif row_no == "g1":
         user_scores.update({'Italy': str(score)})
+        get_total_score()
 
     print("Updating scores...".center(80))
     sleep(3)
