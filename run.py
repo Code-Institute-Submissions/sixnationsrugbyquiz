@@ -16,7 +16,6 @@ from tabulate import tabulate
 
 # import numpy as np
 from info import welcome_message
-from info import rules
 from info import choices
 from info import clear
 from info import blank_spacer
@@ -89,16 +88,18 @@ class User():
 
         try:
             if len(name.strip()) == 0:
-                raise ValueError('...name cannot be blank')
+                raise ValueError('...name cannot be blank'.center(80))
             elif len(name) > 10:
-                raise ValueError("..sorry only 10 characters allowed")
+                raise ValueError("..sorry only 10 characters"
+                                 " allowed".center(80))
             elif name.isdigit():
-                raise ValueError('...numbers on their own not allowed')
+                raise ValueError('...numbers on their own not'
+                                 ' allowed'.center(80))
             else:
                 return True
 
         except ValueError as err:
-            print(f'Please try again {err}')
+            print(f'Please try again {err}'.center(80))
             return False
 
 
@@ -243,13 +244,16 @@ def updating_mid_way():
     """
 
     if len(choices_in) != 0:
+        print()
         print('Would you like to continue playing or quit?\n'.center(80))
         continue_play = input('Type p to play or q to quit\n'.center(80))
+        print()
         if continue_play == "p":
             clear()
             display_choices_left()
             game_choice()
         elif continue_play == "q":
+            clear()
             quit_game_leader()
         elif (continue_play != "q" and continue_play != "p"):
             print("Invalid choice please try again".center(80))
@@ -275,7 +279,7 @@ def quit_game_leader():
     """
     Function to let user quit game
     """
-
+    blank_spacer()
     print("Would you like to see leaderboard before you go?".center(80))
     so_long = input("Type 'l' for leaderboard or 'q' to quit\n".center(80))
     if so_long == 'q':
@@ -285,6 +289,10 @@ def quit_game_leader():
         display_score_board()
         print("Thanks for playing, click Let's Play "
               "above if you change your mind".center(80))
+        print()
+        print()
+    elif so_long != "q" and so_long != "p":
+        print("Not a valid input, you must enter 'q' or 'l'".center(80))
 
 
 def quit_game():
@@ -297,6 +305,40 @@ def quit_game():
     print()
 
 
+def rules():
+    """
+    Displays the rules to the user from google sheets
+    """
+    blank_spacer()
+    print("Rules".center(80))
+    print()
+    print("The Rules are simple.  The Six Nations Championships".center(80))
+    print("consist of six countries: Ireland, England, Wales".center(80))
+    print("Scotland, Italy and France.  You will be asked five".center(80))
+    print("questions on a country in each section.  All questions".center(80))
+    print("are multiple choice. Answer with 'a', 'b' or 'c'".center(80))
+    print("")
+    print("Let's see which country you favour".center(80))
+    print("")
+    print('Type "p" to play or "q" to quit'.center(80))
+    after_rules()
+
+
+def after_rules():
+    """
+    Function to get choice after rules are displayed
+    """
+
+    rules_reply = input('Would you like to play or quit?\n'.center(80))
+    if rules_reply == "p":
+        game_choice()
+    elif rules_reply == "q":
+        quit_game_leader()
+    else:
+        print("Not valid, please enter p or q to proceed".center(80))
+        after_rules()
+
+
 def rules_or_play():
     """
     Function to get players choice of rules or to play game
@@ -307,19 +349,29 @@ def rules_or_play():
     if player_choice == 'r':
         clear()
         rules()
-        player_choice = input('Play or Quit?: \n'.center(80))
-        if player_choice == 'p':
-            clear()
-            choices()
-            game_choice()
-        if player_choice == 'q':
-            print('ok bye')
+        # give option to play here
     elif player_choice == 'p':
         clear()
         choices()
         game_choice()
     else:
         print('You must enter a valid choice either "r" or "p"')
+        rules_or_play()
+
+    #     elif player_choice == 'q':
+    #         print("Sorry to see you go, Click Let's Play if"
+    #               " you change your mind".center(80))
+    #     elif player_choice != "p" and player_choice != "q":
+    #         print("Please enter 'p' or 'q' to proceed".center(80))
+    #         player_choice = input('Type "r" for rules, "p" to'
+    #                               ' play: \n'.center(80))
+    # elif player_choice == 'p':
+    #     clear()
+    #     choices()
+    #     game_choice()
+    # else:
+    #     print('You must enter a valid choice either "r" or "p"')
+    #     rules_or_play()
 
 # Main Quiz
 

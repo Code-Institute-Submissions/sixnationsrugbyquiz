@@ -25,24 +25,6 @@ def welcome_message():
           ' country'.center(80))
 
 
-def rules():
-    """
-    Displays the rules to the user from google sheets
-    """
-    blank_spacer()
-    print("Rules".center(80))
-    print()
-    print("The Rules are simple.  The Six Nations Championships".center(80))
-    print("consist of six countries: Ireland, England, Wales".center(80))
-    print("Scotland, Italy and France.  You will be asked five".center(80))
-    print("questions on a country in each section.  All questions".center(80))
-    print("are multiple choice. Answer with 'a', 'b' or 'c'".center(80))
-    print("")
-    print("Let's see which country you favour".center(80))
-    print("")
-    print('Type "p" to play or "q" to quit'.center(80))
-
-
 def choices():
     """
     Displays choices for user
