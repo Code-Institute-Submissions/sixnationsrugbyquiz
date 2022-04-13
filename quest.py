@@ -17,53 +17,53 @@ class Question:
 
 eng_questions = [
     "\tWhat year did England win their last Six-Nations "
-    "\ngrand slam?\n \
-    \t\t(a) 2016\n \
-    \t\t(b) 2017\n \
-    \t\t(c) 2018\n",
+    "\n\tgrand slam?\n \
+    \t(a) 2016\n \
+    \t(b) 2017\n \
+    \t(c) 2018\n",
 
     "\tHow many grand slams have England won in total?\n \
-    \t\t(a) 12\n \
-    \t\t(b) 15\n \
-    \t\t(c) 13\n",
+    \t(a) 12\n \
+    \t(b) 15\n \
+    \t(c) 13\n",
 
     "\tWhat English player won 'Player of the Championship' "
-    "in 2014?\n \
-    \t\t(a) Mike Brown\n \
-    \t\t(b) Chris Robshaw\n \
-    \t\t(c) Dylan Hartley\n",
+    "\n\tin 2014?\n \
+    \t(a) Mike Brown\n \
+    \t(b) Chris Robshaw\n \
+    \t(c) Dylan Hartley\n",
 
     "\tEngland hold the record for most scores in one "
-    "match.\n What was that score?\n \
-    \t\t(a) 93 points\n \
-    \t\t(b) 75 points\n \
-    \t\t(c) 80 points\n",
+    "\n\tmatch.\n\tWhat was that score?\n \
+    \t(a) 93 points\n \
+    \t(b) 75 points\n \
+    \t(c) 80 points\n",
 
     "\tWho is Englands most capped Six-Nations Player\n \
-    \t\t(a) Ben Youngs\n \
-    \t\t(b) Jason Leonard\n \
-    \t\t(c) Mike Catt\n",
+    \t(a) Ben Youngs\n \
+    \t(b) Jason Leonard\n \
+    \t(c) Mike Catt\n",
 
     "\tWho captained England to the 1991 Grand Slam?\n \
-    \t\t(a) Will Carling\n \
-    \t\t(b) Brian Moore\n \
-    \t\t(c) Rob Andrew\n",
+    \t(a) Will Carling\n \
+    \t(b) Brian Moore\n \
+    \t(c) Rob Andrew\n",
 
     "\tWho scored the most Six-Nations tries for England?\n \
-    \t\t(a) Tony Underwood\n \
-    \t\t(b) Jason Leonard\n \
-    \t\t(c) Rory Underwood\n",
+    \t(a) Tony Underwood\n \
+    \t(b) Jason Leonard\n \
+    \t(c) Rory Underwood\n",
 
     "\tWhat English player has scored the most drop-goals "
-    "in the tournament?\n \
-    \t\t(a) Rob Andrew\n \
-    \t\t(b) Johnny Wilkinson\n \
-    \t\t(c) Owen Farrell\n",
+    "\n\tin the tournament?\n \
+    \t(a) Rob Andrew\n \
+    \t(b) Johnny Wilkinson\n \
+    \t(c) Owen Farrell\n",
 
     "What stadium do England play their home games?\n \
-    \t\t(a) Wembly\n \
-    \t\t(b) Millenium Statidum\n \
-    \t\t(c) Twickenham\n",
+    \t(a) Wembly\n \
+    \t(b) Millenium Statidum\n \
+    \t(c) Twickenham\n",
 
 ]
 
@@ -82,60 +82,60 @@ eng_question_list = [
 
 
 ire_questions = [
-    "Who scored the only try for Ireland when they beat "
-    "England in "
+    "\tWho scored the only try for Ireland when they beat "
+    "\n\tEngland in "
     "Twickenham in 2004\n \
-    (a) Girvan Dempsey\n \
-    (b) Brian O'Driscoll\n \
-    (c) Ronan O'Gara\n",
+    \t(a) Girvan Dempsey\n \
+    \t(b) Brian O'Driscoll\n \
+    \t(c) Ronan O'Gara\n",
 
-    "Who won player of the Six-Nations Championship in "
-    "2010?\n \
-    (a) Brian O'Driscoll\n \
-    (b) Paul O'Connell\n \
-    (c) Tommy Bowe\n",
+    "\tWho won player of the Six-Nations Championship in "
+    "\n\t2010?\n \
+    \t(a) Brian O'Driscoll\n \
+    \t(b) Paul O'Connell\n \
+    \t(c) Tommy Bowe\n",
 
-    "As of 2021 what irish player holds the record for "
-    "the most points scored in the Six Nations Championship?\n \
-    (a) David Humphreys\n \
-    (b) Johnny Sexton\n \
-    (c) Ronan O'Gara\n",
+    "\tAs of 2021 what irish player holds the record for "
+    "\n\tthe most points scored in the Six Nations Championship?\n \
+    \t(a) David Humphreys\n \
+    \t(b) Johnny Sexton\n \
+    \t(c) Ronan O'Gara\n",
 
-    "Ireland's biggest away winning margin of 63-10 was "
-    "away to Italy in what year?\n \
-    (a) 2015\n \
-    (b) 2009\n \
-    (c) 2017\n",
+    "\tIreland's biggest away winning margin of 63-10 was "
+    "\n\taway to Italy in what year?\n \
+    \t(a) 2015\n \
+    \t(b) 2009\n \
+    \t(c) 2017\n",
 
-    "How many times has Ireland won a Six-Nations "
-    "grand slam?\n \
-    (a) 3\n \
-    (b) 4\n \
-    (c) 2\n",
+    "\tHow many times has Ireland won a Six-Nations "
+    "\n\tgrand slam?\n \
+    \t(a) 3\n \
+    \t(b) 4\n \
+    \t(c) 2\n",
 
-    "What place did Ireland finish in the 2021 "
-    "Six-nations Championship?\n \
-    (a) Second\n \
-    (b) First\n \
-    (c) Third\n",
+    "\tWhat place did Ireland finish in the 2021 "
+    "\n\tSix-nations Championship?\n \
+    \t(a) Second\n \
+    \t(b) First\n \
+    \t(c) Third\n",
 
-    "Rob Kearney has won two Grand Slams for Ireland.  Who "
-    "is the only other Irish Player to do this?\n \
-    (a) Brian O'Driscoll\n \
-    (b) Rory Best\n \
-    (c) Paul O'Connell\n",
+    "\tRob Kearney has won two Grand Slams for Ireland.  Who "
+    "\n\tis the only other Irish Player to do this?\n \
+    \t(a) Brian O'Driscoll\n \
+    \t(b) Rory Best\n \
+    \t(c) Paul O'Connell\n",
 
-    "Which Irish player holds the record for the "
-    "most successive starts in the Six Nations?\n \
-    (a) Keith Wood\n \
-    (b) Brian O'Driscoll\n \
-    (c) John Hayes\n",
+    "\tWhich Irish player holds the record for the "
+    "\n\tmost successive starts in the Six Nations?\n \
+    \t(a) Keith Wood\n \
+    \t(b) Brian O'Driscoll\n \
+    \t(c) John Hayes\n",
 
-    "Whoe has the most ball carries in a single Six "
-    "Nations encounter\n \
-    (a) Denis Leamy\n \
-    (b) Peter O'Mahoney\n \
-    (c) David Wallace\n",
+    "\tWhoe has the most ball carries in a single Six "
+    "\n\tNations encounter\n \
+    \t(a) Denis Leamy\n \
+    \t(b) Peter O'Mahoney\n \
+    \t(c) David Wallace\n",
 
 ]
 
@@ -153,55 +153,55 @@ ire_question_list = [
 ]
 
 wales_questions = [
-    "Where do Wales play their home games?\n \
-    (a) Cardiff Arms Park\n \
-    (b) Sophia Gardens\n \
-    (c) Principality Stadiyum\n",
+    "\tWhere do Wales play their home games?\n \
+    \t(a) Cardiff Arms Park\n \
+    \t(b) Sophia Gardens\n \
+    \t(c) Principality Stadiyum\n",
 
-    "Which Welsh player won Player of the Tournament "
-    "in 2019?\n \
-    (a) Alun Wyn Jones\n \
-    (b) George North\n \
-    (c) Dan Biggar\n",
+    "\tWhich Welsh player won Player of the Tournament "
+    "\n\tin 2019?\n \
+    \t(a) Alun Wyn Jones\n \
+    \t(b) George North\n \
+    \t(c) Dan Biggar\n",
 
-    "Who has scored the most points for Wales in the "
-    "Six-Nations\n \
-    (a) Neil Jenkins\n \
-    (b) Leigh Halfpenny\n \
-    (c) Stephen Jones\n",
+    "\tWho has scored the most points for Wales in the "
+    "\n\tSix-Nations\n \
+    \t(a) Neil Jenkins\n \
+    \t(b) Leigh Halfpenny\n \
+    \t(c) Stephen Jones\n",
 
-    "How many Grand Slams have Wales won?\n \
-    (a) 10\n \
-    (b) 11\n \
-    (c) 12\n",
+    "\tHow many Grand Slams have Wales won?\n \
+    \t(a) 10\n \
+    \t(b) 11\n \
+    \t(c) 12\n",
 
-    "How many Triple Crowns have Wales won?\n \
-    (a) 26\n \
-    (b) 24\n \
-    (c) 22\n",
+    "\tHow many Triple Crowns have Wales won?\n \
+    \t(a) 26\n \
+    \t(b) 24\n \
+    \t(c) 22\n",
 
-    "When did Wales last win the Six Nations Championship?\n \
-    (a) 2019\n \
-    (b) 2020\n \
-    (c) 2021\n",
+    "\tWhen did Wales last win the Six Nations Championship?\n \
+    \t(a) 2019\n \
+    \t(b) 2020\n \
+    \t(c) 2021\n",
 
-    "Which Welsh player won Player of the Championship "
-    "in 2013\n \
-    (a) Dan Lydiate\n \
-    (b) Leigh Halfpenny\n \
-    (c) Shane Williams\n",
+    "\tWhich Welsh player won Player of the Championship "
+    "\n\tin 2013\n \
+    \t(a) Dan Lydiate\n \
+    \t(b) Leigh Halfpenny\n \
+    \t(c) Shane Williams\n",
 
-    "Wales hold the record for the longest time without "
-    "conceding a try.  How many minutes?\n \
-    (a) 220\n \
-    (b) 150\n \
-    (c) 358\n",
+    "\tWales hold the record for the longest time without "
+    "\n\tconceding a try.  How many minutes?\n \
+    \t(a) 220\n \
+    \t(b) 150\n \
+    \t(c) 358\n",
 
-    "Who was the head coach for Wales when they won "
-    "the Grand Slam in 2005?\n \
-    (a) Mike Ruddock\n \
-    (b) Steve Hansen\n \
-    (c) Scott Johnson\n",
+    "\tWho was the head coach for Wales when they won "
+    "\n\tthe Grand Slam in 2005?\n \
+    \t(a) Mike Ruddock\n \
+    \t(b) Steve Hansen\n \
+    \t(c) Scott Johnson\n",
 
 ]
 
@@ -219,55 +219,54 @@ wales_question_list = [
 ]
 
 scot_questions = [
-    "Scotland compete against which team in the Six-Nations "
-    "for the "
-    "Calcutta Cup?\n \
-    (a) Ireland\n \
-    (b) Wales\n \
-    (c) England\n",
+    "\tScotland compete against which team in the Six-Nations "
+    "\n\tfor the Calcutta Cup?\n \
+    \t(a) Ireland\n \
+    \t(b) Wales\n \
+    \t(c) England\n",
 
-    "Who captained Scotland in the 2020 Six-Nations "
-    "Championship?\n \
-    (a) Stuart Hogg\n \
-    (b) Finn Russell\n \
-    (c) Ali Price\n",
+    "\tWho captained Scotland in the 2020 Six-Nations "
+    "\n\tChampionship?\n \
+    \t(a) Stuart Hogg\n \
+    \t(b) Finn Russell\n \
+    \t(c) Ali Price\n",
 
-    "Who is Scotland's top scorer in the Six Nations?\n \
-    (a) Gavin Hastings\n \
-    (b) Gregor Townsend\n \
-    (c) Chris Paterson\n",
+    "\tWho is Scotland's top scorer in the Six Nations?\n \
+    \t(a) Gavin Hastings\n \
+    \t(b) Gregor Townsend\n \
+    \t(c) Chris Paterson\n",
 
-    "Who is Scotland's most capped player in the Six-Nations?\n \
-    (a) Jonny  Gray\n \
-    (b) Greig Lidlaw\n \
-    (c) Ross Ford\n",
+    "\tWho is Scotland's most capped player in the Six-Nations?\n \
+    \t(a) Jonny  Gray\n \
+    \t(b) Greig Lidlaw\n \
+    \t(c) Ross Ford\n",
 
-    "Who has scored the most tries for Scotland in "
-    "the Six-Nations\n \
-    (a) Ian Smith\n \
-    (b) Stuart Hogg\n \
-    (c) Gavin Hastings\n",
+    "\tWho has scored the most tries for Scotland in "
+    "\n\tthe Six-Nations\n \
+    \t(a) Ian Smith\n \
+    \t(b) Stuart Hogg\n \
+    \t(c) Gavin Hastings\n",
 
-    "Where do Scotland play their home games?\n \
-    (a) Ibrox Stadium\n \
-    (b) Hampden Park\n \
-    (c) Murrayfield\n",
+    "\tWhere do Scotland play their home games?\n \
+    \t(a) Ibrox Stadium\n \
+    \t(b) Hampden Park\n \
+    \t(c) Murrayfield\n",
 
-    "What flower is the national emblem of Scotland?\n \
-    (a) Daffodil\n \
-    (b) Thistle\n \
-    (c) Rose\n",
+    "\tWhat flower is the national emblem of Scotland?\n \
+    \t(a) Daffodil\n \
+    \t(b) Thistle\n \
+    \t(c) Rose\n",
 
-    "When did Scotland last win a Grand Slam\n \
-    (a) 1982\n \
-    (b) 1985\n \
-    (c) 1990\n",
+    "\tWhen did Scotland last win a Grand Slam\n \
+    \t(a) 1982\n \
+    \t(b) 1985\n \
+    \t(c) 1990\n",
 
-    "Who captianed Scotland when they won their "
-    "last Grand Slam?\n \
-    (a) David Sole\n \
-    (b) Gavin Hastings\n \
-    (c) Craig Chalmers\n",
+    "\tWho captianed Scotland when they won their "
+    "\n\tlast Grand Slam?\n \
+    \t(a) David Sole\n \
+    \t(b) Gavin Hastings\n \
+    \t(c) Craig Chalmers\n",
 
 ]
 
@@ -285,55 +284,55 @@ scot_question_list = [
 ]
 
 italy_questions = [
-    "Who is Italy's most capped player for the Six-Nations?\n \
-    (a) Martin Castrogiovanni\n \
-    (b) Alessandro Zanni\n \
-    (c) Sergio Parisse\n",
+    "\tWho is Italy's most capped player for the Six-Nations?\n \
+    \t(a) Martin Castrogiovanni\n \
+    \t(b) Alessandro Zanni\n \
+    \t(c) Sergio Parisse\n",
 
-    "Who was Italy's coach for the 2017 Six-Nations?\n \
-    (a) Conor O'Shea\n \
-    (b) Jacques Brunel\n \
-    (c) Franco Smith\n",
+    "\tWho was Italy's coach for the 2017 Six-Nations?\n \
+    \t(a) Conor O'Shea\n \
+    \t(b) Jacques Brunel\n \
+    \t(c) Franco Smith\n",
 
-    "What stadium do Italy play their home games in?\n \
-    (a) Stadio Flaminio\n \
-    (b) Stadio Marassi\n \
-    (c) Stadio Olimpico\n",
+    "\tWhat stadium do Italy play their home games in?\n \
+    \t(a) Stadio Flaminio\n \
+    \t(b) Stadio Marassi\n \
+    \t(c) Stadio Olimpico\n",
 
-    "Who did Italy defeat in their very first "
-    "Six-Nations game?\n \
-    (a) Wales\n \
-    (b) Ireland\n \
-    (c) Scotland\n",
+    "\tWho did Italy defeat in their very first "
+    "\n\tSix-Nations game?\n \
+    \t(a) Wales\n \
+    \t(b) Ireland\n \
+    \t(c) Scotland\n",
 
-    "What year did Italy and France start competing "
-    "for the Giuseppe Garibaldi trophy?\n \
-    (a) 2007\n \
-    (b) 2008\n \
-    (c) 2009\n",
+    "\tWhat year did Italy and France start competing "
+    "\n\tfor the Giuseppe Garibaldi trophy?\n \
+    \t(a) 2007\n \
+    \t(b) 2008\n \
+    \t(c) 2009\n",
 
-    "What year was Italy added to the Six-Nations "
-    "tournament?\n \
-    (a) 2002\n \
-    (b) 2001\n \
-    (c) 2000\n",
+    "\tWhat year was Italy added to the Six-Nations "
+    "\n\ttournament?\n \
+    \t(a) 2002\n \
+    \t(b) 2001\n \
+    \t(c) 2000\n",
 
-    "What is the national rugby team color for Italy?\n \
-    (a) Azure Blue\n \
-    (b) Savoy Blue\n \
-    (c) Royal Blue\n",
+    "\tWhat is the national rugby team color for Italy?\n \
+    \t(a) Azure Blue\n \
+    \t(b) Savoy Blue\n \
+    \t(c) Royal Blue\n",
 
-    "How many times have Italy taken home the Wooden "
-    "Spoon trophy?\n \
-    (a) 15\n \
-    (b) 14\n \
-    (c) 17\n",
+    "\tHow many times have Italy taken home the Wooden "
+    "\n\tSpoon trophy?\n \
+    \t(a) 15\n \
+    \t(b) 14\n \
+    \t(c) 17\n",
 
-    "How many times have Italy beaten France in the "
-    "Six-Nations?\n \
-    (a) Once\n \
-    (b) Twice\n \
-    (c) Three times\n",
+    "\tHow many times have Italy beaten France in the "
+    "\n\tSix-Nations?\n \
+    \t(a) Once\n \
+    \t(b) Twice\n \
+    \t(c) Three times\n",
 
 ]
 
@@ -351,53 +350,53 @@ italy_question_list = [
 ]
 
 france_questions = [
-    "Where do France play their home games?\n \
-    (a) Stade Pierre-Mauroy\n \
-    (b) Parc de France\n \
-    (c) Stade de France\n",
+    "\tWhere do France play their home games?\n \
+    \t(a) Stade Pierre-Mauroy\n \
+    \t(b) Parc de France\n \
+    \t(c) Stade de France\n",
 
-    "Who is France's top scorer for the Six-Nations?\n \
-    (a) Frederic Michalak\n \
-    (b) Romain Ntamack\n \
-    (c) Philippe Sella\n",
+    "\tWho is France's top scorer for the Six-Nations?\n \
+    \t(a) Frederic Michalak\n \
+    \t(b) Romain Ntamack\n \
+    \t(c) Philippe Sella\n",
 
-    "Which French player was Player of the Championship "
-    "in 2020?\n \
-    (a) Gael Fickou\n \
-    (b) Charles Ollivon\n \
-    (c) Antoine Dupont\n",
+    "\tWhich French player was Player of the Championship "
+    "\n\tin 2020?\n \
+    \t(a) Gael Fickou\n \
+    \t(b) Charles Ollivon\n \
+    \t(c) Antoine Dupont\n",
 
-    "Who is France's most capped player in the "
-    "Six-Nations?\n \
-    (a) Serg Betsen\n \
-    (b) Fabien Galthie\n \
-    (c) Fabien Pelous\n",
+    "\tWho is France's most capped player in the "
+    "\n\tSix-Nations?\n \
+    \t(a) Serg Betsen\n \
+    \t(b) Fabien Galthie\n \
+    \t(c) Fabien Pelous\n",
 
-    "Who is France's top try-scorer in the Six-Nations\n \
-    (a) Serg Blanco\n \
-    (b) Vincent Clerc\n \
-    (c) Tomas Castaignede\n",
+    "\tWho is France's top try-scorer in the Six-Nations\n \
+    \t(a) Serg Blanco\n \
+    \t(b) Vincent Clerc\n \
+    \t(c) Tomas Castaignede\n",
 
-    "How many times have France won a Six-Nations "
-    "Grand Slam?\n \
-    (a) 10\n \
-    (b) 8\n \
-    (c) 9\n",
+    "\tHow many times have France won a Six-Nations "
+    "\n\tGrand Slam?\n \
+    \t(a) 10\n \
+    \t(b) 8\n \
+    \t(c) 9\n",
 
-    "When did France last win a Six Nations Grand Slam?\n \
-    (a) 2011\n \
-    (b) 2022\n \
-    (c) 2015\n",
+    "\tWhen did France last win a Six Nations Grand Slam?\n \
+    \t(a) 2011\n \
+    \t(b) 2022\n \
+    \t(c) 2015\n",
 
-    "The French mascot is a rooster but what is his name?\n \
-    (a) Astrix\n \
-    (b) Serge\n \
-    (c) Footix\n",
+    "\tThe French mascot is a rooster but what is his name?\n \
+    \t(a) Astrix\n \
+    \t(b) Serge\n \
+    \t(c) Footix\n",
 
-    "Which game is commonly referred to as 'Le Crunch'?\n \
-    (a) France v England\n \
-    (b) France v Wales\n \
-    (c) France v Ireland\n",
+    "\tWhich game is commonly referred to as 'Le Crunch'?\n \
+    \t(a) France v England\n \
+    \t(b) France v Wales\n \
+    \t(c) France v Ireland\n",
 
 ]
 
