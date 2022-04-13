@@ -1,7 +1,6 @@
 """True or False Quiz Game"""
 # clear terminal screen
 
-
 # Allows a time delay
 from time import sleep
 
@@ -255,21 +254,21 @@ def updating_mid_way():
         elif continue_play == "q":
             clear()
             quit_game_leader()
-        elif (continue_play != "q" and continue_play != "p"):
+        elif continue_play != "q" and continue_play != "p":
             print("Invalid choice please try again".center(80))
             updating_mid_way()
     else:
-        print("No choices left")
-        print("Type l for leaderboard, q to quit or p to play again")
-        what_next = input("So what would you like to do?\n")
+        print("You have answered all sections".center(80))
+        print()
+        print("Type l for leaderboard or q to quit".center(80))
+        print()
+        what_next = input("So what would you like to do?\n".center(80))
         if what_next == "l":
             update_score_sheet()
             display_score_board()
             print("Goodbye, thanks for playing".center(80))
         elif what_next == "q":
             quit()
-        elif what_next == "p":
-            print("Play again")
         else:
             print("Invalid choice, try again")
             updating_mid_way()
@@ -331,6 +330,7 @@ def after_rules():
 
     rules_reply = input('Would you like to play or quit?\n'.center(80))
     if rules_reply == "p":
+        choices()
         game_choice()
     elif rules_reply == "q":
         quit_game_leader()
