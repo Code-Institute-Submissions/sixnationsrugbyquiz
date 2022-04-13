@@ -107,11 +107,9 @@ def update_score_sheet():
     Use the score dictionary to update google sheets
     so the user can see top scores
     """
-
+    
     new_list = list(user_scores.values())
-    print(new_list)
     score_data.append_row(new_list)
-    sleep(4)
 
 
 def display_score_board():
@@ -220,17 +218,17 @@ def get_questions(questions, choice_name, row_no):
     print(f'You scored {score} for {choice_name}'.center(80))
 
     if row_no == "b1":
-        user_scores.update({"England": score})
+        user_scores.update({"England": str(score)})
     elif row_no == "c1":
-        user_scores.update({'Ireland': score})
+        user_scores.update({'Ireland': str(score)})
     elif row_no == "d1":
-        user_scores.update({'Scotland': score})
+        user_scores.update({'Scotland': str(score)})
     elif row_no == "e1":
-        user_scores.update({'Wales': score})
+        user_scores.update({'Wales': str(score)})
     elif row_no == "f1":
-        user_scores.update({'France': score})
+        user_scores.update({'France': str(score)})
     elif row_no == "g1":
-        user_scores.update({'Italy': score})
+        user_scores.update({'Italy': str(score)})
 
     print("Updating scores...".center(80))
     sleep(3)
