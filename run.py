@@ -232,6 +232,14 @@ def get_questions(questions, choice_name, row_no):
 
     print("Updating scores...".center(80))
     sleep(3)
+    updating_mid_way()
+
+
+def updating_mid_way():
+    """
+    Function to update scores for single game
+    """
+
     if len(choices_in) != 0:
         print('Would you like to continue playing or quit?\n'.center(80))
         continue_play = input('Type p to play or q to quit\n'.center(80))
@@ -240,16 +248,7 @@ def get_questions(questions, choice_name, row_no):
             display_choices_left()
             game_choice()
         elif continue_play == "q":
-            print("Would you like to see leaderboard before you go?")
-            so_long = input("Type 'l' for leaderboard or 'q' to quit")
-            if so_long == 'q':
-                print("Ok, thanks for playing.  Goodbye")
-                print("click Play Again above if you change your mind")
-            elif so_long == 'l':
-                update_score_sheet()
-                display_score_board()
-                print("Thanks for playing, click Play Again "
-                      "above if you change your mind".center(80))
+            quit_game()
         elif (continue_play != "q" and continue_play != "p" and
               continue_play != "l"):
             print("Invalid choice please try again".center(80))
@@ -266,6 +265,24 @@ def get_questions(questions, choice_name, row_no):
             print("Play again")
         else:
             print("Invalid choice, try again")
+            updating_mid_way()
+
+
+def quit_game():
+    """
+    Function to let user quit game
+    """
+
+    print("Would you like to see leaderboard before you go?")
+    so_long = input("Type 'l' for leaderboard or 'q' to quit\n")
+    if so_long == 'q':
+        print("Ok, thanks for playing.  Goodbye")
+        print("click Play Again above if you change your mind")
+    elif so_long == 'l':
+        update_score_sheet()
+        display_score_board()
+        print("Thanks for playing, click Play Again "
+              "above if you change your mind".center(80))
 
 
 def rules_or_play():
@@ -305,6 +322,7 @@ def main_quiz_start():
     sleep(2)
     clear()
     rules_or_play()
+    updating_mid_way()
 
 
 main_quiz_start()
