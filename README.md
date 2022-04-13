@@ -3,21 +3,21 @@
 
 # Six Nations Rugby Quiz
 
-For my **Portfolio 3 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a command line Six Nations Rugby Quiz game.  The game asks the user questions on each of the teams that take part in the Six Nations Rugby tournament.  There are six countries that take part so there are six different sections to choose from.  
+For my **Portfolio 3 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a command line Six Nations Rugby Quiz game.  Just like the tournament itself there are six sections for each of the countries.  The user will be asked 5 random questions in each section relating to a particular country.  The user can select whichever country their want to start with and work their way through each country, when their score will be totalled and they will find out if they made the leaderboard or not!   
 
 Link to the deployed app is [here](https://sixnationsrugbyquiz.herokuapp.com/). 
 
-Link to the repository is [here](). 
+Link to the repository is [here](https://github.com/rockymiss/sixnationsrugbyquiz). 
 
 
 
-![alt text]()
+![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1649890785/rugby/mockup_kgpgxf.png)
 
 -----
 
 ## Who is this game for and what does it do?
 
-
+This game is for anyone who likes Rugby, particularly the Six Nations Tournament.  
 -----
 
 ## User Experience
@@ -26,16 +26,26 @@ Link to the repository is [here]().
 ### From a User's Perspective
 As a user it is important: 
 
-1. That it is easy to navigate the game. 
+1. That it is easy to follow the game. 
 2. To understand the rules of the game. 
 3. To understand how to start the game. 
-4. To choose a game they want to play. 
-
-
+4. To choose a game they want to play.
+5. To quit the game if they want to. 
+6. To answer questions and receive a result. 
+7. To view their scores. 
+8. To view the leaderboard.  
 
 
 ### Users Fulfilment
 
+1.  The game is laid out clearly so the user knows immediately what to do.  A welcome message is provided prompting the user for their name. 
+2.  Rules are available for the user to view. 
+3.  Clear instructions are given on how to start the game.
+4.  Clear instructions are given on how to select the country they want to play. 
+5.  The user is given opportunities to quit the game throughout. 
+6.  The user is asked multiple choice questions which they can answer by typing in a letter and are given a result as to whether they answered correctly or incorrectly. 
+7.  After each section ends the user is shown how they scored in that round. 
+8.  At the end of the game and if they quit the user is given the option to view the leaderboard. 
 
 
 -----
