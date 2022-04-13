@@ -107,7 +107,7 @@ def update_score_sheet():
     Use the score dictionary to update google sheets
     so the user can see top scores
     """
-    
+
     new_list = list(user_scores.values())
     score_data.append_row(new_list)
 
@@ -206,10 +206,12 @@ def get_questions(questions, choice_name, row_no):
                 break
         if answer == question.answer:
             score += 1
+            print()
             print('Correct Answer!'.center(80))
             sleep(2)
             clear()
         else:
+            print()
             print('Sorry you got that one wrong!'.center(80))
             sleep(2)
             clear()
@@ -301,7 +303,7 @@ def rules_or_play():
     """
     blank_spacer()
     blank_spacer()
-    player_choice = input('TYPE "r" FOR RULES, "p" TO PLAY: \n'.center(80))
+    player_choice = input('Type "r" for rules, "p" to play: \n'.center(80))
     if player_choice == 'r':
         clear()
         rules()
