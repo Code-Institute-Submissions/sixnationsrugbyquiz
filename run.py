@@ -12,7 +12,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 #  To create tables
-# from tabulate import tabulate
+from tabulate import tabulate
 
 # import numpy as np
 from info import welcome_message
@@ -41,6 +41,8 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('true_false')
+
+score_data = SHEET.worksheet('scores')
 
 # Get data for scores, choices, rules and leaderboard
 user_scores = {"Name": "",
@@ -105,22 +107,23 @@ def update_score_sheet():
     Use the score dictionary to update google sheets
     so the user can see top scores
     """
-    score_data = SHEET.worksheet('scores')
+
     new_list = list(user_scores.values())
     score_data.append_row(new_list)
 
 
-# def display_score_board():
-#     """
-#     Collects high scores to display
-#     """
+def display_score_board():
+    """
+    This function uses the score dictionary to update google sheets
+    Then sorts the sheet to put max scores on top
+    Slices the first 4 rows
+    and prints out the leaderboard in table format
+    """
 
-#     high_scores = score_data.get_all_values()
-#     result = []
-#     for ind in high_scores:
-#         result.append(ind)
-#     load_scores = result
-#     print(tabulate(load_scores, tablefmt="pretty",))
+    score_data.sort((8, 'des'), range='A2:H1000')
+    new_data = score_data.get_all_values()
+    max_score = new_data[slice(0, 4)]
+    print(tabulate(max_score, tablefmt="pretty",))
 
 
 def display_choices_left():
