@@ -215,7 +215,7 @@ def get_questions(questions, choice_name, row_no):
             clear()
     sleep(2)
     blank_spacer()
-    print(f'You scored {score} for {choice_name} go {row_no}'.center(80))
+    print(f'You scored {score} for {choice_name}'.center(80))
 
     if row_no == "b1":
         user_scores.update({"England": score})
@@ -231,7 +231,6 @@ def get_questions(questions, choice_name, row_no):
         user_scores.update({'Italy': score})
 
     print("Updating scores...".center(80))
-    print(user_scores)
     sleep(3)
     if len(choices_in) != 0:
         print('Would you like to continue playing or quit?\n'.center(80))
@@ -242,10 +241,19 @@ def get_questions(questions, choice_name, row_no):
             game_choice()
         elif continue_play == "q":
             print("Would you like to see leaderboard before you go?")
-            update_score_sheet()
-            # print("ok good bye".center(80))
-        elif continue_play != "q" and continue_play != "p":
+            so_long = input("Type 'l' for leaderboard or 'q' to quit")
+            if so_long == 'q':
+                print("Ok, thanks for playing.  Goodbye")
+                print("click Play Again above if you change your mind")
+            elif so_long == 'l':
+                update_score_sheet()
+                display_score_board()
+                print("Thanks for playing, click Play Again "
+                      "above if you change your mind".center(80))
+        elif (continue_play != "q" and continue_play != "p" and
+              continue_play != "l"):
             print("Invalid choice please try again".center(80))
+        # might need a try except here!
     else:
         print("No choices left")
         print("Type l for leaderboard, q to quit or p to play again")
