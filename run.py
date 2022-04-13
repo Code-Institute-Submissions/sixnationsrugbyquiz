@@ -109,7 +109,9 @@ def update_score_sheet():
     """
 
     new_list = list(user_scores.values())
+    print(new_list)
     score_data.append_row(new_list)
+    sleep(4)
 
 
 def display_score_board():
@@ -248,17 +250,18 @@ def updating_mid_way():
             display_choices_left()
             game_choice()
         elif continue_play == "q":
-            quit_game()
-        elif (continue_play != "q" and continue_play != "p" and
-              continue_play != "l"):
+            quit_game_leader()
+        elif (continue_play != "q" and continue_play != "p"):
             print("Invalid choice please try again".center(80))
-        # might need a try except here!
+            updating_mid_way()
     else:
         print("No choices left")
         print("Type l for leaderboard, q to quit or p to play again")
         what_next = input("So what would you like to do?\n")
         if what_next == "l":
-            print("display_score_board")
+            update_score_sheet()
+            display_score_board()
+            print("Goodbye, thanks for playing".center(80))
         elif what_next == "q":
             quit()
         elif what_next == "p":
@@ -268,21 +271,30 @@ def updating_mid_way():
             updating_mid_way()
 
 
-def quit_game():
+def quit_game_leader():
     """
     Function to let user quit game
     """
 
-    print("Would you like to see leaderboard before you go?")
-    so_long = input("Type 'l' for leaderboard or 'q' to quit\n")
+    print("Would you like to see leaderboard before you go?".center(80))
+    so_long = input("Type 'l' for leaderboard or 'q' to quit\n".center(80))
     if so_long == 'q':
-        print("Ok, thanks for playing.  Goodbye")
-        print("click Play Again above if you change your mind")
+        quit_game()
     elif so_long == 'l':
         update_score_sheet()
         display_score_board()
-        print("Thanks for playing, click Play Again "
+        print("Thanks for playing, click Let's Play "
               "above if you change your mind".center(80))
+
+
+def quit_game():
+    """
+    Function to just quit game
+    """
+    print("Goodbye, sorry to see you go.  If you change your mind"
+          " click Let's Play above".center(80))
+    print()
+    print()
 
 
 def rules_or_play():
@@ -323,7 +335,6 @@ def main_quiz_start():
     sleep(2)
     clear()
     rules_or_play()
-    updating_mid_way()
 
 
 main_quiz_start()
