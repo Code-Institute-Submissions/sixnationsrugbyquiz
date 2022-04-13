@@ -17,7 +17,7 @@ class Question:
 
 eng_questions = [
     "\tWhat year did England win their last Six-Nations "
-    "grand slam?\n \
+    "\ngrand slam?\n \
     \t\t(a) 2016\n \
     \t\t(b) 2017\n \
     \t\t(c) 2018\n",
@@ -34,7 +34,7 @@ eng_questions = [
     \t\t(c) Dylan Hartley\n",
 
     "\tEngland hold the record for most scores in one "
-    "match. What was that score?\n \
+    "match.\n What was that score?\n \
     \t\t(a) 93 points\n \
     \t\t(b) 75 points\n \
     \t\t(c) 80 points\n",
