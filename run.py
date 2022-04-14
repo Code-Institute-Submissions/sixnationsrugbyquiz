@@ -95,13 +95,13 @@ class User():
 
         try:
             if len(name.strip()) == 0:
-                raise ValueError('...name cannot be blank'.center(80))
+                raise ValueError('...name cannot be blank\n')
             elif len(name) > 10:
                 raise ValueError("..sorry only 10 characters"
-                                 " allowed".center(80))
+                                 " allowed\n")
             elif name.isdigit():
                 raise ValueError('...numbers on their own not'
-                                 ' allowed'.center(80))
+                                 ' allowed\n')
             else:
                 return True
 
@@ -286,6 +286,7 @@ def updating_mid_way():
     if len(choices_in) != 0:
         print()
         print('Would you like to continue playing or quit?\n'.center(80))
+        print('If you quit now all scores will be lost'.center(80))
         continue_play = input('Type p to play or q to quit\n'.center(80))
         print()
         if continue_play == "p":
@@ -310,6 +311,8 @@ def updating_mid_way():
             update_score_sheet()
             display_score_board()
             print("Goodbye, thanks for playing".center(80))
+            print("If you change your mind and want to play...".center(80))
+            print("Click the Let's Play Button below the terminal".center(80))
         elif what_next == "q":
             quit()
         else:
