@@ -185,22 +185,11 @@ I used google sheets to store usernames and scores for the Leaderboard.  I used 
 <br>
 
 
-### Skeleton 
+### Design  
 
+Design was limited for this project as it was primiarily command line based.  I did however want to give it some element of design so positioned the t
 
-
-
-### Surface  
-
-##### Colors 
-
-
-
-
-
- 
-##### Typography
-
+#### Colors 
 
 
 
@@ -239,12 +228,6 @@ I used google sheets to store usernames and scores for the Leaderboard.  I used 
 - [Brock Byrd](https://brockbyrdd.medium.com/creating-a-multiple-choice-quiz-in-python-terminal-1c46123b86d5) for quiz class layout etc. 
    
 
-### Images
-
-
-
-
-
 -----
 ## Testing
 
@@ -257,6 +240,9 @@ I used google sheets to store usernames and scores for the Leaderboard.  I used 
 The website was sent to a group of approximately 15 people of all different ages.  My children 6 and 8 also tested the game and could manage functionality well and really enjoyed it.  Other users found the game easy to work through but found it hard to win in under 8 flips.  I didn't change the flip lives because of this as all users kept going back to the game to try to win!  Some in competition with others.  I liked this as they kept coming back to it.  Devices used to test were as follows: 
 
 
+### Manual Testing
+
+
 ### Browser Testing
 
 The Website has been tested on Google Chrome, Microsoft Edge, Safari and Opera.   On all browsers testing was as expected.  Functionality and responsiveness are good. 
@@ -264,15 +250,11 @@ The Website has been tested on Google Chrome, Microsoft Edge, Safari and Opera. 
 
 ### Validators 
 
-The website was tested using Jigsaw W3C validation. 
+The website was tested using Jigsaw pep8 validation. 
 
 
 
 
-### Responsiveness 
-
-To check responsiveness I used Google Chrome Dev Tools.  Desktop, Mobile and tablet sizes were tested.  The website responded well.   
-<br>
 
 ###  Result: Chrome Lighthouse 
 
@@ -348,7 +330,7 @@ Steps followed:
     - **git push** to update work to GitHub 
 
 
-### Deployment 
+### Deployment to Heroku
 
 
   #### Deployment: 
@@ -398,6 +380,15 @@ Steps followed:
 
 </details>
 <br>
+
+## Credits 
+
+### Code 
+
+### Images/Media
+
+### Content
+
 
 
 -----

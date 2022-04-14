@@ -1,5 +1,4 @@
-"""True or False Quiz Game"""
-# clear terminal screen
+"""Six Nations Rugby Quiz Game"""
 
 # Allows a time delay
 from time import sleep
@@ -7,17 +6,20 @@ from time import sleep
 # to get random questions
 import random
 
+# to access google sheets
 import gspread
 from google.oauth2.service_account import Credentials
 
 #  To create tables
 from tabulate import tabulate
 
+# To add color
 from colorama import Fore, Style
 
+# For ascii text
 from pyfiglet import figlet_format
 
-# import numpy as np
+# Imports from info file
 from info import welcome_message
 from info import choices
 from info import clear
@@ -44,9 +46,10 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('true_false')
 
+# access sheet for leaderboard
 score_data = SHEET.worksheet('scores')
 
-# Get data for scores, choices, rules and leaderboard
+# Object to get data for scores, choices, and leaderboard
 user_scores = {"Name": "",
                "England": "0",
                "Ireland": "0",
@@ -58,15 +61,14 @@ user_scores = {"Name": "",
 choices_out = []
 choices_in = ["eng", "ire", "wal", "sc", "fr", "it"]
 
-
-# Class for User
+# User
 
 
 class User():
     """
     Creates a User object which can take
-    the users name, display a welcome message
-    validate user input for name and answers
+    the users name, display a message to user
+    and validate user input for name and answers
 
     """
 
@@ -87,7 +89,8 @@ class User():
     def validate_name(name):
         """
         Inside the try it checks if the user has inputed a name that
-        is longer than 10 characters or has any characteres at all
+        is longer than 10 characters or has any characters at all or
+        if there are numbers in the username
         """
 
         try:
@@ -106,11 +109,13 @@ class User():
             print(f'Please try again {err}'.center(80))
             return False
 
+# Functions for scores, choices and leaderboards
+
 
 def get_total_score():
     """
     Function to get total score for each section and
-    append to score_data
+    append to score_data object
     """
     get_score_data = list(user_scores.values())[1:7]
     change_score = list(map(int, get_score_data))
@@ -119,7 +124,7 @@ def get_total_score():
 
 def update_score_sheet():
     """
-    Use the score dictionary to update google sheets
+    A function to use the score_data object to update google sheets
     so the user can see top scores
     """
 
@@ -129,10 +134,10 @@ def update_score_sheet():
 
 def display_score_board():
     """
-    This function uses the score dictionary to update google sheets
+    This function uses the score_data object to update google sheets
     Then sorts the sheet to put max scores on top
     Slices the first 4 rows
-    and prints out the leaderboard in table format
+    and prints out the leaderboard in table format with banner
     """
     blank_spacer()
     score_data.sort((8, 'des'), range='A2:H1000')
@@ -148,6 +153,8 @@ def display_score_board():
 def display_choices_left():
     """
     A Function to display game choices left for user
+    This function will check what games the user has played
+    already and output remaining games
     """
     blank_spacer()
     print('You have the following choices left to play:'.center(80))
@@ -157,12 +164,14 @@ def display_choices_left():
         print(f"Choice {i}: {left}".center(80))
 
 
-# Game Functions
+# Quiz Functions
 
 
 def game_choice():
     """
-    Will get users choice on which game they want to play
+    A function to get the users choice of game.
+    The choice is then appended to the choices_out array and
+    removed from choices_in array.
     """
 
     global choices_out
@@ -209,7 +218,8 @@ def get_questions(questions, choice_name, row_no):
     """
     This function will get the questions for each section
     Get users answers
-    Get users scores and update leaderboard
+    Get users scores are appended to scores_data object
+    to update leaderboard
     """
     clear()
     score = 0
@@ -267,7 +277,10 @@ def get_questions(questions, choice_name, row_no):
 
 def updating_mid_way():
     """
-    Function to update scores for single game
+    This function allows the user to continue play
+    or quit the quiz at the end of each section.  It is
+    also used to complete the quiz and update
+    scoreboard.
     """
 
     if len(choices_in) != 0:
@@ -306,7 +319,8 @@ def updating_mid_way():
 
 def quit_game_leader():
     """
-    Function to let user quit game
+    This function will quit the game giving the user the option
+    to view the leaderboard before quitting
     """
     blank_spacer()
     print("Would you like to see leaderboard before you go?".center(80))
@@ -329,17 +343,19 @@ def quit_game_leader():
 
 def quit_game():
     """
-    Function to just quit game
+    Function to just quit game after Rules, no leaderboard required.
     """
     blank_spacer()
     print("Goodbye, sorry to see you go.".center(80))
     print("If you change your mind and want to play again".center(80))
     print("Click Let's Play below".center(80))
 
+# Functions for Rules
+
 
 def rules():
     """
-    Displays the rules to the user from google sheets
+    A function that displays rules to the user from google sheets
     """
     blank_spacer()
     print("Rules".center(80))
@@ -376,6 +392,7 @@ def after_rules():
 def rules_or_play():
     """
     Function to get players choice of rules or to play game
+    at the start of the game
     """
     blank_spacer()
     blank_spacer()
@@ -383,7 +400,6 @@ def rules_or_play():
     if player_choice == 'r':
         clear()
         rules()
-        # give option to play here
     elif player_choice == 'p':
         clear()
         choices()
@@ -392,27 +408,13 @@ def rules_or_play():
         print('You must enter a valid choice either "r" or "p"')
         rules_or_play()
 
-    #     elif player_choice == 'q':
-    #         print("Sorry to see you go, Click Let's Play if"
-    #               " you change your mind".center(80))
-    #     elif player_choice != "p" and player_choice != "q":
-    #         print("Please enter 'p' or 'q' to proceed".center(80))
-    #         player_choice = input('Type "r" for rules, "p" to'
-    #                               ' play: \n'.center(80))
-    # elif player_choice == 'p':
-    #     clear()
-    #     choices()
-    #     game_choice()
-    # else:
-    #     print('You must enter a valid choice either "r" or "p"')
-    #     rules_or_play()
 
-# Main Quiz
+# Main Quiz Function
 
 
 def main_quiz_start():
     """
-    Main function to run all program functions
+    Main function to run quiz
     """
 
     welcome_message()
