@@ -503,7 +503,6 @@ Steps followed:
 - I created a new public repository on GitHub using the Code Institute template.
 - I then created a workspace and started coding on GitPod. 
 - All relevant files were created. 
-- As I worked I previewed changes using python??.
 - To save my work safely I continued to use the terminal consistently by using: 
     - **git add .** to add work to git
     - **git commit -m""** to commit the work 
@@ -513,7 +512,6 @@ Steps followed:
 ### Deployment to Heroku
 
 
-  #### Deployment: 
         
     
 
