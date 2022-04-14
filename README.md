@@ -101,7 +101,12 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
 - Leaderboard
   - If the user chooses to view the leaderboard a banner with the word "Leaders" will appear and a table beneath it showing the top three highest scores.  Users names are displayed along with scores for each country. The user is thanked for playing and directed to click the button below the terminal if they want to play again. 
 
-- 
+- Quit Screen 
+  - There are two quit screens:
+    - Quit Screen before Play
+      This is a simple screen that appears after the Rules display if the user decides not to play.  It will display a message to the user saying goodbye and redirecting them to the 'Let's Play' button below the terminal. 
+    - Quit Screen Mid-Quiz
+      This screen is displayed if the user wants to quit half way through the game.  The user is asked if they would like to see the leaderboard before they go or just quit.  Leaderboard will bring them to the Leaderboard section and quit will bring them to the quit screen mentioned above. 
 
 
 
