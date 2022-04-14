@@ -212,30 +212,42 @@ Design was limited for this project as it was primiarily command line based.  I 
 ## Technologies Used 
 
 
-- HTML5 to provide content and structure to the website.
-- CSS3 provides styles for the website. 
-- Python to provide functionality to the website. 
--  
-- [Cloudinary.com](https://www.cloudinary.com/) to store images for the website.
--
-- 
-- Gitpod to create and edit the website. 
-- GibHub for hosting files and deployment of the website.
-- Google Chrome DevTools for debug and testing site.
-- GitBash to push changes to the GitHub repository.
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) to provide content and structure to the website.
+- [CSS3](https://en.wikipedia.org/wiki/CSS) provides styles for the website.
+- [Python](https://www.python.org/) to provide functionality to the website. 
+- [a11y](https://color.a11y.com/Contrast/) to test contrast. 
+- [TinyPNG](https://tinypng.com/) to compress images.
+- [Cloudinary](https://cloudinary.com/) to store images. 
+- [GitPod](https://www.gitpod.io/) to create and edit the website. 
+- [GitHub](https://github.com/) to host website
+- [GitBash](https://www.atlassian.com/git/tutorials/git-bash#:~:text=What%20is%20Git%20Bash%3F,operating%20system%20through%20written%20commands.) to push changes to GitHub.
+- [Heroku](https://id.heroku.com/login) to deploy the website. 
+- [Balsamiq](https://balsamiq.com/) to create wireframes. 
+- [Draw.io](https://drawio-app.com/) to create logic flow chart. 
+- [vsCode](https://code.visualstudio.com/) to create logic flow chart.
+- [Google-Sheets](https://www.google.com/sheets/about/) to store username and scores. 
+- [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) to debug and test responsiveness.
 
-
-
-</details>
 
 -----
 ## Resources 
 
-- Code Institute course materials, tutor and mentor support.
-- Code Institute Slack Community.
-- Love Sandwiches walk-through on Code Insitute.
+- [Code Institute](https://codeinstitute.net/ie/) for course materials, tutor and mentor support.
+- [Slack](https://slack.com/intl/en-ie/) in particular the Code Institute Slack Community.
 - [W3schools](https://www.w3schools.com/) 
-- [Brock Byrd](https://brockbyrdd.medium.com/creating-a-multiple-choice-quiz-in-python-terminal-1c46123b86d5) for quiz class layout etc. 
+- [Brock Byrd](https://brockbyrdd.medium.com/creating-a-multiple-choice-quiz-in-python-terminal-1c46123b86d5) for quiz question layout.
+- [Appdividend](https://appdividend.com/2022/01/29/how-to-clear-console-in-python/) to clear the console.
+- [dev.to](https://dev.to/wangonya/when-to-use-python-s-enumerate-instead-of-range-in-loops-3e03) - to enumerate over a list.
+- [W3schools](https://www.w3schools.com/python/ref_string_center.asp) to center text in the terminal. 
+- [Stack OverFlow](https://stackoverflow.com/questions/47984091/print-dictionary-value-into-string-with-python3-6) to iterate through a dictionary. 
+- [thispointer.com](https://thispointer.com/convert-dictionary-values-to-a-list-in-python/) to covert specific values of dictionary list. 
+- [Stack OverFlow](https://stackoverflow.com/questions/50938274/sort-a-spread-sheet-via-gspread) to sort rows in google sheets. 
+
+## Python Libraries
+
+- [Tabulate](https://pypi.org/project/tabulate/) to print leaderboard tables.
+- [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) for ascii art.
+- [Colorama](https://pypi.org/project/colorama/) to add color. 
    
 
 -----
