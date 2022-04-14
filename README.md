@@ -98,6 +98,11 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
 - No Choices Left
   - Once all games have been completed the user will be directed to the a screen telling them that they have no choices left to play.  The user is asked if they want to see the leaderboard or to quit the game.   
 
+- Leaderboard
+  - If the user chooses to view the leaderboard a banner with the word "Leaders" will appear and a table beneath it showing the top three highest scores.  Users names are displayed along with scores for each country. 
+
+- 
+
 
 
 
