@@ -260,6 +260,126 @@ The website was sent to a group of approximately 15 people.  Users found the gam
 
 ### Manual Testing
 
+I carried out a manual test to ensure that game flow was correct, everything was working as it should and validation caught any errors. 
+
+- Tests carried out: 
+  - Start-up Display - Verify that: 
+    - The logo displays.
+    - The welcome message displays with information on the game.
+    - The user is prompted for ther name.
+    - The user can enter their name.
+    - The user gets a warning message if the name is longer than 10 characters. 
+    - The user gets a warning message if the name is just numbers. 
+    - The user gets a warning message if the name is blank. 
+  
+  - Display Rules or Play - Verify that: 
+    - The user is asked if they want to see the rules or play.
+    - The user is prompted to type an "r" to see the rules and "p" to play. 
+    - That warning message appears if anything other than a p or r is entered by the user. 
+    - That the user is asked to enter "r" or "p" again.  
+  
+  - Rules - Verify that:
+    - If the user types "r" the rules are displayed.
+    - The message is clear to the user on how to play. 
+    - The user is asked if they would like to Play or Quit. 
+    - That the user is prompted to type in "p" to play or "q" to quit. 
+    - That a warning message appears if anything other than a p or q is entered.  
+  
+  - Quit Early - Verify that: 
+    - When the user types q to quit as above a message displays saying goodbye to the user and pointing out that if they wish to play they can click the Let's Play Button. 
+    - By clicking the Let's Play Button the website is refreshed and the quiz re-starts. 
+  
+  - Quiz Choices - Verify that: 
+    - If the user types p to play as above in the Rules Section that a list of choices appears to the user. 
+    - That the list displayed contains the correct instructions to the user to proceed. 
+    - That a warning will appear if the player chooses anything other than the six options above. 
+
+  Quiz Questions - Verify that: 
+
+    - That if the user types "eng" English questions will be displayed.
+    - That five questions on English Six Nations Rugby will be displayed one at a time. 
+    - That the user is asked an English Question. 
+    - That the user is shown three mulitple choice answers. 
+    - That if the user answers a question correctly a message will display in green telling them it is correct. 
+    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
+    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+    - That the next question will appear after the user answers a question and that this happens five times. 
+  
+    - That if the user types "ire" Irish questions will be displayed.
+    - That five questions on Irish Six Nations Rugby will be displayed one at a time. 
+    - That the user is asked an Irish Question. 
+    - That the user is shown three mulitple choice answers. 
+    - That if the user answers a question correctly a message will display in green telling them it is correct. 
+    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
+    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+    - That the next question will appear after the user answers a question and that this happens five times. 
+
+    - That if the user types "wal" Welsh questions will be displayed.
+    - That five questions on Welsh Six Nations Rugby will be displayed one at a time. 
+    - That the user is asked an Welsh Question. 
+    - That the user is shown three mulitple choice answers. 
+    - That if the user answers a question correctly a message will display in green telling them it is correct. 
+    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
+    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+    - That the next question will appear after the user answers a question and that this happens five times. 
+
+    - That if the user types "fr" French questions will be displayed.
+    - That five questions on French Six Nations Rugby will be displayed one at a time. 
+    - That the user is asked an French Question. 
+    - That the user is shown three mulitple choice answers. 
+    - That if the user answers a question correctly a message will display in green telling them it is correct. 
+    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
+    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+    - That the next question will appear after the user answers a question and that this happens five times. 
+
+    - That if the user types "it" Italian questions will be displayed.
+    - That five questions on Italian Six Nations Rugby will be displayed one at a time. 
+    - That the user is asked an Italian Question. 
+    - That the user is shown three mulitple choice answers. 
+    - That if the user answers a question correctly a message will display in green telling them it is correct. 
+    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
+    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+    - That the next question will appear after the user answers a question and that this happens five times. 
+
+
+  - Section End - Verify: 
+
+    - That when five questions are answered by the user a message appears telling them how many points they scored for that country. 
+    - That a message displays saying "Updating scores...."
+    - That a question appears asking the user if they want to play or quit the game. 
+    - That the user is prompted to enter a "p" to play or "q" to quit. 
+    - That a warning message appears if they enter anything other than "p" or "q". 
+
+      Quit Midway - Veryify: 
+
+      - That if the user types "q" a message will display asking if the user wants to see the leaderboard before they quit. 
+      - That the user is prompted to type "s" for leaderboard and "q" to quit.
+      - That if the user types "s" the leaderboard is displayed.
+        - That the leaderboard appears showing the top three players. 
+        - That the leaderboard shows the Name of each player and how many points they scored in each section. 
+        - That a message appears under the leaderboard saying goodbye and thanking the user for playing.
+      - That if the user types "q" that a message appears saying goodbye to the user and if they change their mind they can play again by clicking the Let's Play button below the terminal. 
+  
+  - Next Section Play - Verify: 
+
+    - That the the remaining choices left to play are displayed. 
+    - That the user is prompted to select another country. 
+    - That if anything other than a country choice is entered a warning message appears. 
+    - That if the user enters a correct country that country's questions will appear next and that all questions work for each country as outlined above under Quiz Questions. 
+  
+  - Quiz End - Verify: 
+    - That a message appears telling the user they have answered all sections.
+    - That the user is asked if they want to see the leaderboard or quit. 
+    - That the user is prompted to type "s" for leaderboard or "q" to quit. 
+    - That if the user types anything other than "s" or "q" that a warning message will appearing prompting them to put in the correct letter. 
+
+  - Leader Display - Veryify that: 
+    - If the user types "s" above that a leader board will display showing the word "Leaders" in green done with ascii art. 
+    - That the leaderboard appears showing the top three players. 
+    - That the leaderboard shows the Name of each player and how many points they scored in each section. 
+    - That a message appears under the leaderboard saying goodbye and thanking the user for playing.
+
+
 
 ### Browser Testing
 
