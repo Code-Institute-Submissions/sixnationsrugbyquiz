@@ -224,7 +224,7 @@ def get_questions(questions, choice_name, row_no):
     clear()
     score = 0
 
-    for question in random.sample(questions, 2):
+    for question in random.sample(questions, 5):
         while True:
             blank_spacer()
             answer = input(question.question.center(80)).lower()

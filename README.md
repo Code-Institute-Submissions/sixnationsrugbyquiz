@@ -5,9 +5,6 @@ For my **Portfolio 3 Project** on the **Code Institute's Diploma in Software Dev
 
 Link to the deployed app is [here](https://sixnationsrugbyquiz.herokuapp.com/). 
 
-Link to the repository is [here](https://github.com/rockymiss/sixnationsrugbyquiz). 
-
-
 
 ![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1649890785/rugby/mockup_kgpgxf.png)
 
