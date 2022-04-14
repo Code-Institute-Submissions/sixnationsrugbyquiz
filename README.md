@@ -242,6 +242,16 @@ Design was limited for this project as it was primiarily command line based.  I 
 - [Stack OverFlow](https://stackoverflow.com/questions/47984091/print-dictionary-value-into-string-with-python3-6) to iterate through a dictionary. 
 - [thispointer.com](https://thispointer.com/convert-dictionary-values-to-a-list-in-python/) to covert specific values of dictionary list. 
 - [Stack OverFlow](https://stackoverflow.com/questions/50938274/sort-a-spread-sheet-via-gspread) to sort rows in google sheets. 
+- Rugby Questions:
+
+  - [SixNationsrugby.com](https://www.sixnationsrugby.com/competition/guinness-six-nations-2019-quiz-round-three/)
+  - [Wikipedia Six Nations](https://en.wikipedia.org/wiki/Six_Nations_Championship)
+  - [Funtrivia](https://www.funtrivia.com/trivia-quiz/Sports/Italy-at-the-Six-Nations-357331.html)
+  - [Wikipedia - Italy](https://en.wikipedia.org/wiki/Italy_national_rugby_union_team#Six_Nations)
+  - [Rugby World Cup](https://www.rugbyworldcup.com/2021/news/570281)
+  - [Wikipedia - Scotland](https://en.wikipedia.org/wiki/Scotland_national_rugby_union_team#:~:text=Scotland%20competed%20in%20the%20Five%20Nations%20from%20the,change%2C%20Scotland%20have%20yet%20to%20win%20the%20competition.)
+  - [Wikipedia - Wales](https://en.wikipedia.org/wiki/Wales_national_rugby_union_team#Coaches)
+    
 
 ## Python Libraries
 
@@ -436,7 +446,6 @@ I used [a11y](https://https://color.a11y.com/) to test the color contrast on the
 
 
 ### Issues/Bugs Fixed 
-
 
 
 <details open>
