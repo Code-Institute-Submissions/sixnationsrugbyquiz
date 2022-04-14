@@ -195,7 +195,17 @@ Design was limited for this project as it was primiarily command line based.  I 
 -----
 ## Future Implementation 
 
+- User Log-In Function
+  - A user log-in function where the user can register with name and password and come back to the game by login. 
 
+- Bigger Question Bank 
+  - I would like to make a bigger question bank so that when users come back they are not being asked the same questions.  While there are 9 questions in each country and only 5 randomingly asked I think a much bigger bank would make it more interesting.  
+
+- Information Section 
+  - Information the user can access in relation to the Six Nations Rugby Championship such as game times, player stats etc. 
+
+- Profanity Checker
+  - So that users cannot add names with profanity in them. 
 
 
 -----
@@ -204,7 +214,7 @@ Design was limited for this project as it was primiarily command line based.  I 
 
 - HTML5 to provide content and structure to the website.
 - CSS3 provides styles for the website. 
-- Python
+- Python to provide functionality to the website. 
 -  
 - [Cloudinary.com](https://www.cloudinary.com/) to store images for the website.
 -
