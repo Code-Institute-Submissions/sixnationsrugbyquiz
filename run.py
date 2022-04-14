@@ -287,6 +287,7 @@ def updating_mid_way():
         what_next = input("So what would you like to do?\n".center(80))
         if what_next == "s":
             clear()
+            get_total_score()
             update_score_sheet()
             display_score_board()
             print("Goodbye, thanks for playing".center(80))
@@ -311,7 +312,6 @@ def quit_game_leader():
     elif so_long == 's':
         clear()
         update_score_sheet()
-        clear()
         display_score_board()
         print("Thanks for playing, click Let's Play "
               "below if you change your mind".center(80))
@@ -360,7 +360,8 @@ def after_rules():
         choices()
         game_choice()
     elif rules_reply == "q":
-        quit_game_leader()
+        clear()
+        quit_game()
     else:
         print("Not valid, please enter p or q to proceed".center(80))
         after_rules()
