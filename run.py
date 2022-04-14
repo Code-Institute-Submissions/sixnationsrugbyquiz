@@ -15,6 +15,8 @@ from tabulate import tabulate
 
 from colorama import Fore, Style
 
+from pyfiglet import figlet_format
+
 # import numpy as np
 from info import welcome_message
 from info import choices
@@ -136,6 +138,10 @@ def display_score_board():
     score_data.sort((8, 'des'), range='A2:H1000')
     new_data = score_data.get_all_values()
     max_score = new_data[slice(0, 4)]
+    print(Fore.GREEN)
+    print(figlet_format('LEADERS',
+                        font="banner3-D", justify="center"))
+    print(Style.RESET_ALL)
     print(tabulate(max_score, tablefmt="pretty",))
 
 

@@ -5,7 +5,7 @@ from time import sleep
 
 # For ascii art
 from pyfiglet import figlet_format
-from colorama import Fore, Style, Back
+from colorama import Fore, Style
 # Back, Style
 
 
