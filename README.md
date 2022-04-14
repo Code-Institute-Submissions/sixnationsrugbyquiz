@@ -1,17 +1,17 @@
 
 # Six Nations Rugby Quiz
 
-For my **Portfolio 3 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a command line Six Nations Rugby Quiz game.  Just like the tournament itself there are six sections for each of the countries.  The user will be asked 5 random questions in each section relating to a particular country.  The user can select whichever country their want to start with and work their way through each country, when their score will be totalled and they will find out if they made the leaderboard or not!   
+For my **Portfolio 3 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a command line Six Nations Rugby Quiz game.  Just like the tournament itself there are six sections for each of the countries.  The user will be asked 5 random questions in each section relating to a particular country.  The user can select whichever country they want to start with and work their way through each country, when their score will be totalled and they will find out if they made the leaderboard or not!   
 
 Link to the deployed app is [here](https://sixnationsrugbyquiz.herokuapp.com/). 
 
 
-![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1649890785/rugby/mockup_kgpgxf.png)
+![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1649977332/rugby/mockup_rugby_kfrp3f.png)
 
 -----
 
 ## Who is this game for and what does it do?
-This game is for anyone who likes Rugby, particularly the Six Nations Tournament.  
+This game is for anyone who likes Rugby, particularly the Six Nations Tournament.  Its a quiz about Rugby and the Six Nations that battle it out at the start of every year to be crowned Six Nation Champions.   
  
 -----
 
@@ -54,7 +54,7 @@ While I did want to give the game a bit of design it was designed minimally as t
 
 ### Python Logic
 
-I created a flow chart using drawio.  The chart gave me an idea of the flow of the game and how the game would progress, paying particular attention to user input and validation.  While some changes have been made to the quiz since drafting this flow chart it was extrememly beneficial in how the quiz was put together.  
+I created a flow chart using draw.io.  The chart gave me an idea of the flow of the game and how the game would progress, paying particular attention to user input and validation.  While some changes have been made to the quiz since drafting this flow chart it was extrememly beneficial in how the quiz was put together.  
 
 <p align="center"><img src="rugbyquizflow.png"></p>
 
@@ -77,7 +77,7 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
 <br>
 
 - Rules
-  - If the user selects to view the rules the rules are shown setting out the game.  The user will be told that there are six sections, one for each country that take part in the Six Nations Rugby Championship.  Users are told the questions are multiple choice and can be answered by typing in a, b, c.    The user will then be asked to play or quit. 
+  - If the user selects to view the rules the rules are shown setting out the game.  The user will be told that there are six sections, one for each country that take part in the Six Nations Rugby Championship.  Users are told the questions are multiple choice and can be answered by typing in "a", "b" or "c".    The user will then be asked to play or quit. 
 
 <details open>
 <summary>Rules Display</summary> 
@@ -119,20 +119,20 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
 - Section Results
   - Once all questions have been answered in the Quiz Questions section a results page will open up telling the user how many points they scored in that section.  The user can then decided to continue playing or to quit the game. 
 
-<details open>
-<summary>Section Results Display</summary> 
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948166/rugby/section-score_dc2o1l.png"></p>
-</details>
-<br>
+  <details open>
+  <summary>Section Results Display</summary> 
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948166/rugby/section-score_dc2o1l.png"></p>
+  </details>
+  <br>
 
 - Remaining Choices 
-  - If the user decides to continue playing after Section results then they will be given a list of remaining countries to choose from.  Once they choose another country they will be re-directed by to the Quiz Questions, then Section results and back to remaining Choices until all games have been completed.
+  - If the user decides to continue playing after Section results then they will be given a list of remaining countries to choose from.  Once they choose another country they will be re-directed to the Quiz Questions, then Section results and back to Remaining Choices until all games have been completed.
 
-<details open>
-<summary>Remaining Choices Display</summary> 
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948166/rugby/remaining-choices_nzaupe.png"></p>
-</details>
-<br>  
+  <details open>
+  <summary>Remaining Choices Display</summary> 
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948166/rugby/remaining-choices_nzaupe.png"></p>
+  </details>
+  <br>  
 
 - No Choices Left
   - Once all games have been completed the user will be directed to the a screen telling them that they have no choices left to play.  The user is asked if they want to see the leaderboard or to quit the game.
@@ -156,6 +156,7 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
   - There are two quit screens:
     - Quit Screen before Play
       This is a simple screen that appears after the Rules display if the user decides not to play.  It will display a message to the user saying goodbye and redirecting them to the 'Let's Play' button below the terminal. 
+
 
     <details open>
     <summary>Quit Screen Before Play Display</summary> 
@@ -199,7 +200,7 @@ Design was limited for this project as it was primiarily command line based.  I 
   - A user log-in function where the user can register with name and password and come back to the game by login. 
 
 - Bigger Question Bank 
-  - I would like to make a bigger question bank so that when users come back they are not being asked the same questions.  While there are 9 questions in each country and only 5 randomingly asked I think a much bigger bank would make it more interesting.  
+  - I would like to make a bigger question bank so that when users come back they are not being asked the same questions.  While there are 9 questions in each country and only 5 randomingly asked I think a much bigger bank would make it more interesting.  These questions would be updated each year.   
 
 - Information Section 
   - Information the user can access in relation to the Six Nations Rugby Championship such as game times, player stats etc. 
@@ -240,7 +241,7 @@ Design was limited for this project as it was primiarily command line based.  I 
 - [dev.to](https://dev.to/wangonya/when-to-use-python-s-enumerate-instead-of-range-in-loops-3e03) - to enumerate over a list.
 - [W3schools](https://www.w3schools.com/python/ref_string_center.asp) to center text in the terminal. 
 - [Stack OverFlow](https://stackoverflow.com/questions/47984091/print-dictionary-value-into-string-with-python3-6) to iterate through a dictionary. 
-- [thispointer.com](https://thispointer.com/convert-dictionary-values-to-a-list-in-python/) to covert specific values of dictionary list. 
+- [thispointer.com](https://thispointer.com/convert-dictionary-values-to-a-list-in-python/) to convert specific values of a dictionary list. 
 - [Stack OverFlow](https://stackoverflow.com/questions/50938274/sort-a-spread-sheet-via-gspread) to sort rows in google sheets. 
 - [Pexels](https://www.pexels.com/) for background stadium image. 
 
@@ -260,25 +261,25 @@ Design was limited for this project as it was primiarily command line based.  I 
 - [Tabulate](https://pypi.org/project/tabulate/) to print leaderboard tables.
 - [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) for ascii art.
 - [Colorama](https://pypi.org/project/colorama/) to add color. 
-   
+
 
 -----
 ## Testing
 
 ### User Testing
 
-The website was sent to a group of approximately 15 people.  Users found the game easy to work through.  This testing for the most part produced spelling errors.  Some more substantial bugs were noticed which are discussed below. 
+The website was sent to a group of approximately 15 people.  Users found the game easy to work through.  This testing for the most part produced spelling errors and complaints that some of the questions were too hard! 
 
 
 ### Manual Testing
 
-I carried out a manual test to ensure that game flow was correct, everything was working as it should and validation caught any errors. 
+I carried out manual testing to ensure that game flow was correct, everything was working as it should and validation caught any errors. 
 
 - Tests carried out: 
   - Start-up Display - Verify that: 
     - The logo displays.
     - The welcome message displays with information on the game.
-    - The user is prompted for ther name.
+    - The user is prompted for their name.
     - The user can enter their name.
     - The user gets a warning message if the name is longer than 10 characters. 
     - The user gets a warning message if the name is just numbers. 
@@ -287,7 +288,7 @@ I carried out a manual test to ensure that game flow was correct, everything was
   - Display Rules or Play - Verify that: 
     - The user is asked if they want to see the rules or play.
     - The user is prompted to type an "r" to see the rules and "p" to play. 
-    - That warning message appears if anything other than a p or r is entered by the user. 
+    - That warning message appears if anything other than a "p" or "r" is entered by the user. 
     - That the user is asked to enter "r" or "p" again.  
   
   - Rules - Verify that:
@@ -298,7 +299,7 @@ I carried out a manual test to ensure that game flow was correct, everything was
     - That a warning message appears if anything other than a p or q is entered.  
   
   - Quit Early - Verify that: 
-    - When the user types q to quit as above a message displays saying goodbye to the user and pointing out that if they wish to play they can click the Let's Play Button. 
+    - When the user types "q" to quit as above a message displays saying goodbye to the user and pointing out that if they wish to play they can click the Let's Play Button. 
     - By clicking the Let's Play Button the website is refreshed and the quiz re-starts. 
   
   - Quiz Choices - Verify that: 
@@ -306,52 +307,61 @@ I carried out a manual test to ensure that game flow was correct, everything was
     - That the list displayed contains the correct instructions to the user to proceed. 
     - That a warning will appear if the player chooses anything other than the six options above. 
 
-  Quiz Questions - Verify that: 
+    Quiz Questions - Verify: 
 
-    - That if the user types "eng" English questions will be displayed.
-    - That five questions on English Six Nations Rugby will be displayed one at a time. 
-    - That the user is asked an English Question. 
-    - That the user is shown three mulitple choice answers. 
-    - That if the user answers a question correctly a message will display in green telling them it is correct. 
-    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
-    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
-    - That the next question will appear after the user answers a question and that this happens five times. 
-  
-    - That if the user types "ire" Irish questions will be displayed.
-    - That five questions on Irish Six Nations Rugby will be displayed one at a time. 
-    - That the user is asked an Irish Question. 
-    - That the user is shown three mulitple choice answers. 
-    - That if the user answers a question correctly a message will display in green telling them it is correct. 
-    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
-    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
-    - That the next question will appear after the user answers a question and that this happens five times. 
+      **England**
+      - That if the user types "eng" English questions will be displayed.
+      - That five questions on English Six Nations Rugby will be displayed one at a time. 
+      - That the user is asked an English Question. 
+      - That the user is shown three mulitple choice answers. 
+      - That if the user answers a question correctly a message will display in green telling them it is correct. 
+      - That if the user answers a question incorrectly a message will display in red telling them that it is incorrect. 
+      - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+      - That the next question will appear after the user answers a question and that this happens five times. 
 
-    - That if the user types "wal" Welsh questions will be displayed.
-    - That five questions on Welsh Six Nations Rugby will be displayed one at a time. 
-    - That the user is asked an Welsh Question. 
-    - That the user is shown three mulitple choice answers. 
-    - That if the user answers a question correctly a message will display in green telling them it is correct. 
-    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
-    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
-    - That the next question will appear after the user answers a question and that this happens five times. 
 
-    - That if the user types "fr" French questions will be displayed.
-    - That five questions on French Six Nations Rugby will be displayed one at a time. 
-    - That the user is asked an French Question. 
-    - That the user is shown three mulitple choice answers. 
-    - That if the user answers a question correctly a message will display in green telling them it is correct. 
-    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
-    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
-    - That the next question will appear after the user answers a question and that this happens five times. 
+      **Ireland**
+      - That if the user types "ire" Irish questions will be displayed.
+      - That five questions on Irish Six Nations Rugby will be displayed one at a time. 
+      - That the user is asked an Irish Question. 
+      - That the user is shown three mulitple choice answers. 
+      - That if the user answers a question correctly a message will display in green telling them it is correct. 
+      - That if the user answers a question incorrectly a message will display in red telling them that it is incorrect. 
+      - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+      - That the next question will appear after the user answers a question and that this happens five times. 
 
-    - That if the user types "it" Italian questions will be displayed.
-    - That five questions on Italian Six Nations Rugby will be displayed one at a time. 
-    - That the user is asked an Italian Question. 
-    - That the user is shown three mulitple choice answers. 
-    - That if the user answers a question correctly a message will display in green telling them it is correct. 
-    - That if the user answers a question correctly a message will display in red telling that it is incorrect. 
-    - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
-    - That the next question will appear after the user answers a question and that this happens five times. 
+
+      **Wales**
+      - That if the user types "wal" Welsh questions will be displayed.
+      - That five questions on Welsh Six Nations Rugby will be displayed one at a time. 
+      - That the user is asked an Welsh Question. 
+      - That the user is shown three mulitple choice answers. 
+      - That if the user answers a question correctly a message will display in green telling them it is correct. 
+      - That if the user answers a question incorrectly a message will display in red telling them that it is incorrect. 
+      - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+      - That the next question will appear after the user answers a question and that this happens five times. 
+
+
+      **France**
+      - That if the user types "fr" French questions will be displayed.
+      - That five questions on French Six Nations Rugby will be displayed one at a time. 
+      - That the user is asked an French Question. 
+      - That the user is shown three mulitple choice answers. 
+      - That if the user answers a question correctly a message will display in green telling them it is correct. 
+      - That if the user answers a question incorrectly a message will display in red telling them that it is incorrect.  
+      - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+      - That the next question will appear after the user answers a question and that this happens five times. 
+
+
+      **Italy**
+      - That if the user types "it" Italian questions will be displayed.
+      - That five questions on Italian Six Nations Rugby will be displayed one at a time. 
+      - That the user is asked an Italian Question. 
+      - That the user is shown three mulitple choice answers. 
+      - That if the user answers a question correctly a message will display in green telling them it is correct. 
+      - That if the user answers a question incorrectly a message will display in red telling them that it is incorrect. 
+      - That a warning will appear if the user enters anything other than a, b, or c to answer a question.  
+      - That the next question will appear after the user answers a question and that this happens five times. 
 
 
   - Section End - Verify: 
@@ -451,7 +461,7 @@ I used [a11y](https://https://color.a11y.com/) to test the color contrast on the
 
 **Space or no input from user**
 
-Initially I had thought that I validated for all user input until I entered nothing into the username and hit enter.  This allowed the user to have no name which would cause errors in relation to the leaderboard.   If fixed this by using strip() with a combination of checking for length on the input. 
+Initially I had thought that I validated for all user input until I entered nothing into the username and hit enter.  This allowed the user to have no name which would cause errors in relation to the leaderboard.   I fixed this by using strip() with a combination of checking for length on the input. 
 
 
 <details open>
@@ -517,98 +527,94 @@ The website was deployed to heroku by doing the following:
 
 2. Click "new" and create a new App. 
 
-<details open>
-<summary>New App</summary>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/new-app-heroku_vteenf.png"></p>
-</details>
-<br>
+  <details open>
+  <summary>New App</summary>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/new-app-heroku_vteenf.png"></p>
+  </details>
+  <br>
 
 3. Give your app a name, choose your region and Click "Create app". 
 
-<details open>
-<summary>Name and Create</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/name-app-heroku_ein4ms.png"></p>
+  <details open>
+  <summary>Name and Create</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/name-app-heroku_ein4ms.png"></p>
 
-</details>
+  </details>
 
 4. The menus that we are concerned with are "Deploy" and "Settings".  Click on "Settings" First. 
 
-<details open>
-<summary>Settings</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/deploy-settings-heroku_zjvoxb.png"></p>
+  <details open>
+  <summary>Settings</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/deploy-settings-heroku_zjvoxb.png"></p>
 
-</details>
+  </details>
 
-5. Convig vars in where you will store sensitive data that needs to be kept secret.  Heroku will build the app using the code in the github repository.  This is very important for files such as the creds.json file.  If we want the heroku application to access the spreadsheet it needs to have the contents of the creds.json file.  Copy the contents of the creds.json file. 
+5. Copy the contents of the creds.json file.  Insert "CREDS" into the key field and the entire contents of the file into the value field.  The template code provided will use this information to create the file called creds.json and write this data into it as the application is built. 
 
-Insert "CREDS" into the key field and the entire contents of the file into the value field. 
-
-The template code provided will use this information to create the file called creds.json and write this data into it as the application is built. 
-
-<details open>
-<summary>Convig vars</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/creds-heroku_goggpk.png"></p>
-</details>
+  <details open>
+  <summary>Convig vars</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/creds-heroku_goggpk.png"></p>
+  </details>
 
 6. Buildpacks now need to be added.  These install future dependancies that we need outside of the requirements file.   The first is python and the second is node.js.  Select Python first and then node.js and click save.  Make sure they are in this order.
 
-<details open>
-<summary>Buildpacks</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/buildpacks-heroku_k4r9nm.png"></p>
-</details>
+  <details open>
+  <summary>Buildpacks</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/buildpacks-heroku_k4r9nm.png"></p>
+  </details>
 
 7. Then go to the deploy section and choose your deployment method.  To connect with github select github and confirm. 
 
-<details open>
-<summary>Connect to github</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/github-heroku_jcxvgc.png"></p>
-</details>
+  <details open>
+  <summary>Connect to github</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/github-heroku_jcxvgc.png"></p>
+  </details>
 
 8. Search for your repo, select it and click connect. 
 
-<details open>
-<summary>Repo Search</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/search-repo-heroku_nyvzsi.png"></p>
+  <details open>
+  <summary>Repo Search</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/search-repo-heroku_nyvzsi.png"></p>
 
-</details>
+  </details>
 
 9. You can choose to either deploy using automatic deploys which means heroku will rebuild the app everytime you push your changes.  For this option choose the branch to deploy and click enable automatic deploys.  This can be changed at a later date to manual.  Manual deployment deploys the current state of a branch.  
 
-<details open>
-<summary>Manual Deployment</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/deployment-heroku_jqzzx7.png"></p>
+  <details open>
+  <summary>Manual Deployment</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/deployment-heroku_jqzzx7.png"></p>
 
-</details>
+  </details>
 
-<details open>
-<summary>Automatic Deployment</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/auto-deploy-heroku_uwaljv.png"></p>
+  <details open>
+  <summary>Automatic Deployment</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/auto-deploy-heroku_uwaljv.png"></p>
 
-</details>
+  </details>
 
 
 10. Click deploy branch. 
 
 11. If successful you should be able to view your deployed app by clicking "View". 
 
-<details open>
-<summary>View Deployment</summary>
-<br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/choose-branch-hereoku_zuzwf6.png"></p>
+  <details open>
+  <summary>View Deployment</summary>
+  <br>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/choose-branch-hereoku_zuzwf6.png"></p>
 
-</details>
+  </details>
         
     
 
-  #### Fork: 
+  ### Fork a Repository: 
         
     A copy can be made of a repository by forking the repository.  The copy can then be viewed and changed without affecting the original repository. 
     
@@ -624,7 +630,7 @@ The template code provided will use this information to create the file called c
 </details>
 
 
-  #### Clone: 
+  ### Clone a Repository: 
         
     Cloning this project from GitHub can be done by following these steps: 
     
@@ -634,7 +640,7 @@ The template code provided will use this information to create the file called c
       - Open Git Bash in your IDE. 
       - Change the current working directory to the location you want to place the clone. 
       - Type git clone and paste the copied URL.  
-      - Press enter for the clone to be created. .
+      - Press enter for the clone to be created. 
 
   <details open>
 <summary>Clone Preview Image</summary>
@@ -651,6 +657,6 @@ Initially I looked at Portfolio 3 Projects on the Code Institute Slack Community
 -----
 ## Acknowledegments/Conclusion
 
-I couldn't complete this without the massive support I get from my Code Institute cohort in particular [Kasia](https://github.com/bezebee), our cohort facilitator and a special mention to [Rhi](https://github.com/rhiannonmcn) for being a great sounding board a few times throughout this project.  Sometimes it's great to just say things out loud to others and bounce ideas off eachother!  Thanks to my mentor Spencer for being a great support and a really nice guy!  Last but not least my husband for helping with the rugby questions, bringing me tea and generally holding the fort while I work.     
+I couldn't complete this without the massive support I get from my Code Institute cohort in particular [Kasia](https://github.com/bezebee), our cohort facilitator and a special mention to [Rhi](https://github.com/rhiannonmcn) for being a great sounding board a few times throughout this project.  Sometimes it's great to just say things out loud to others and bounce ideas off eachother!  Thanks to my mentor Spencer for being a great support and a really nice guy!  Last but not least my husband for helping with the rugby questions, bringing me tea and generally holding the fort while I work on projects.     
 
 Rachel Rock April 2022
