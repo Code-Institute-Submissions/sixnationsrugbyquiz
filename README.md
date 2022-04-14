@@ -68,6 +68,40 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
 
 ### Scope  
 
+#### Existing Features
+
+- Startup Display
+  - The first display the user will see is the startup screen showing the logo done with ASCII art with the words "Rugby Quiz".  
+  - A welcome message tells the user a small bit about the game.
+  - The user is prompted to enter in their name. 
+  - The user will then be asked to read the rules of play the game. 
+
+- Rules
+  - If the user selects to view the rules the rules are shown setting out the game.  The user will be told that there are six sections, one for each country that take part in the Six Nations Rugby Championship.  Users are told the questions are multiple choice and can be answered by typing in a, b, c.    The user will then be asked to play or quit. 
+
+- Choices Menu
+  - If the user chooses to play a list of choices will show for each country.  The user can select one of the six countries by typing in "eng" for England, "ire" for Ireland, "sc" for Scotland, "wal" for Wales, "fr" for France and "sc" for Scotland.  The user can select whichever country they wish to start on. 
+
+- Quiz Questions
+  - Once the user makes a choice of which country they will be asked 5 questions in relation to that country.  The questions are displayed with the available answers underneath.  The user is prompted to pick and answer by typing a, b, or c.  
+    - Correct Answer 
+      - If the user answers correctly it will be displayed in green. 
+    - Incorrect Answer
+      - If the user answers incorrectly it will be displayed in red. 
+
+- Section Results
+  - Once all questions have been answered in the Quiz Questions section a results page will open up telling the user how many points they scored in that section.  The user can then decided to continue playing or to quit the game. 
+
+- Remaining Choices 
+  - If the user decides to continue playing after Section results then they will be given a list of remaining countries to choose from.  Once they choose another country they will be re-directed by to the Quiz Questions, then Section results and back to remaining Choices until all games have been completed.  
+
+- No Choices Left
+  - Once all games have been completed the user will be directed to the a screen telling them that they have no choices left to play.  The user is asked if they want to see the leaderboard or to quit the game.   
+
+
+
+
+
 
 
 ### Structure Plane
