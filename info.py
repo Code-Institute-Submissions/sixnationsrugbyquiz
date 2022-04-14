@@ -5,7 +5,7 @@ from time import sleep
 
 # For ascii art
 from pyfiglet import figlet_format
-from colorama import Fore, Style
+from colorama import Fore, Style, Back
 # Back, Style
 
 
@@ -16,10 +16,12 @@ def welcome_message():
     """
     Displays welcome message to user
     """
-    print(Fore.YELLOW)
-    print(figlet_format('Six Nations',
-          font="slant", justify="center"))
-    print(figlet_format('Rugby Quiz', font="slant", justify="center"))
+    print(Fore.GREEN)
+    print(Back.BLACK)
+    # print(figlet_format('SIX NATIONS',
+    #       font="banner3-D", justify="center"))
+    print()
+    print(figlet_format('RUGBY QUIZ', font="banner3-D", justify="center"))
     print(Style.RESET_ALL)
     print('Hello and welcome to the Six Nations Rugby Quiz\n'.center(80))
     sleep(2)

@@ -66,8 +66,7 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
 
 
 
-### Scope / Features 
-
+### Scope  
 
 
 
