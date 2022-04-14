@@ -6,7 +6,6 @@ from time import sleep
 # For ascii art
 from pyfiglet import figlet_format
 from colorama import Fore, Style
-# Back, Style
 
 
 # Functions below to display messages
@@ -17,8 +16,6 @@ def welcome_message():
     Displays welcome message to user
     """
     print(Fore.GREEN)
-    # print(figlet_format('SIX NATIONS',
-    #       font="banner3-D", justify="center"))
     print()
     print(figlet_format('RUGBY QUIZ', font="banner3-D", justify="center"))
     print(Style.RESET_ALL)
@@ -33,7 +30,7 @@ def welcome_message():
 
 def choices():
     """
-    Displays choices for user
+    Displays choices of game for user
     """
     clear()
     blank_spacer()
