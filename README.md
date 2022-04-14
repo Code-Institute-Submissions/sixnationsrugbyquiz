@@ -76,42 +76,103 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
   - The user is prompted to enter in their name. 
   - The user will then be asked to read the rules of play the game. 
 
+
+<details open>
+<summary>Startup Display</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948165/rugby/display-startup_fj1xa3.png"></p>
+
+</details>
+<br>
+
 - Rules
   - If the user selects to view the rules the rules are shown setting out the game.  The user will be told that there are six sections, one for each country that take part in the Six Nations Rugby Championship.  Users are told the questions are multiple choice and can be answered by typing in a, b, c.    The user will then be asked to play or quit. 
 
+<details open>
+<summary>Rules Display</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948166/rugby/rules_lmbqc6.png"></p>
+
+</details>
+<br>
+
 - Choices Menu
   - If the user chooses to play a list of choices will show for each country.  The user can select one of the six countries by typing in "eng" for England, "ire" for Ireland, "sc" for Scotland, "wal" for Wales, "fr" for France and "sc" for Scotland.  The user can select whichever country they wish to start on. 
+
+<details open>
+<summary>Choices</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948165/rugby/choices_xdvvee.png"></p>
+
+</details>
+<br>
 
 - Quiz Questions
   - Once the user makes a choice of which country they will be asked 5 questions in relation to that country.  The questions are displayed with the available answers underneath.  The user is prompted to pick and answer by typing a, b, or c.  
     - Correct Answer 
       - If the user answers correctly it will be displayed in green. 
+      <details open>
+      <summary>Correct Question Display</summary> 
+      <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948165/rugby/question-correct_x8erig.png"></p>
+
+      </details>
+      <br>
     - Incorrect Answer
       - If the user answers incorrectly it will be displayed in red. 
+
+      <details open>
+      <summary>Incorrect Question Display</summary> 
+      <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948165/rugby/incorrect-question_wtam6b.png"></p>
+
+      </details>
+      <br>
 
 - Section Results
   - Once all questions have been answered in the Quiz Questions section a results page will open up telling the user how many points they scored in that section.  The user can then decided to continue playing or to quit the game. 
 
+<details open>
+<summary>Section Results Display</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948166/rugby/section-score_dc2o1l.png"></p>
+</details>
+<br>
+
 - Remaining Choices 
-  - If the user decides to continue playing after Section results then they will be given a list of remaining countries to choose from.  Once they choose another country they will be re-directed by to the Quiz Questions, then Section results and back to remaining Choices until all games have been completed.  
+  - If the user decides to continue playing after Section results then they will be given a list of remaining countries to choose from.  Once they choose another country they will be re-directed by to the Quiz Questions, then Section results and back to remaining Choices until all games have been completed.
+
+<details open>
+<summary>Remaining Choices Display</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948166/rugby/remaining-choices_nzaupe.png"></p>
+</details>
+<br>  
 
 - No Choices Left
-  - Once all games have been completed the user will be directed to the a screen telling them that they have no choices left to play.  The user is asked if they want to see the leaderboard or to quit the game.   
+  - Once all games have been completed the user will be directed to the a screen telling them that they have no choices left to play.  The user is asked if they want to see the leaderboard or to quit the game.
+
+<details open>
+<summary>No Choices Left Display</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948165/rugby/no-choice-remaining_ximkoq.png"></p>
+</details>
+<br>     
 
 - Leaderboard
   - If the user chooses to view the leaderboard a banner with the word "Leaders" will appear and a table beneath it showing the top three highest scores.  Users names are displayed along with scores for each country. The user is thanked for playing and directed to click the button below the terminal if they want to play again. 
+
+<details open>
+<summary>Leaderboard Display</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948165/rugby/leaderboard_walxda.png"></p>
+</details>
+<br>  
 
 - Quit Screen 
   - There are two quit screens:
     - Quit Screen before Play
       This is a simple screen that appears after the Rules display if the user decides not to play.  It will display a message to the user saying goodbye and redirecting them to the 'Let's Play' button below the terminal. 
+
+    <details open>
+    <summary>Quit Screen Before Play Display</summary> 
+    <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649948165/rugby/quit_screen_kqkv1r.png"></p>
+    </details>
+    <br>
+
     - Quit Screen Mid-Quiz
       This screen is displayed if the user wants to quit half way through the game.  The user is asked if they would like to see the leaderboard before they go or just quit.  Leaderboard will bring them to the Leaderboard section and quit will bring them to the quit screen mentioned above. 
-
-
-
-
-
 
 
 ### Structure Plane
