@@ -48,7 +48,7 @@ eng_questions = [
     \t(b) Brian Moore\n \
     \t(c) Rob Andrew\n",
 
-    "\tWho scored the most Six-Nations tries for England?\n \
+    "\tWho scored the most Six-Nation tries for England?\n \
     \t(a) Tony Underwood\n \
     \t(b) Jason Leonard\n \
     \t(c) Rory Underwood\n",
@@ -59,7 +59,7 @@ eng_questions = [
     \t(b) Johnny Wilkinson\n \
     \t(c) Owen Farrell\n",
 
-    "What stadium do England play their home games?\n \
+    "What stadium do England play their home games in?\n \
     \t(a) Wembly\n \
     \t(b) Millenium Statidum\n \
     \t(c) Twickenham\n",
@@ -71,7 +71,7 @@ eng_question_list = [
     Question(eng_questions[1], "c"),
     Question(eng_questions[2], "a"),
     Question(eng_questions[3], "c"),
-    Question(eng_questions[4], "c"),
+    Question(eng_questions[4], "a"),
     Question(eng_questions[5], "a"),
     Question(eng_questions[6], "c"),
     Question(eng_questions[7], "b"),
@@ -82,8 +82,7 @@ eng_question_list = [
 
 ire_questions = [
     "\tWho scored the only try for Ireland when they beat "
-    "\n\tEngland in "
-    "Twickenham in 2004\n \
+    "\n\tEngland in Twickenham in 2004\n \
     \t(a) Girvan Dempsey\n \
     \t(b) Brian O'Driscoll\n \
     \t(c) Ronan O'Gara\n",
@@ -94,7 +93,7 @@ ire_questions = [
     \t(b) Paul O'Connell\n \
     \t(c) Tommy Bowe\n",
 
-    "\tAs of 2021 what irish player holds the record for "
+    "\tAs of 2022 what Irish player holds the record for "
     "\n\tthe most points scored in the Six Nations Championship?\n \
     \t(a) David Humphreys\n \
     \t(b) Johnny Sexton\n \
@@ -130,7 +129,7 @@ ire_questions = [
     \t(b) Brian O'Driscoll\n \
     \t(c) John Hayes\n",
 
-    "\tWhoe has the most ball carries in a single Six "
+    "\tWho has the most ball carries in a single Six "
     "\n\tNations encounter\n \
     \t(a) Denis Leamy\n \
     \t(b) Peter O'Mahoney\n \
@@ -140,7 +139,7 @@ ire_questions = [
 
 ire_question_list = [
     Question(ire_questions[0], "a"),
-    Question(ire_questions[1], "a"),
+    Question(ire_questions[1], "c"),
     Question(ire_questions[2], "c"),
     Question(ire_questions[3], "c"),
     Question(ire_questions[4], "a"),
@@ -193,7 +192,7 @@ wales_questions = [
     "\tWales hold the record for the longest time without "
     "\n\tconceding a try.  How many minutes?\n \
     \t(a) 220\n \
-    \t(b) 150\n \
+    \t(b) 310\n \
     \t(c) 358\n",
 
     "\tWho was the head coach for Wales when they won "
@@ -236,7 +235,7 @@ scot_questions = [
     \t(c) Chris Paterson\n",
 
     "\tWho is Scotland's most capped player in the Six-Nations?\n \
-    \t(a) Jonny  Gray\n \
+    \t(a) Jonny Gray\n \
     \t(b) Greig Lidlaw\n \
     \t(c) Ross Ford\n",
 
@@ -367,14 +366,14 @@ france_questions = [
 
     "\tWho is France's most capped player in the "
     "\n\tSix-Nations?\n \
-    \t(a) Serg Betsen\n \
+    \t(a) Serge Betsen\n \
     \t(b) Fabien Galthie\n \
     \t(c) Fabien Pelous\n",
 
     "\tWho is France's top try-scorer in the Six-Nations\n \
-    \t(a) Serg Blanco\n \
+    \t(a) Serge Blanco\n \
     \t(b) Vincent Clerc\n \
-    \t(c) Tomas Castaignede\n",
+    \t(c) Thomas Castaignede\n",
 
     "\tHow many times have France won a Six-Nations "
     "\n\tGrand Slam?\n \
