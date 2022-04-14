@@ -292,15 +292,13 @@ The three python files were tested using [Pep8 Validation](http://pep8online.com
 <br>
 
 
-
-
-
-
-
 ###  Result: Chrome Lighthouse 
 
+I used Chrome Lighthouse to test Performance on the website. 
 
-
+<details open>
+<summary>Lighthouse Validation</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649960816/rugby/lighthouse_ajquwx.png"></p>
 
 </details>
 <br>
@@ -309,23 +307,13 @@ The three python files were tested using [Pep8 Validation](http://pep8online.com
 ### Color Contrast Testing 
 
 I used [a11y](https://https://color.a11y.com/) to test the color contrast on the website which produced no issues. 
+
 <details open>
 <summary>Color Contrast </summary> 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649960794/rugby/a11y-contrast_cbqqgb.png"></p>
 
 </details>
 <br>
-
-### Accessibility 
-
-
-<details open>
-<summary>accessibilty</summary> 
-<p align="center"><img src=""></p>
-
-</details>
-<br>
-
 
 ### Issues/Bugs Fixed 
 
