@@ -3,12 +3,11 @@ Questions for Quiz.
 
 """
 
-# import numpy as np
-
 
 class Question:
     """
-    The Class Question gets the questions and answers
+    The Class Question holds the questions and answers
+    for each country
     """
     def __init__(self, question, answer):
         self.question = question
