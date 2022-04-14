@@ -331,8 +331,10 @@ def quit_game():
     """
     Function to just quit game
     """
-    print("Goodbye, sorry to see you go.  If you change your mind\n"
-          "and want to play again, click Let's Play below".center(80))
+    blank_spacer()
+    print("Goodbye, sorry to see you go.".center)
+    print("If you change your mind and want to play again".center(80))
+    print("Click Let's Play below".center(80))
     print()
     print()
 
