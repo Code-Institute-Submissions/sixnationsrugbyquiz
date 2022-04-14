@@ -293,7 +293,7 @@ def updating_mid_way():
         elif what_next == "q":
             quit()
         else:
-            print("Invalid choice, try again")
+            print("Invalid choice, try again".center(80))
             updating_mid_way()
 
 
