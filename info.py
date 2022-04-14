@@ -17,7 +17,6 @@ def welcome_message():
     Displays welcome message to user
     """
     print(Fore.GREEN)
-    print(Back.BLACK)
     # print(figlet_format('SIX NATIONS',
     #       font="banner3-D", justify="center"))
     print()
