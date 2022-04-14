@@ -253,13 +253,9 @@ Design was limited for this project as it was primiarily command line based.  I 
 -----
 ## Testing
 
-
-### Local Testing
-
-
 ### User Testing
 
-The website was sent to a group of approximately 15 people of all different ages.  My children 6 and 8 also tested the game and could manage functionality well and really enjoyed it.  Other users found the game easy to work through but found it hard to win in under 8 flips.  I didn't change the flip lives because of this as all users kept going back to the game to try to win!  Some in competition with others.  I liked this as they kept coming back to it.  Devices used to test were as follows: 
+The website was sent to a group of approximately 15 people.  Users found the game easy to work through.  This testing for the most part produced spelling errors.  Some more substantial bugs were noticed which are discussed below. 
 
 
 ### Manual Testing
@@ -267,12 +263,21 @@ The website was sent to a group of approximately 15 people of all different ages
 
 ### Browser Testing
 
-The Website has been tested on Google Chrome, Microsoft Edge, Safari and Opera.   On all browsers testing was as expected.  Functionality and responsiveness are good. 
+The Website has been tested on Google Chrome, Microsoft Edge, Safari and Opera.   On all browsers testing was as expected.  
 
 
 ### Validators 
 
-The website was tested using Jigsaw pep8 validation. 
+The three python files were tested using [Pep8 Validation](http://pep8online.com/checkresult). 
+
+<details open>
+<summary>run.py file</summary> 
+<p align="center"><img src=""></p>
+
+</details>
+<br>
+
+
 
 
 
