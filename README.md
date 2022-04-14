@@ -380,7 +380,6 @@ I carried out a manual test to ensure that game flow was correct, everything was
     - That a message appears under the leaderboard saying goodbye and thanking the user for playing.
 
 
-
 ### Browser Testing
 
 The Website has been tested on Google Chrome, Microsoft Edge, Safari and Opera.   On all browsers testing was as expected.  
