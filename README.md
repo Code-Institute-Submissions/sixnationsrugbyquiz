@@ -52,9 +52,6 @@ While I did want to give the game a bit of design it was designed minimally as t
 
 
 
-<p align="center"><img src="rugbyquizflow.png"></p>
-
-
 ### Python Logic
 
 I created a flow chart using drawio.  The chart gave me an idea of the flow of the game and how the game would progress, paying particular attention to user input and validation.  While some changes have been made to the quiz since drafting this flow chart it was extrememly beneficial in how the quiz was put together.  
@@ -189,10 +186,15 @@ Design was limited for this project as it was primiarily command line based.  I 
 
 #### Colors 
 
+![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1649959187/rugby/palette_tknwbh.png)
 
+- #000 - Terminal Screen background
+- #013220 - Let's Play Button
+- #2F4F4F - Border on Let's Play Button
 
 -----
 ## Future Implementation 
+
 
 
 
