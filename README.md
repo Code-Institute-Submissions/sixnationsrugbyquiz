@@ -511,16 +511,101 @@ Steps followed:
 
 ### Deployment to Heroku
 
+The website was deployed to heroku by doing the following: 
 
-        
-    
+1. Navigate to [heroku](https://id.heroku.com/login). 
+
+2. Click "new" and create a new App. 
 
 <details open>
-<summary>Deployment Preview Image</summary>
+<summary>New App</summary>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/new-app-heroku_vteenf.png"></p>
+</details>
 <br>
-<p align="center"><img src=""></p>
+
+3. Give your app a name, choose your region and Click "Create app". 
+
+<details open>
+<summary>Name and Create</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/name-app-heroku_ein4ms.png"></p>
 
 </details>
+
+4. The menus that we are concerned with are "Deploy" and "Settings".  Click on "Settings" First. 
+
+<details open>
+<summary>Settings</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/deploy-settings-heroku_zjvoxb.png"></p>
+
+</details>
+
+5. Convig vars in where you will store sensitive data that needs to be kept secret.  Heroku will build the app using the code in the github repository.  This is very important for files such as the creds.json file.  If we want the heroku application to access the spreadsheet it needs to have the contents of the creds.json file.  Copy the contents of the creds.json file. 
+
+Insert "CREDS" into the key field and the entire contents of the file into the value field. 
+
+The template code provided will use this information to create the file called creds.json and write this data into it as the application is built. 
+
+<details open>
+<summary>Convig vars</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/creds-heroku_goggpk.png"></p>
+</details>
+
+6. Buildpacks now need to be added.  These install future dependancies that we need outside of the requirements file.   The first is python and the second is node.js.  Select Python first and then node.js and click save.  Make sure they are in this order.
+
+<details open>
+<summary>Buildpacks</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/buildpacks-heroku_k4r9nm.png"></p>
+</details>
+
+7. Then go to the deploy section and choose your deployment method.  To connect with github select github and confirm. 
+
+<details open>
+<summary>Connect to github</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/github-heroku_jcxvgc.png"></p>
+</details>
+
+8. Search for your repo, select it and click connect. 
+
+<details open>
+<summary>Repo Search</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974679/rugby/search-repo-heroku_nyvzsi.png"></p>
+
+</details>
+
+9. You can choose to either deploy using automatic deploys which means heroku will rebuild the app everytime you push your changes.  For this option choose the branch to deploy and click enable automatic deploys.  This can be changed at a later date to manual.  Manual deployment deploys the current state of a branch.  
+
+<details open>
+<summary>Manual Deployment</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/deployment-heroku_jqzzx7.png"></p>
+
+</details>
+
+<details open>
+<summary>Automatic Deployment</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/auto-deploy-heroku_uwaljv.png"></p>
+
+</details>
+
+
+10. Click deploy branch. 
+
+11. If successful you should be able to view your deployed app by clicking "View". 
+
+<details open>
+<summary>View Deployment</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/choose-branch-hereoku_zuzwf6.png"></p>
+
+</details>
+        
     
 
   #### Fork: 
@@ -561,16 +646,11 @@ Steps followed:
 
 ## Credits 
 
-### Code 
-
-### Images/Media
-
-### Content
-
-
+Initially I looked at Portfolio 3 Projects on the Code Institute Slack Community to get some inspiration.  I found two quiz apps created by [Mike](https://github.com/MikeR94) and [Dave](https://github.com/DaveyJH).  Those two were massive quizzes to follow and honestly a bit overwhelming.  It was from Mike's readme that I saw the blog from [Brock Byrd](https://brockbyrdd.medium.com/).  Like Mike I followed this and primarily used the setup of Brock's questions and answers from this blog.  From this I slowly built my app using the resources mentioned above I made it my own.  I actually really enjoyed putting this together.  
 
 -----
 ## Acknowledegments/Conclusion
 
+I couldn't complete this without the massive support I get from my Code Institute cohort in particular [Kasia](https://github.com/bezebee), our cohort facilitator and a special mention to [Rhi](https://github.com/rhiannonmcn) for being a great sounding board a few times throughout this project.  Sometimes it's great to just say things out loud to others and bounce ideas off eachother!  Thanks to my mentor Spencer for being a great support and a really nice guy!  Last but not least my husband for helping with the rugby questions, bringing me tea and generally holding the fort while I work.     
 
 Rachel Rock April 2022
