@@ -184,7 +184,8 @@ I used google sheets to store usernames and scores for the Leaderboard.  I used 
 
 ### Design  
 
-Design was limited for this project as it was primiarily command line based.  I did however want to give it some element of design so positioned the t
+Design was limited for this project as it was primiarily command line based.  I did however want to give it some element of design so positioned the terminal to the center of the screen to make it look like a tv screen.  I added a background image of a stadium which complimented the quiz.   
+
 
 #### Colors 
 
