@@ -271,8 +271,22 @@ The Website has been tested on Google Chrome, Microsoft Edge, Safari and Opera. 
 The three python files were tested using [Pep8 Validation](http://pep8online.com/checkresult). 
 
 <details open>
-<summary>run.py file</summary> 
-<p align="center"><img src=""></p>
+<summary>run.py Validation</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649965515/rugby/run_validation_fwv5py.png"></p>
+
+</details>
+<br>
+
+<details open>
+<summary>quest.py Validation</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649965515/rugby/quest_validation_vrof1e.png"></p>
+
+</details>
+<br>
+
+<details open>
+<summary>info.py Validation</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649965515/rugby/info_validation_ozla7z.png"></p>
 
 </details>
 <br>
