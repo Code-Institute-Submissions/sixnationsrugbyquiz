@@ -49,16 +49,25 @@ As a user it is important:
 -----
 ## UX 
 
-While I did want to give the game a bit of design it was not nececessary to draft wireframes as the instructions were to produce a command line interface application.  Minimal styles were achieved by adding a background image, adding a mock tv screen and color to the 'Let's Play' button. 
+While I did want to give the game a bit of design it was designed minimally as the instructions were to produce a command line interface application.  Minimal styles were achieved by adding a background image, adding a mock screen and color to the 'Let's Play' button. 
+
+![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1649938195/rugby/wireframe_hs0tpn.png)
+
+
 
 <p align="center"><img src="rugbyquizflow.png"></p>
 
 
-### Strategy 
+### Python Logic
+
+I created a flow chart using drawio.  The chart gave me an idea of the flow of the game and how the game would progress, paying particular attention to user input and validation.  While some changes have been made to the quiz since drafting this flow chart it was extrememly beneficial in how the quiz was put together.  
+
+<p align="center"><img src="rugbyquizflow.png"></p>
 
 
 
-### Scope  
+### Scope / Features 
+
 
 
 
