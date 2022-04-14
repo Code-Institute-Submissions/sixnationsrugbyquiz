@@ -30,7 +30,7 @@ def welcome_message():
 
 def choices():
     """
-    Displays choices of game for user
+    Displays choices of for user
     """
     clear()
     blank_spacer()

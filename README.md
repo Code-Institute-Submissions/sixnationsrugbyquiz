@@ -242,8 +242,10 @@ Design was limited for this project as it was primiarily command line based.  I 
 - [Stack OverFlow](https://stackoverflow.com/questions/47984091/print-dictionary-value-into-string-with-python3-6) to iterate through a dictionary. 
 - [thispointer.com](https://thispointer.com/convert-dictionary-values-to-a-list-in-python/) to covert specific values of dictionary list. 
 - [Stack OverFlow](https://stackoverflow.com/questions/50938274/sort-a-spread-sheet-via-gspread) to sort rows in google sheets. 
-- Rugby Questions:
+- [Pexels](https://www.pexels.com/) for background stadium image. 
 
+
+- Rugby Questions:
   - [SixNationsrugby.com](https://www.sixnationsrugby.com/competition/guinness-six-nations-2019-quiz-round-three/)
   - [Wikipedia Six Nations](https://en.wikipedia.org/wiki/Six_Nations_Championship)
   - [Funtrivia](https://www.funtrivia.com/trivia-quiz/Sports/Italy-at-the-Six-Nations-357331.html)
@@ -447,24 +449,44 @@ I used [a11y](https://https://color.a11y.com/) to test the color contrast on the
 
 ### Issues/Bugs Fixed 
 
+**Space or no input from user**
+
+Initially I had thought that I validated for all user input until I entered nothing into the username and hit enter.  This allowed the user to have no name which would cause errors in relation to the leaderboard.   If fixed this by using strip() with a combination of checking for length on the input. 
+
 
 <details open>
-<summary>Issue images</summary>
-<p align="center"><img src=""></p>
+<summary>Spacing/Blank Error</summary>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649971844/rugby/strip_rhrlkm.png"></p>
 </details>
 <br>
 
 
+**Errors in GitPod**
+
+As I worked in GitPod I used the problems menu constantly.  For the most part the errors were in relation to whitespaces, indentations and two line spacing before functions.  I fixed the errors as I went so when it came to validating my code with the PEP8 validator there were no errors and my code was clean.  
 
 <details open>
-<summary>Safari/Iphone Error</summary>
-<p align="center"></p>
+<summary>GitPod Errors</summary>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649971844/rugby/strip_rhrlkm.png"></p>
 </details>
 <br>
+
+**Leaderboard Update**
+
+If the user started to play the quiz but just got as far as inputting their name and then quit the game this would affect the leaderboard and it wouldn't sort.  I fixed this by not giving the user access to the leaderboard unless the game was played.
 
 
 ### Issues Unresolved
 
+**Profanity Error**
+
+I had hoped to put in a profanity filter for the username.  I attempted to install the profanity library however every attempt affected deployment.  I tried different libriaries all of which failed.  Deployment was more important than profanity filters and I made the decision to leave it out of this project.  I hope to come back to it in the future.  
+
+<details open>
+<summary>Heroku Fail</summary>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649972289/rugby/heroku-fail_lgf3vx.png"></p>
+</details>
+<br>
 
 
 
