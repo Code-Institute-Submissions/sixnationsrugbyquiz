@@ -66,9 +66,7 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
 
 
 
-### Scope  
-
-#### Existing Features
+### Existing Features
 
 - Startup Display
   - The first display the user will see is the startup screen showing the logo done with ASCII art with the words "Rugby Quiz".  
@@ -175,7 +173,16 @@ I created a flow chart using drawio.  The chart gave me an idea of the flow of t
       This screen is displayed if the user wants to quit half way through the game.  The user is asked if they would like to see the leaderboard before they go or just quit.  Leaderboard will bring them to the Leaderboard section and quit will bring them to the quit screen mentioned above. 
 
 
-### Structure Plane
+### Data Model
+
+I used google sheets to store usernames and scores for the Leaderboard.  I used one sheet for this.  In the main run.py file I created a dictonary to hold values as the user played the game.  Once the game was played the values from the dictonary were then appended to the rows in google sheets.  I also used this dictonary to total scores for each section which was also appended to google sheets.  This allowed me to sort the data in google sheets and display the three highest scores to the user.  The game was originally intended to be called True or False hence the name of the google sheet.
+
+
+<details open>
+<summary>Google Sheets</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649950873/rugby/googles_zdbluh.png"></p>
+</details>
+<br>
 
 
 ### Skeleton 
