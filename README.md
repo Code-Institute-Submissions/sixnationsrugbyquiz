@@ -1,5 +1,3 @@
-<p align="center"><img src=""></p>
-
 
 # Six Nations Rugby Quiz
 
@@ -16,8 +14,8 @@ Link to the repository is [here](https://github.com/rockymiss/sixnationsrugbyqui
 -----
 
 ## Who is this game for and what does it do?
-
 This game is for anyone who likes Rugby, particularly the Six Nations Tournament.  
+ 
 -----
 
 ## User Experience
