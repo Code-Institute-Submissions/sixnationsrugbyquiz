@@ -132,7 +132,7 @@ def display_score_board():
     Slices the first 4 rows
     and prints out the leaderboard in table format
     """
-
+    blank_spacer()
     score_data.sort((8, 'des'), range='A2:H1000')
     new_data = score_data.get_all_values()
     max_score = new_data[slice(0, 4)]
@@ -282,10 +282,11 @@ def updating_mid_way():
     else:
         print("You have answered all sections".center(80))
         print()
-        print("Type l for leaderboard or q to quit".center(80))
+        print("Type s for Leader score board or q to quit".center(80))
         print()
         what_next = input("So what would you like to do?\n".center(80))
-        if what_next == "l":
+        if what_next == "s":
+            clear()
             update_score_sheet()
             display_score_board()
             print("Goodbye, thanks for playing".center(80))
@@ -302,26 +303,30 @@ def quit_game_leader():
     """
     blank_spacer()
     print("Would you like to see leaderboard before you go?".center(80))
-    so_long = input("Type 'l' for leaderboard or 'q' to quit\n".center(80))
+    so_long = input("Type 's' for Leader score "
+                    "board or 'q' to quit\n".center(80))
     if so_long == 'q':
+        clear()
         quit_game()
-    elif so_long == 'l':
+    elif so_long == 's':
+        clear()
         update_score_sheet()
+        clear()
         display_score_board()
         print("Thanks for playing, click Let's Play "
-              "above if you change your mind".center(80))
+              "below if you change your mind".center(80))
         print()
         print()
-    elif so_long != "q" and so_long != "p":
-        print("Not a valid input, you must enter 'q' or 'l'".center(80))
+    elif so_long != "s" and so_long != "p":
+        print("Not a valid input, you must enter 'q' or 's'".center(80))
 
 
 def quit_game():
     """
     Function to just quit game
     """
-    print("Goodbye, sorry to see you go.  If you change your mind"
-          " click Let's Play above".center(80))
+    print("Goodbye, sorry to see you go.  If you change your mind\n"
+          "and want to play again, click Let's Play below".center(80))
     print()
     print()
 
