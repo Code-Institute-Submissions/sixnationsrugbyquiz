@@ -563,7 +563,7 @@ The website was deployed to heroku by doing the following:
   <details open>
   <summary>Convig vars</summary>
   <br>
-  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649974678/rugby/creds-heroku_goggpk.png"></p>
+  <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649978071/rugby/creds-heroku_fbc93f.png"></p>
   </details>
 
 6. Buildpacks now need to be added.  These install future dependancies that we need outside of the requirements file.   The first is python and the second is node.js.  Select Python first and then node.js and click save.  Make sure they are in this order.
