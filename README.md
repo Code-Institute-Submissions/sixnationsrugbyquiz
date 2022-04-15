@@ -10,8 +10,8 @@ Link to the deployed app is [here](https://sixnationsrugbyquiz.herokuapp.com/).
 
 -----
 
-## Who is this game for and what does it do?
-This game is for anyone who likes Rugby, particularly the Six Nations Tournament.  Its a quiz about Rugby and the Six Nations that battle it out at the start of every year to be crowned Six Nation Champions.   
+## Objective?
+To deliver a command line quiz that is interactive and fun for the users, particularly anyone who likes Rugby   
  
 -----
 
@@ -208,6 +208,9 @@ Design was limited for this project as it was primiarily command line based.  I 
 - Profanity Checker
   - So that users cannot add names with profanity in them. 
 
+- Timer
+  - With a timer the users would be unable to look up answers online. 
+
 
 -----
 ## Technologies Used 
@@ -233,7 +236,7 @@ Design was limited for this project as it was primiarily command line based.  I 
 -----
 ## Resources 
 
-- [Code Institute](https://codeinstitute.net/ie/) for course materials, tutor and mentor support.
+- [Code Institute](https://codeinstitute.net/ie/) for course materials, tutor and mentor support, in particular the use of google sheets and deployment to heroku.
 - [Slack](https://slack.com/intl/en-ie/) in particular the Code Institute Slack Community.
 - [W3schools](https://www.w3schools.com/) 
 - [Brock Byrd](https://brockbyrdd.medium.com/creating-a-multiple-choice-quiz-in-python-terminal-1c46123b86d5) for quiz question layout.
@@ -256,11 +259,15 @@ Design was limited for this project as it was primiarily command line based.  I 
   - [Wikipedia - Wales](https://en.wikipedia.org/wiki/Wales_national_rugby_union_team#Coaches)
     
 
-## Python Libraries
+## Python Libraries/Modules/API
 
 - [Tabulate](https://pypi.org/project/tabulate/) to print leaderboard tables.
 - [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/) for ascii art.
 - [Colorama](https://pypi.org/project/colorama/) to add color. 
+- [Random](https://www.cs.swarthmore.edu/~adanner/cs21/f09/randomlib.php#:~:text=Using%20the%20random%20library&text=The%20random%20module%20provides%20access,the%20basic%20features%20of%20python.) to generate random questions.
+- [Time](https://docs.python.org/3/library/time.html) to add delays.
+- [gspread](https://docs.gspread.org/en/v5.3.2/) to communicate with google sheets
+- [os](https://www.geeksforgeeks.org/os-module-python-examples/#:~:text=The%20OS%20module%20in%20Python,*os*%20and%20*os.) to clear terminal screen.
 
 
 -----
