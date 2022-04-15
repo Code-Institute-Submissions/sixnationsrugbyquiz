@@ -478,6 +478,21 @@ Initially I had thought that I validated for all user input until I entered noth
 <br>
 
 
+**Total Scores and Updates**
+
+For total scores I thought originally an easy fix would be to total the scores using google sheets however without constantly going in and adding a sum this would not work.  If I put a function into the entire column then data could not be appended properly into google sheets to hold username and totals. 
+Also it's not very best use of python now is it!  
+
+To work around this I used the dictonary I set up to collect the user name and scores and I pulled out the values of the scores, changed them to integers and got the sum of all values.  This was then appended to the dictonary that held the scores giving it a new key of "Total" and the value of the total scores.  Once the dictonary was complete with the data this could be appended to google sheets, where it was sorted and then the top three score details retreived from it to go on the leaderboard.  
+
+
+<details open>
+<summary>Total Scores and Updates</summary>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1649983010/rugby/total-scores_nrjesc.png"></p>
+</details>
+<br>
+
+
 **Errors in GitPod**
 
 As I worked in GitPod I used the problems menu constantly.  For the most part the errors were in relation to whitespaces, indentations and two line spacing before functions.  I fixed the errors as I went so when it came to validating my code with the PEP8 validator there were no errors and my code was clean.  
